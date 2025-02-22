@@ -1,0 +1,44 @@
+
+
+:root {
+
+    --bright-purple: #b852fc;
+    --purple: #b191ff;
+    --light-purple: #e8dfff;
+    --sand: #ffc65e;
+
+    --whitesmoke: #f5f5f5;
+    --white: #fff;
+    --black: #222;
+    --medium-gray: #bbb;
+    --light-gray: #eee;
+
+}
+
+
+
+.SampleGrid-main-grid {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+    z-index: 0;
+}
+
+.SampleGrid-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.SampleGrid-slot {
+    border: 1px solid var(--sand);
+    width: 20%;
+    height: 25vh;
+    background: var(--purple);
+    background: transparent;
+}
+

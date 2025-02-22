@@ -1,0 +1,39 @@
+
+
+.FourDays-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.FourDays-top-row button {
+    background: var(--white);
+    border: 1px solid var(--medium-gray);
+    width: 100px;
+    height: 30px;
+    margin:  0px 10px;
+    color: var(--bright-purple);
+}
+
+.FourDays-top-row button:hover {
+    transform: scale(0.97);
+    cursor: pointer; 
+}
+
+
+
+.FourDays-four-columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FourDays-four-columns div {
+    margin: 10px;
+    transform: scale(0.75);
+}
+
+
+

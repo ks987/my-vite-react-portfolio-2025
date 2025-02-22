@@ -1,0 +1,24 @@
+ .ShowData {
+
+    border: 2px solid deeppink;
+    margin: 5px;
+
+}
+
+
+
+.database-itself {
+    border: 2px solid deeppink;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.single-task-styles {
+    min-width: 200px;
+    min-height: 200px;
+    background: gold;
+    color: #222;
+    margin: 5px;
+    text-align: left;
+}

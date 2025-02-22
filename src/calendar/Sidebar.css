@@ -1,0 +1,193 @@
+
+
+:root {
+
+    --bright-purple: #b852fc;
+    --purple: #b191ff;
+    --light-purple: #e8dfff;
+    --sand: #ffc65e;
+
+    --whitesmoke: #f5f5f5;
+    --white: #fff;
+    --black: #222;
+    --medium-gray: #bbb;
+    --light-gray: #eee;
+
+}
+
+
+
+.Sidebar {
+    font-size: 18px;
+    width: 200px;
+    height: 600px;
+    border: 1px solid var(--black);
+    border: none;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 30px;
+    background: var(--whitesmoke);
+    background: linear-gradient(45deg, var(--purple), var(--light-purple));
+    background: linear-gradient(45deg, var(--purple), var(--light-purple));
+}
+
+
+.Sidebar-add-new-task-btn {
+    width: 150px;
+    height: 40px;
+    background: var(--light-purple);
+    color: var(--black);
+    border: 2px solid var(--white);
+    margin: 25px 10px 0px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.Sidebar-add-new-task-btn:hover {
+cursor: pointer;
+transform: scale(1.03);
+background: var(--light-purple);
+border: 2px solid var(--bright-purple);
+}
+
+
+.Sidebar-today {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+    background: var(--whitesmoke);
+    background: transparent;
+}
+
+
+.Sidebar-title {
+    font-weight: normal;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.Sidebar-calendars-section {
+    margin: 0 auto;
+    width: 200px;
+    font-size: 16px;
+    text-align: center;
+    background: var(--whitesmoke);
+    background: transparent;
+}
+
+.calendars-list-itself {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    background: var(--whitesmoke);
+    background: transparent;
+    width: 200px;
+}
+
+
+.Sidebar-row {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--medium-gray);
+    border-left: 1px solid var(--medium-gray);
+    border-right: 1px solid var(--medium-gray);
+    border: 2px solid var(--sand);
+    border: none;
+    margin-left: 5px;
+    width: 215px;
+}
+
+.Sidebar-custom-checkbox {
+    color: var(--light-purple);
+    margin: 2px 2px;
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background: var(--purple);
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.calendars-list-itself.Sidebar-row:last-child {
+    border-bottom: 1px solid var(--medium-gray);
+    border: none;
+}
+
+
+.Sidebar-color-picker-box {
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+.Sidebar-color-circle {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    width: 15px;
+    height: 15px;
+    background: gold;
+    border: 2px solid white;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+
+
+/* add new calendar styles */
+
+.Sidebar-add-calendar-btn {
+    border: none;
+    width: 150px;
+    height: 30px;
+    font-size: 14px;
+    background: var(--light-purple);
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: var(--black);
+
+
+}
+
+.Sidebar-add-calendar-btn:hover {
+    cursor: pointer;
+    border: 2px solid var(--bright-purple);
+    transform: scale(1.03);
+}
+
+/* Dropdown to resize the calendar */
+
+.Sidebar-CSS-dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.Sidebar-CSS-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.Sidebar-CSS-dropdown-content a {
+    color: #222;
+}
+
+/* html dropdown styles */
+#html-scale:focus {
+    outline: none;
+}

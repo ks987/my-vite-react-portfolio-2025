@@ -1,0 +1,29 @@
+
+
+:root {
+
+    --bright-purple: #b852fc;
+    --purple: #b191ff;
+    --light-purple: #e8dfff;
+    --sand: #ffc65e;
+
+    --whitesmoke: #f5f5f5;
+    --white: #fff;
+    --black: #222;
+    --medium-gray: #bbb;
+    --light-gray: #eee;
+
+}
+
+
+.OneTask {
+    border: 2px solid gray;
+    border: none;
+    width: 80%;
+    background: var(--purple);
+    margin: 0px 3px;
+}
+
+.OneTask:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,81 @@
+
+
+:root {
+
+    --bright-purple: #b852fc;
+    --purple: #b191ff;
+    --light-purple: #e8dfff;
+    --sand: #ffc65e;
+
+    --whitesmoke: #f5f5f5;
+    --white: #fff;
+    --black: #222;
+    --medium-gray: #bbb;
+    --light-gray: #eee;
+
+}
+
+
+.AddNewCalendar {
+    border: 2px solid var(--purple);
+    background: white;
+    width: 500px;
+    height: 400px;
+    position: fixed;
+    top: 100px;
+    left: 50px;
+}
+
+.AddNewCalendar-close-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--purple);
+    background: white;
+    margin: 10px;
+    position: relative;
+    left: 300px;
+    top: -50px;
+}
+
+.AddNewCalendar-close-btn:hover {
+    background: var(--purple);
+    cursor: pointer;
+}
+
+.AddNewCalendar input {
+    width: 200px;
+    height: 30px;
+    margin: 0px auto;
+    border: 1px solid var(--purple);
+}
+
+
+.AddNewCalendar input:focus {
+    outline: none;
+}
+
+
+
+.AddNewCalendar-color-picker-box {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.AddNewCalendar-save-btn {
+    border: none;
+    background: var(--purple);
+    color: white;
+    font-size: 20px;
+    width: 100px;
+    height: 60px;
+    margin: 15px 10px;
+    position: relative;
+    top: -80px;
+    left: 180px;
+    border-radius: 10px;
+}
+
+.AddNewCalendar-save-btn:hover {
+    background: var(--bright-purple);
+    cursor: pointer;
+}

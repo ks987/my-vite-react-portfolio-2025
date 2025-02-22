@@ -1,0 +1,245 @@
+
+:root {
+
+    --bright-purple: #b852fc;
+    --purple: #b191ff;
+    --light-purple: #e8dfff;
+    --sand: #ffc65e;
+
+    --whitesmoke: #f5f5f5;
+    --white: #fff;
+    --black: #222;
+    --medium-gray: #bbb;
+    --light-gray: #eee;
+}
+
+
+.Overlay {
+    margin: 10px auto;
+    border: 2px solid var(--purple);
+    height: 400px;
+    width: 60%;
+    max-width: 400px;
+    min-width: 400px;
+    border-radius: 10px;
+    position: relative;
+    background: var(--white);
+    background: linear-gradient(45deg, var(--purple), var(--light-purple));
+    display: none;
+    display: block;
+    position: fixed;
+    left: 50%;
+    font-size: 14px;
+    z-index: 50;
+    transform: translate(-50%, 0%);
+}
+
+.Overlay:hover {
+    cursor: pointer;
+}
+
+
+.Overlay-close-btn {
+    border: 2px solid var(--purple);
+    border: none;
+    color: var(--bright-purple);
+    color: var(--black);
+    background: var(--light-purple);
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 3px;
+}
+
+.Overlay-close-btn:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+}
+
+.Overlay-event-title {
+    border: none;
+    border-bottom: 1px solid var(--medium-gray);
+    width: 80%;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.Overlay-event-title:focus {
+    outline: none;
+
+}
+
+
+/* Overlay date row */
+
+.Overlay-date-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+
+.Overlay-date-row input {
+    border: 1px solid white;
+    border: none;
+    margin: 2px;
+    height: 25px;
+    font-size: 14px;
+    text-align: center;
+ }
+
+.Overlay-date-row input:focus {
+    outline: none;
+}
+
+
+.Overlay-day-of-week {
+    width: 60px;
+}
+
+.Overlay-month {
+    width: 60px;
+}
+
+.Overlay-day {
+    width: 40px;
+}
+
+.Overlay-year {
+    width: 50px;
+}
+
+.Overlay-starting-time {
+    width: 60px;
+}
+
+.Overlay-ending-time {
+    width: 60px;
+}
+
+
+.Overlay-description {
+    border: 1px solid var(--medium-gray);
+    width: 95%;
+    height: 100px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 5px;
+    max-width: 370px;
+    min-width: 370px;
+    max-height: 130px;
+    min-height: 130px;
+    border: none;
+}
+
+
+.Overlay-description:focus {
+    outline: none;
+}
+
+
+
+
+/* Overlay calendar name and color */
+
+.Overlay-calendar-name-and-color {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+.Overlay-calendar-name-and-color div {
+    margin: 0px 3px;
+    font-size: 20px;
+}
+
+.Overlay-event-color {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+
+.Overlay-save-event-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--light-purple);
+    color: var(--black);
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    margin: 3px;
+    font-size: 17px;
+}
+
+.Overlay-save-event-btn:hover {
+    cursor: pointer;
+    transform: scale(0.97)
+}
+
+
+
+
+
+
+/* discard or delete note */
+
+.Overlay-discard-delete-note {
+    width: 200px;
+    height: 150px;
+    border: 1px solid var(--black);
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    background: var(--white);
+    z-index: 100;
+    padding: 10px;
+}
+
+.discard-delete-note h4 {
+    margin: 0 auto;
+}
+
+.Overlay-cancel-btn {
+    border: 1px solid var(--purple);
+    padding: 10px;
+    background: var(--white);
+    margin: 5px;
+    background: var(--light-purple);
+    color: var(--black);
+    font-weight: bold;
+}
+
+.Overlay-discard-btn {
+    border: 1px solid var(--purple);
+    padding: 10px;
+    background: var(--white);
+    margin: 5px;
+    font-weight: bold;
+
+}
+
+.Overlay-cancel-btn:hover,
+.Overlay-discard-btn:hover {
+    cursor: pointer;
+    background: var(--purple);
+    transform: scale(0.97);
+    color: var(--white);
+    font-weight: bold;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 850px) {
+    
+}

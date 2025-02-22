@@ -1,0 +1,137 @@
+
+
+:root {
+
+    --bright-purple: #b852fc;
+    --purple: #b191ff;
+    --light-purple: #e8dfff;
+    --sand: #ffc65e;
+
+    --whitesmoke: #f5f5f5;
+    --white: #fff;
+    --black: #222;
+    --medium-gray: #bbb;
+    --light-gray: #eee;
+
+}
+
+
+.OneMonth {
+    width: 100%;
+    border: 2px solid deeppink;
+    border: none;
+}
+
+
+
+
+
+
+
+/* OneMonth  */
+.OneMonth-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* all tasks popup styles */
+.OneMonth-all-tasks-popup {
+    border: 2px solid var(--sand);
+    width: 200px;
+    height: 300px;
+    background: white;
+    position: absolute;
+}
+
+
+
+/* a single task popup styles */
+
+
+
+
+/* one month styles */
+
+.OneMonth-top-row button {
+    background: var(--white);
+    border: 1px solid var(--medium-gray);
+    width: 100px;
+    height: 30px;
+    margin:  0px 10px;
+    color: var(--bright-purple);
+}
+
+.OneMonth-top-row button:hover {
+    transform: scale(0.97);
+    cursor: pointer;
+    
+}
+
+
+
+.OneMonth-sidebar-and-one-month {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    border: 2px solid var(--sand);
+    border: none;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+/* monthly calendar itself - styles */
+
+.OneMonth-monthly-calendar {
+    border: 1px solid var(--bright-purple);
+    border: none;
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.OneMonth-title-slot {
+    width: 40px;
+    height: 20px;
+    border: 1px solid magenta;
+    border: none;
+}
+
+.OneMonth-slot {
+    width: 13.5%;
+    height: 80px;
+    border: 1px solid var(--medium-gray);
+}
+
+
+
+/* inserted task styles */
+
+.OneMonth-inserted-task-row {
+    font-size: 10px;
+    display: flex;
+}
+
+.OneMonth-number-of-tasks {
+    width: 70px;
+    font-weight: bold;
+    color: var(--black);
+    font-size: 12px;
+    border: 0.5px solid var(--medium-gray);
+    margin: 1px 2px;
+}
+
+.OneMonth-number-of-tasks:hover {
+    cursor: pointer;
+    border: 0.5px solid var(--white);
+    background: white;
+}
+
+
+
+/* on very big screens */
+

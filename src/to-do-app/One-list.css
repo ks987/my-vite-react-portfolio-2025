@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root {
+
+    --bright-purple: #b852fc;
+    --purple: #b191ff;
+    --light-purple: #e8dfff;
+    --sand: #ffc65e;
+
+    --whitesmoke: #f5f5f5;
+    --white: #fff;
+    --black: #222;
+    --medium-gray: #bbb;
+    --light-gray: #eee;
+
+}
+
+
+
+.OneList {
+    margin: 10px;
+    border: 2px solid var(--purple);
+    background: var(--white);
+    color: var(--black);
+    width: 260px;
+    height: 320px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.OneList-title {
+    color: var(--bright-purple);
+}
+
+.OneList-row {
+    height: 25px;
+    border: 1px solid var(--purple);
+    display: flex;
+    margin-top: 2px;
+    align-items: center;
+}
+
+.OneList-number {
+    width: 20px;
+    height: 25px;
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--bright-purple);
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--purple);
+}
+
+.OneList-task {
+    height: 25px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.OneList-checkbox {
+    color: var(--purple);
+    margin-right: 5px;
+    font-size: 20px;
+
+}
+
+.OneList-crossed-out {
+    text-decoration: line-through;
+    text-decoration-color: var(--purple);
+}

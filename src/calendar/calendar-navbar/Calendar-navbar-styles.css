@@ -1,0 +1,60 @@
+
+:root {
+
+    --bright-purple: #b852fc;
+    --purple: #b191ff;
+    --light-purple: #e8dfff;
+    --sand: #ffc65e;
+
+    --whitesmoke: #f5f5f5;
+    --white: #fff;
+    --black: #222;
+    --medium-gray: #bbb;
+    --light-gray: #eee;
+
+}
+
+
+
+.SampleCalendar {
+    height: 1000px;
+    background: var(--white);
+    color: var(--bright-purple);
+    color: var(--black);
+}
+
+.title-calendar-app {
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+/* buttons styles */
+
+.calendar-link {
+    padding: 5px;
+    color: var(--black);
+    background: white;
+    border: none;
+    margin: 5px;
+    border: 1px solid var(--medium-gray);
+    border: 1px solid var(--purple);
+    text-decoration: none;
+}
+
+.calendar-link:hover {
+    cursor: pointer;
+    background: var(--light-gray);
+    background: var(--purple);
+    color: white;
+}
+
+
+
+
+
+
+
+.link-highlighted {
+    border: 2px solid var(--sand);
+}
+
+
