@@ -1,19 +1,16 @@
 import { useState } from 'react'
-
-
+import {Link } from "react-router-dom";
+ 
 import './About-and-contact.css';
 
-
-import Footer from '../Footer.jsx';
 import DefaultSetup from './DefaultSetup.jsx';
 
-import '../App.css';
 
 export default function AboutAndContact() {
 
     return (
         <div className="AboutAndContact">
-            
+
             <div className="AboutAndContact-container">
 
                 <DefaultSetup />
@@ -23,29 +20,36 @@ export default function AboutAndContact() {
                     <ul className="AboutAndContact-main-li">
                         <li>Name: <span>Kseniia Bondarenko</span></li>
                         <li>She/Her</li>
-                        <li>Has been studying software development for:
+                        <li>Studied software development:
                             <ul className="AboutAndContact-sub-li">
                                 <li>
-                                    2 years as of 2025.
+                                    for 2 years.
                                 </li>
                             </ul>
                         </li>
-                        <li>GitHub: <span>@ks987</span>
+                        <li>GitHub: <span className="AboutAndContact-normal-font">@ks987</span></li>
+                        <li>GitHub: <span className="AboutAndContact-normal-font">@ks987</span>
+
                             <ul className="AboutAndContact-sub-li">
                                 <li><a href="https://github.com/ks987" target="_blank">Link: https://github.com/ks987</a></li>
                             </ul></li>
 
-                        <li>Gmail: <span>ksen9291@gmail.com</span></li>
-                        <li>Gmail: <span>ksen9291@gmail.com</span></li>
-                        <li>Portfolio contains <span>two</span> React.js projects:
-                            <ul className="AboutAndContact-sub-li">
-                                <li>
-                                    "Calendar App" and "To-Do App".
-                                </li>
-                            </ul></li>
+                        <li>Gmail: <span className="AboutAndContact-normal-font">ksen9291@gmail.com</span></li>
+                        <li>Gmail: <span className="AboutAndContact-normal-font">ksen9291@gmail.com</span></li>
+                        <li>Portfolio contains <span className="AboutAndContact-highlighted">2</span> React.js projects:
+
+                            <li>
+                                <span className="AboutAndContact-highlighted">"Calendar App"</span>
+
+                                <span className="AboutAndContact-cursive">and</span>
+
+                                <span className="AboutAndContact-highlighted">"To-Do App".</span>
+
+                            </li>
+                        </li>
                     </ul>
 
-                    <Footer />
+
                 </div>
 
 

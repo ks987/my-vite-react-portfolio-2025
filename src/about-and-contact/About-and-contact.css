@@ -18,15 +18,18 @@
 /* system default page: Vite + React */
 .AboutAndContact {
     margin: 0 auto;
+    border: 2px solid gold;
+    border: none;
 }
 
 
 .AboutAndContact-container {
     display: flex;
-    width: 90%;
+    width: 750px;
     justify-content: center;
     align-items: center;
     border: 2px solid deeppink;  
+    border: none;
     background: whitesmoke;
     margin: 0 auto;
 }
@@ -34,11 +37,18 @@
 /* about and contact styles */
 
 .about-me-note {
-  width: 400px;
+  width: 350px;
   height: 650px;
    border: 2px solid var(--medium-gray);
-   margin: 10px;
+   border: 2px solid var(--purple);
+   margin: 10px auto;
 
+}
+
+.about-me-note h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
 }
 
 .about-me-note ul li {
@@ -61,6 +71,7 @@
 .AboutAndContact-sub-li a {
     text-decoration: none;
     color: var(--black);
+    font-weight: bold;
 }
 .AboutAndContact-sub-li a:hover  {
     text-decoration: underline;
@@ -69,6 +80,26 @@
 
 .AboutAndContact-main-li span {
     font-weight: bold;
+}
+
+.AboutAndContact-normal-font {
+    font-family: 'Oxygen';
+    font-style: normal;
+}
+
+.AboutAndContact-highlighted {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-size: 18px;
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+.AboutAndContact-cursive {
+    font-style: italic;
+    font-family: 'Benne';
+    font-size: 18px;
+   
 }
 
 @media screen and (max-width: 860px) {

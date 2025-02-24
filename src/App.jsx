@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 
 // import main layout
@@ -32,19 +32,16 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-
-      <Layout />
-
+    <BrowserRouter>
       <Routes>
-
+        
         {/* portfolio landing page routes */}
+        <Route path='/' element={<Layout />}>
+          <Route exact path='about-and-contact' element={<AboutAndContact />}></Route>
+          <Route exact path='calendar-in-react' element={<Calendar />}></Route>
+          <Route exact path='to-do-app-in-react' element={<ToDoApp />}></Route>
 
-        <Route exact path='/about-and-contact' element={<AboutAndContact />}></Route>
-        <Route exact path='/calendar-in-react' element={<Calendar />}></Route>
-        <Route exact path='/to-do-app-in-react' element={<ToDoApp />}></Route>
-
-
+        </Route>
 
         {/* calendar application routes */}
 
@@ -59,8 +56,7 @@ function App() {
         {/* to-do application routes */}
 
       </Routes>
-
-    </div>
+    </BrowserRouter>
   )
 }
 

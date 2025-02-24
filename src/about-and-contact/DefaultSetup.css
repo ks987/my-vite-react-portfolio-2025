@@ -18,7 +18,9 @@
 
   .DefaultSetup {
     border: 2px solid var(--medium-gray);
-    min-width: 330px;
+    border: 2px solid var(--purple);
+    min-width: 350px;
+    max-width: 350px;
     height: 650px;
     margin: 10px;
   }
@@ -51,11 +53,11 @@
     }
   }
   
-  .card {
+  .DefaultSetup.card {
     padding: 2em;
   }
   
-  .read-the-docs {
+  .DefaultSetup.read-the-docs {
     color: #888;
   }
 
@@ -66,8 +68,9 @@
  
   .DefaultSetup {
     border: 2px solid var(--medium-gray);
-    min-width: 330px;
-    max-width: 330px;
+    border: 2px solid var(--purple);
+    min-width: 350px;
+    max-width: 350px;
     margin: 0 auto;
     margin-bottom: 20px;
   }
@@ -80,8 +83,9 @@
  
   .DefaultSetup {
     border: 2px solid var(--medium-gray);
-    min-width: 330px;
-    max-width: 330px;
+    border: 2px solid var(--purple);
+    min-width: 350px;
+    max-width: 350px;
     margin: 0 auto;
     margin-bottom: 20px;
   }
