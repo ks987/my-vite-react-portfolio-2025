@@ -22,7 +22,7 @@ function toShowCreateNew() {
             <h4 className="ToDoApp-title">To-Do Application</h4>
             <div className="ToDoApp-new-task-field">
 
-                <button className="ToDoApp-create-button" onClick={toShowCreateNew}>+ Create New Task</button>
+                <button className="ToDoApp-create-button" onClick={toShowCreateNew}>+ Add</button>
 
             </div>
 

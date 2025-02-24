@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="Footer-portoflio">
             <div className="footer-bar">
 
-                Copyright 2025 kseniiasprojects.com
+                Copyright 2025
 
             </div>
         </div>

@@ -19,7 +19,9 @@
 .ToDoApp {
     width: 1000px;
     margin: 0 auto;
+    border: 2px solid deeppink;
 }
+
 
 
 .ToDoApp-title {
@@ -48,6 +50,9 @@
     color: white;
 }
 
+.ToDoApp-create-button:focus {
+    outline: none;
+}
 
 
 .ToDoApp-all-lists {
@@ -62,8 +67,23 @@
 
 
 @media screen and (max-width: 1000px) {
-   .ToDoApp {
-    width: 90%;
+    .ToDoApp {
+        width: 90%;
 
-   }
-  }
+    }
+}
+
+
+@media screen and (max-width: 860px) {
+    .ToDoApp {
+        width: 90%;
+
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .ToDoApp-create-button {
+        width: 80px;
+    }
+}
