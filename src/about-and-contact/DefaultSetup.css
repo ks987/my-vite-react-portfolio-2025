@@ -14,7 +14,6 @@
  }
 
 
-<<<<<<< HEAD
   .DefaultSetup {
     border: 2px solid var(--medium-gray);
     border: 2px solid var(--purple);
@@ -59,8 +58,6 @@
   .DefaultSetup.read-the-docs {
     color: #888;
   }
-=======
->>>>>>> 6a1f3ae (progress-2.12pm-Feb-24-2025)
 
  .DefaultSetup {
    border: 2px solid var(--medium-gray);
@@ -71,7 +68,6 @@
    margin: 10px;
  }
 
-<<<<<<< HEAD
 @media screen and (max-width: 860px) {
   
  
@@ -84,12 +80,10 @@
     margin-bottom: 20px;
   }
   
-=======
  .DefaultSetup-logos {
   display: flex;
   justify-self: center;
  }
->>>>>>> 6a1f3ae (progress-2.12pm-Feb-24-2025)
 
  .DefaultSetup-vite-logo {
    height: 6em;
@@ -97,11 +91,12 @@
    will-change: filter;
    transition: filter 300ms;
  }
+}
 
-<<<<<<< HEAD
 @media screen and (max-width: 400px) {
   
- 
+}
+
   .DefaultSetup {
     border: 2px solid var(--medium-gray);
     border: 2px solid var(--purple);
@@ -111,11 +106,9 @@
     margin-bottom: 20px;
   }
   
-=======
  .DefaultSetup-vite-logo:hover {
    filter: drop-shadow(0 0 2em #646cffaa);
  }
->>>>>>> 6a1f3ae (progress-2.12pm-Feb-24-2025)
 
  .DefaultSetup-react-logo {
    height: 6em;
