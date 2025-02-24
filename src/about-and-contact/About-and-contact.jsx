@@ -8,6 +8,7 @@ import DefaultSetup from './DefaultSetup.jsx';
 
 export default function AboutAndContact() {
 
+    
     return (
         <div className="AboutAndContact">
 
