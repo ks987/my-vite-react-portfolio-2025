@@ -23,18 +23,31 @@
    margin: 10px;
  }
 
- .logo {
+ .DefaultSetup-logos {
+   display: flex;
+   justify-content: center;
+ }
+
+ .DefaultSetup-vite-logo {
    height: 6em;
    padding: 1.5em;
    will-change: filter;
    transition: filter 300ms;
  }
 
- .logo:hover {
+ .DefaultSetup-vite-logo:hover {
    filter: drop-shadow(0 0 2em #646cffaa);
  }
 
- .logo.react:hover {
+ .DefaultSetup-react-logo {
+   height: 6em;
+   padding: 1.5em;
+   will-change: filter;
+   transition: filter 300ms;
+ }
+
+
+ .DefaultSetup-react-logo:hover {
    filter: drop-shadow(0 0 2em #61dafbaa);
  }
 
@@ -54,11 +67,17 @@
    }
  }
 
- .DefaultSetup.card {
+ .DefaultSetup-card {
    padding: 2em;
  }
 
- .DefaultSetup.read-the-docs {
+
+ .DefaultSetup-note {
+   padding: 2em;
+ }
+
+
+ .DefaultSetup-read-the-docs {
    color: #888;
  }
 
