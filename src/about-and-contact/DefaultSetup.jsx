@@ -13,6 +13,7 @@ export default function DefaultSetup() {
 
 
         <div className="DefaultSetup">
+            <div className="DefaultSetup-container">
             <div className="DefaultSetup-logos">
                 <a href="https://vite.dev" target="_blank">
                     <img src={viteLogo} className="DefaultSetup-vite-logo" alt="Vite logo" />
@@ -33,6 +34,7 @@ export default function DefaultSetup() {
             <p className="DefaultSetup-read-the-docs">
                 Click on the Vite and React logos to learn more
             </p>
+            </div>
         </div>
 
     )

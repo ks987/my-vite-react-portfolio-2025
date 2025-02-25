@@ -1,0 +1,251 @@
+:root {
+
+    --bright-purple: #b852fc;
+    --purple: #b191ff;
+    --light-purple: #e8dfff;
+    --sand: #ffc65e;
+ 
+    --whitesmoke: #f5f5f5;
+    --white: #fff;
+    --black: #222;
+    --medium-gray: #bbb;
+    --light-gray: #eee;
+ 
+  }
+ 
+ 
+  .DefaultSetup {
+    border: 2px solid var(--medium-gray);
+    border: 2px solid var(--purple);
+    min-width: 350px;
+    max-width: 350px;
+    height: 650px;
+    margin: 10px;
+  }
+ 
+  .DefaultSetup-logos {
+    display: flex;
+    justify-content: center;
+  }
+ 
+  .DefaultSetup-vite-logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+ 
+  .DefaultSetup-vite-logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+ 
+  .DefaultSetup-react-logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+ 
+ 
+  .DefaultSetup-react-logo:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+ 
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+ 
+    to {
+      transform: rotate(360deg);
+    }
+  }
+ 
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+ 
+  .DefaultSetup-card {
+    padding: 2em;
+  }
+ 
+ 
+  .DefaultSetup-note {
+    padding: 2em;
+  }
+ 
+ 
+  .DefaultSetup-read-the-docs {
+    color: #888;
+  }
+ 
+ 
+  @media screen and (max-width: 860px) {
+ 
+ 
+    .DefaultSetup {
+      border: 2px solid var(--medium-gray);
+      border: 2px solid var(--purple);
+      min-width: 350px;
+      max-width: 350px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+ 
+    .DefaultSetup-logos {
+      display: flex;
+      justify-self: center;
+    }
+ 
+    .DefaultSetup-vite-logo {
+      height: 6em;
+      padding: 1.5em;
+      will-change: filter;
+      transition: filter 300ms;
+    }
+  }
+ 
+  @media screen and (max-width: 400px) {}
+ 
+  .DefaultSetup {
+    border: 2px solid var(--medium-gray);
+    border: 2px solid var(--purple);
+    min-width: 350px;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+ 
+  .DefaultSetup-vite-logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+ 
+  .DefaultSetup-react-logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+ 
+ 
+  .DefaultSetup-react-logo:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+ 
+ 
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+ 
+    to {
+      transform: rotate(360deg);
+    }
+  }
+ 
+  @media (prefers-reduced-motion: no-preference) {
+    .DefaultSetup-react-logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+ 
+  .DefaultSetup-card {
+    padding: 2em;
+  }
+ 
+  .DefaultSetup-note {
+    text-align: center;
+  }
+ 
+  .DefaultSetup-read-the-docs {
+    color: #888;
+    text-align: center;
+  }
+ 
+ 
+  /*  */
+  .DefaultSetup a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+  }
+ 
+  .DefaultSetup a:hover {
+    color: #535bf2;
+  }
+ 
+ 
+  .DefaultSetup h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+    display: flex;
+    justify-self: center;
+  }
+ 
+  .DefaultSetup button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    display: flex;
+    justify-self: center;
+  }
+ 
+  .DefaultSetup-card button:hover {
+    border-color: #646cff;
+  }
+ 
+  .DefaultSetup button:focus,
+  .DefaultSetup button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+ 
+ 
+ 
+  .DefaultSetup a:hover {
+    color: #747bff;
+  }
+ 
+  .DefaultSetup button {
+    background-color: #f9f9f9;
+    border: 2px solid #747bff;
+  }
+ 
+ 
+ 
+  @media screen and (max-width: 860px) {
+ 
+ 
+    .DefaultSetup {
+      border: 2px solid var(--medium-gray);
+      border: 2px solid var(--purple);
+      min-width: 350px;
+      max-width: 350px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+ 
+ 
+  }
+ 
+  @media screen and (max-width: 400px) {
+ 
+ 
+    .DefaultSetup {
+      border: 2px solid var(--medium-gray);
+      border: 2px solid var(--purple);
+      min-width: 350px;
+      max-width: 350px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+ 
+ 
+  }
