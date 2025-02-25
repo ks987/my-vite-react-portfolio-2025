@@ -38,11 +38,8 @@
 
 .about-me-note {
   width: 350px;
-<<<<<<< HEAD
-=======
   width: 400px;
   width: 390px;
->>>>>>> 6a1f3ae (progress-2.12pm-Feb-24-2025)
   height: 650px;
    border: 2px solid var(--medium-gray);
    border: 2px solid var(--purple);
