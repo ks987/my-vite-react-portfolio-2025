@@ -18,6 +18,7 @@
 /* system default page: Vite + React */
 .AboutAndContact {
     margin: 0 auto;
+    padding: 0;
     border: 2px solid gold;
     border: none;
 }
@@ -124,6 +125,8 @@
     .AboutAndContact-container {
         display: flex;
         flex-direction: column;
+        width: 320px;
+        margin: 0 auto;
     }
 
     .about-me-note {
