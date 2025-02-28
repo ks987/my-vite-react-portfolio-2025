@@ -22,7 +22,9 @@
   place-items: center;
   width: 350px;
   height: 650px;
+  height: 440px;
   border: 2px solid #535bf2;
+  border: none;
 }
 
 .DefaultSetup-container {
