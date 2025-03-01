@@ -31,6 +31,7 @@
     border: 2px solid var(--purple);
     border: none;
     margin: 10px auto;
+    padding-right: 10px;
 
 }
 
@@ -101,6 +102,18 @@
 .AboutAndContact-info span {
     font-weight: bold;
     font-size: 20px;
+}
+
+
+.AboutAndContact-info a  {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.AboutAndContact-info a:hover  {
+    text-decoration: underline;
+    font-weight: bold;
+
 }
 
 @media screen and (max-width: 860px) {

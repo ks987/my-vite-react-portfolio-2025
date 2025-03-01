@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import './About-and-contact-old.css';
 
-import DefaultSetup from './DefaultSetup.jsx';
+import DefaultSetup from '../DefaultSetup.jsx';
 
 
 export default function AboutAndContact() {

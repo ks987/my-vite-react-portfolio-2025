@@ -47,10 +47,8 @@ export default function AboutAndContact() {
                         </p>
                         <p>GitHub username is <span>@ks987</span></p>
 
-                    <h3>Let’s Connect!</h3>
-                    <p>I’m always open to discussing new opportunities and collaborations. 
-                        Feel free to reach out at ksen9291@gmail.com (ksen9291@gmail.com) or connect with me on LinkedIn. 
-                        Let’s build something amazing together!</p>
+            
+                  
                 </div>
 
 
