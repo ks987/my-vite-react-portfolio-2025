@@ -19,12 +19,12 @@
 
 .OneList {
     margin: 10px;
-    border: 2px solid var(--purple);
+    border: 2px solid var(--light-purple);
     background: var(--white);
     color: var(--black);
     width: 260px;
     height: 320px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 10px auto;
 }
 
@@ -44,9 +44,10 @@
     width: 20px;
     height: 25px;
     display: flex;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 900;
     color: var(--bright-purple);
+    color: var(--black);
     justify-content: center;
     align-items: center;
     border-right: 1px solid var(--purple);

@@ -10,6 +10,7 @@
 :root {
   --bright-purple: #b852fc;
   --purple: #b191ff;
+  --dark-purple: #7b69a9;
   --light-purple: #e8dfff;
   --sand: #ffc65e;
 
@@ -23,6 +24,7 @@
 
 body {
   background: var(--whitesmoke);
+  background: var(--dark-purple);
   margin: 0;
   padding: 0; 
   font-family: 'Sour Gummy';

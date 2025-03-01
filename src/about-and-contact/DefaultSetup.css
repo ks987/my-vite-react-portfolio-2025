@@ -22,9 +22,9 @@
   place-items: center;
   width: 350px;
   height: 650px;
-  height: 440px;
   border: 2px solid #535bf2;
   border: none;
+
 }
 
 .DefaultSetup-container {
@@ -133,4 +133,23 @@
 
 .DefaultSetup-read-the-docs {
   color: #888;
+}
+
+.DefaultSetup-website-note {
+  font-size: 20px;
+}
+
+.DefaultSetup-ul li {
+  list-style-type: disc;
+}
+
+li::marker {
+  color: #646cffaa;
+  color: var(--black);
+}
+
+.DefaultSetup-website-note span {
+  font-weight: bold;
+  font-family: Oxygen;
+  font-size: 18px;
 }

@@ -8,8 +8,10 @@
  */
 
 :root {
+  /* Theme E */
   --bright-purple: #b852fc;
   --purple: #b191ff;
+  --dark-purple: #7b69a9;
   --light-purple: #e8dfff;
   --sand: #ffc65e;
 
@@ -18,12 +20,18 @@
   --black: #222;
   --medium-gray: #bbb;
   --light-gray: #eee;
+
+      /* Theme G */
+
+
+      /* shadows */
+
+      --shadow-1: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+          /* Shadows */
+    --shadow-light: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    --main-text-shadow: 2px 2px 4px var(--black);
 }
 
 
-
-
-@media screen and (max-width: 860px) {
-  
-  
-}

@@ -38,8 +38,14 @@ function toShowCreateNew() {
                 <OneList />
                 <OneList />
                 <OneList />
+                <OneList />
+                <OneList />
+                <OneList />
+                <OneList />
+                <OneList />
+                <OneList />
+                <OneList />
             </div>
-            <Footer />
         </div>
     )
 };

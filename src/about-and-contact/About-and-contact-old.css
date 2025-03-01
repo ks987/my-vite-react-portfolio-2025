@@ -1,20 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root {
+
+    --bright-purple: #b852fc;
+    --purple: #b191ff;
+    --light-purple: #e8dfff;
+    --sand: #ffc65e;
+
+    --whitesmoke: #f5f5f5;
+    --white: #fff;
+    --black: #222;
+    --medium-gray: #bbb;
+    --light-gray: #eee;
+
+}
+
+/* system default page: Vite + React */
 .AboutAndContact {
     margin: 0 auto;
     padding: 0;
     border: 2px solid gold;
     border: none;
-    height: 1100px;
 }
 
 
 .AboutAndContact-container {
     display: flex;
     width: 750px;
-    height: 1050px;
     justify-content: center;
     align-items: end;
-    align-items: start;
-    border: 2px solid var(--purple);
+align-items: start;
+    border: 2px solid deeppink;  
     border: none;
     background: whitesmoke;
     margin: 0 auto;
@@ -22,15 +38,15 @@
 
 /* about and contact styles */
 
-.AboutAndContact-info {
-    width: 350px;
-    width: 400px;
-    width: 390px;
-    height: 650px;
-    border: 2px solid var(--medium-gray);
-    border: 2px solid var(--purple);
-    border: none;
-    margin: 10px auto;
+.about-me-note {
+  width: 350px;
+  width: 400px;
+  width: 390px;
+  height: 650px;
+   border: 2px solid var(--medium-gray);
+   border: 2px solid var(--purple);
+   border: none;
+   margin: 10px auto;
 
 }
 
@@ -63,10 +79,9 @@
     color: var(--black);
     font-weight: bold;
 }
-
-.AboutAndContact-sub-li a:hover {
+.AboutAndContact-sub-li a:hover  {
     text-decoration: underline;
-
+    
 }
 
 .AboutAndContact-main-li span {
@@ -90,21 +105,11 @@
     font-style: italic;
     font-family: 'Benne';
     font-size: 18px;
-
-}
-
-
-.AboutAndContact-info a {
-    text-decoration: none;
-}
-
-.AboutAndContact-info span {
-    font-weight: bold;
-    font-size: 20px;
+   
 }
 
 @media screen and (max-width: 860px) {
-
+  
     .AboutAndContact-container {
         display: flex;
         flex-direction: column;
@@ -113,13 +118,13 @@
     .about-me-note {
         width: 350px;
 
-    }
+      }
 
-
-}
-
-@media screen and (max-width: 400px) {
-
+    
+  }
+  
+  @media screen and (max-width: 400px) {
+    
     .AboutAndContact-container {
         display: flex;
         flex-direction: column;
@@ -130,9 +135,9 @@
     .about-me-note {
         width: 350px;
 
-    }
+      }
 
+    
 
-
-
-}
+    
+  }
