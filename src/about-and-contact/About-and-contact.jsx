@@ -17,7 +17,7 @@ export default function AboutAndContact() {
 
                 <div className="AboutAndContact-info">
                     <h1>About Me</h1>
-                    <p>Hello, my name is Kseniia Bondarenko.
+                    <p>My name is Kseniia Bondarenko.
                         <br></br>
                     I'm a software development student, mainly focused on React.js, and excited about building dynamic, 
                     user-friendly web applications.

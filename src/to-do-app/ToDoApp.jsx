@@ -11,15 +11,15 @@ import './ToDoApp.css';
 
 export default function ToDoApp() {
 
-const [showCreateNewTask, setShowCreateNewTask] = useState(false);
+    const [showCreateNewTask, setShowCreateNewTask] = useState(false);
 
-function toShowCreateNew() {
-    setShowCreateNewTask((prev) => !prev);
-}
+    function toShowCreateNew() {
+        setShowCreateNewTask((prev) => !prev);
+    }
 
     return (
         <div className="ToDoApp">
-            <h4 className="ToDoApp-title">To-Do Application</h4>
+            <div className="ToDoApp-title">To-Do Application</div>
             <div className="ToDoApp-new-task-field">
 
                 <button className="ToDoApp-create-button" onClick={toShowCreateNew}>+ Add</button>
@@ -29,22 +29,24 @@ function toShowCreateNew() {
             {showCreateNewTask && <CreateOneList />}
 
 
+            <div className="ToDoApp-go-to-other-page">
+                <button className="ToDoApp-go-back"><i class="fa-solid fa-arrow-left"></i></button>
+                <div className="ToDoApp-page-number">Page #</div>
+                <button className="ToDoApp-go-forward"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+
             <div className="ToDoApp-all-lists">
                 <OneList />
                 <OneList />
                 <OneList />
                 <OneList />
+                
                 <OneList />
                 <OneList />
                 <OneList />
                 <OneList />
-                <OneList />
-                <OneList />
-                <OneList />
-                <OneList />
-                <OneList />
-                <OneList />
-                <OneList />
+             
             </div>
         </div>
     )
