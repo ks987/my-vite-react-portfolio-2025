@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css'
 
 // import main layout
@@ -32,7 +32,7 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <BrowserRouter>
+
       <Routes>
 
         {/* portfolio landing page routes */}
@@ -57,7 +57,7 @@ function App() {
         {/* to-do application routes */}
 
       </Routes>
-    </BrowserRouter>
+   
   )
 }
 
