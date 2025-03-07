@@ -21,10 +21,9 @@
   display: flex;
   place-items: center;
   width: 350px;
+  min-width: 300px;
   height: 650px;
   border: 2px solid #535bf2;
-  border: none;
-
 }
 
 .DefaultSetup-container {
@@ -34,6 +33,7 @@
   align-items: center;
   place-items: center;
   margin: 0 auto;
+  background: var(--whitesmoke);
 }
 
 .DefaultSetup a {
@@ -143,7 +143,7 @@
   list-style-type: disc;
 }
 
-li::marker {
+.DefaultSetup li::marker {
   color: #646cffaa;
   color: var(--black);
 }
@@ -153,3 +153,14 @@ li::marker {
   font-family: Oxygen;
   font-size: 18px;
 }
+
+@media screen and (max-width: 750px) {
+
+.DefaultSetup {
+  width: 350px;
+  min-width: 350px;
+}
+
+
+}
+

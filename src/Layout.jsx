@@ -26,9 +26,9 @@ const Layout = () => {
             </main>
 
 
-            <footer className="Layout-footer">
+            <div className="Layout-footer">
                 <Footer />
-            </footer>
+            </div>
 
 
 

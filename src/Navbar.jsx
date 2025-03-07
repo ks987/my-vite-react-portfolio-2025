@@ -5,26 +5,6 @@ import { Link, Outlet } from 'react-router-dom';
 // Import components
 import Footer from './Footer.jsx';
 
-// Link the apps to the navbar
-
-import AboutAndContact from './about-and-contact/About-and-contact.jsx';
-import Calendar from './calendar/Calendar.jsx';
-import ToDoApp from './to-do-app/ToDoApp.jsx';
-
-
-// Links to the js files to the calendar navbar
-
-
-import OneDay from './calendar/OneDay.jsx';
-import FourDays from './calendar/FourDays.jsx';
-
-import OneWeek from './calendar/OneWeek.jsx';
-import OneMonth from './calendar/OneMonth.jsx';
-
-import OneYear from './calendar/OneYear.jsx';
-
-// Links to the to-app pages
-
 
 
 // import css files 

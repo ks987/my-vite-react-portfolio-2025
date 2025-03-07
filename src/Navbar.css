@@ -19,18 +19,25 @@
 .Navbar {
     margin: 0 auto;
     padding: 0;
-
 }
-
 
 .Navbar-portfolio-title {
-    padding: 0;
-    margin: 0;
+    text-align: center;
+    margin: 20px 20px -20px 20px;
+    color: black;
     font-weight: bold;
-    padding-top: 5px;
-    text-align: left;
-    padding-left: 3%;
+    padding: 0;
+    height: 20px;
+    background: white;
+    border-radius: 5px;
+    width: 300px;
 }
+
+.Navbar-portfolio-title:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
 
 .important-note {
     width: 80%;
@@ -45,32 +52,16 @@
     font-size: 20px;
 }
 
-
-.Navbar-portfolio-title {
-    text-align: center;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-bottom: -20px;
-    color: black;
-    width: 300px;
-    height: 30px;
-    background: white;
-    border-radius: 5px;
-
-
-}
-
 .portfolio-title:hover {
     color: var(--bright-purple);
     cursor: pointer;
 }
 
+
 .portfolio-title span {
     color: var(--bright-purple);
     font-weight: bold;
     text-decoration: underline;
-  
 }
 
 
@@ -86,13 +77,12 @@
 
 .navbar-link {
     text-decoration: none;
-    color: black;
-    background: var(--whitesmoke);
+    color: var(--black);
+    background: var(--white);
     border: 2px solid var(--medium-gray);
-    border: 2px solid var(--bright-purple);
-    border: none;
+    border: 4px solid var(--whitesmoke);
     margin: 10px;
-    padding: 8px 40px;
+    padding: 6px 30px;
     border-radius: 5px;
     font-size: 18px;
     box-shadow: var(--shadow-1);
@@ -100,9 +90,9 @@
 
 .navbar-link:hover {
     background: var(--white);
-    border: 2px solid var(--sand);
-    transform: scale(0.97);
+    border: 4px solid var(--purple);
     color: var(--bright-purple);
+    color: var(--black);
 
 }
 
@@ -124,6 +114,4 @@
 @media screen and (max-width: 400px) {
 
     
-
-
 }
