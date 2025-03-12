@@ -21,7 +21,7 @@ export default function Calendar() {
             <div className="Calendar">
                     <OneYear/>
                     <hr></hr>
-                    <Footer/>
+              
             </div>
         )
 };

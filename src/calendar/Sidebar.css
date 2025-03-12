@@ -191,3 +191,12 @@ border: 2px solid var(--bright-purple);
 #html-scale:focus {
     outline: none;
 }
+
+@media screen and (max-width: 450px) {
+
+    .Sidebar {
+        display: none;
+    }
+
+
+}

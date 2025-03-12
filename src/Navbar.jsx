@@ -18,7 +18,7 @@ export default function Navbar() {
 
     return (
         <div className="Navbar">
-            <div className="Navbar-portfolio-title">React portfolio by Kseniia Bondarenko</div>
+            <div className="Navbar-portfolio-title">React portfolio by</div>
 
             <nav className="Navbar-for-portfolio">
                 <Link id="about-and-contact" className="navbar-link" to='/about-and-contact'>About</Link>
