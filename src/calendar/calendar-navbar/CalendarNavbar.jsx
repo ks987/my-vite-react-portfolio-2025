@@ -1,18 +1,17 @@
-
-
+import React from "react";
 import { Link } from 'react-router-dom';
 
+// import CSS files
+import './CalendarNavbar.css';
 
-import './Calendar-navbar-styles.css';
 
 export default function CalendarNavbar() {
-
     return (
-        <div>
+        <div className="CalendarNavbar">
 
-        <div className="title-calendar-app">Calendar</div>
+        <div className="CalendarNavbar-title">Calendar</div>
 
-        <nav className="navbar-calendar">
+        <nav className="CalendarNavbar-itself">
             <Link id="open-one-day-btn" className="calendar-link" to='/go-to-day'>Day</Link>
             <Link id="github-link" className="calendar-link" to='/go-to-four-days'>Four Days</Link>
             <Link id="fake-log-in" className="calendar-link" to='/go-to-week'>Week</Link>

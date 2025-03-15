@@ -13,8 +13,6 @@
   --purple: #b191ff;
   --dark-purple: #7b69a9;
 
-
-
   --very-dark-purple: #4f426e;
   --light-purple: #e8dfff;
   --sand: #ffc65e;
@@ -57,6 +55,8 @@ html, body {
   font-family: 'Jost';
   font-family: 'Oxygen';
   font-family: 'Benne';
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto; 
 }
 
 body {

@@ -30,6 +30,7 @@
     height: 20px;
     background: white;
     border-radius: 5px;
+    max-width: 400px;
 }
 
 .Navbar-portfolio-title:hover {
@@ -70,24 +71,32 @@
 }
 
 
-@media screen and (max-width: 400px) {
-.Navbar {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    justify-self: center;
-    margin: 0;
-    padding: 0;
-}
+@media screen and (max-width: 450px) {
+    .Navbar {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        justify-self: center;
+        margin: 0;
+        padding: 0;
+    }
 
-.Navbar-portfolio-title {
-    display: flex;
- justify-content: center;
- justify-self: center;
- margin: 0;
- padding: 0;
- border-radius: 0px;
-}
+    .Navbar-portfolio-title {
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        margin: 0;
+        margin: 10px 20px -10px 20px;
+        padding: 0;
+    }
+
+    .navbar-link {
+        margin: 5px;
+        padding: 3px 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        box-shadow: var(--shadow-1);
+    }
 
 }

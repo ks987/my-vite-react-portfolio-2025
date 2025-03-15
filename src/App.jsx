@@ -35,8 +35,9 @@ function App() {
 
         {/* portfolio landing page routes */}
         <Route path='/' element={<Layout />}>
-          <Route index element={<AboutAndContact />}></Route>
+
           <Route exact path='about-and-contact' element={<AboutAndContact />}></Route>
+          <Route index element={<Calendar />}></Route>
           <Route exact path='calendar-in-react' element={<Calendar />}></Route>
           <Route exact path='to-do-app-in-react' element={<ToDoApp />}></Route>
 

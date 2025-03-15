@@ -44,7 +44,7 @@
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .Footer-portfolio {
         display: flex;
         justify-content: center;

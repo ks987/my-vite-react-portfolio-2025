@@ -1,213 +1,35 @@
 .AboutAndContact {
     padding: 0;
+    margin: 0 auto;
     border: none;
     width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px; 
+    font-size: 18px;
+    color: var(--black);
 }
 
 .AboutAndContact-container {
     display: flex;
-    max-width: 800px;
-    justify-content: center;
-    align-items: start;
-    border: 2px solid var(--purple);
-    background: var(--white);
-    background: white;
-    margin: 0 auto;
-    border: none;
-    padding: 0;
-
-}
-
-
-/* default setup styles */
-
-
-.DefaultSetup-section {
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-
-
-
-}
-
-
-.DefaultSetup {
-    margin: 5px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 390px;
-    
-    border: 2px solid #535bf2;
-    border: none;
-    background: transparent;
-    padding: 0;
-
-}
-
-.DefaultSetup-container {
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    border: none;
+    background: var(--white);
     margin: 0 auto;
-    background: transparent;
     padding: 0;
+    max-width: 800px;
 }
-
-.DefaultSetup a {
-    font-weight: 500;
-    color: #646cff;
-    text-decoration: inherit;
-}
-
-.DefaultSetup a:hover {
-    color: #535bf2;
-}
-
-
-.DefaultSetup h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
-}
-
-.DefaultSetup button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    margin: 0 auto;
-    text-align: center;
-    width: 120px;
-    display: flex;
-    justify-content: center;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #1a1a1a;
-    cursor: pointer;
-    transition: border-color 0.25s;
-}
-
-.DefaultSetup button:hover {
-    border-color: #646cff;
-}
-
-.DefaultSetup button:focus,
-.DefaultSetup button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-
-    .DefaultSetup a:hover {
-        color: #747bff;
-    }
-
-    .DefaultSetup button {
-        background-color: #f9f9f9;
-    }
-}
-
-.DefaultSetup-vite-logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-}
-
-.DefaultSetup-vite-logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.DefaultSetup-react-logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-}
-
-.DefaultSetup-react-logo:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .DefaultSetup-react-logo {
-        animation: logo-spin infinite 20s linear;
-    }
-}
-
-.DefaultSetup-card {
-    padding: 2em;
-}
-
-.DefaultSetup-read-the-docs {
-    color: #888;
-}
-
-.DefaultSetup-website-note {
-    font-size: 20px;
-}
-
-.DefaultSetup-ul li {
-    list-style-type: disc;
-}
-
-.DefaultSetup li::marker {
-    color: #646cffaa;
-    color: var(--black);
-}
-
-.DefaultSetup-website-note span {
-    font-weight: bold;
-    font-family: Oxygen;
-    font-size: 18px;
-}
-
-
-
-
-
-
-
-/* about and contact styles */
 
 .AboutAndContact-info {
-
-    width: 100%;
+    width: 90%;
     border: 2px solid var(--purple);
-    margin: 5px;
-    padding-right: 7px;
-    padding-left: 7px;
+    margin: 5px auto;
     border: none;
-
 }
 
-
-.AboutAndContact-info a {
-    text-decoration: none;
+.AboutAndContact-title {
+    font-size: 28px;
 }
-
-.AboutAndContact-info span {
-    font-weight: bold;
-    font-size: 20px;
-}
-
 
 .AboutAndContact-info a {
     text-decoration: none;
@@ -220,43 +42,15 @@
 
 }
 
-.AboutAndContact-approach {
-    color: var(--black);
-}
 
 @media screen and (max-width: 800px) {
-    .DefaultSetup {
-        width: 80%;
-    }
 
-    .AboutAndContact-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
 
-    }
-
-    .AboutAndContact-info {
-        width: 80%;
-    }
 
 }
 
-@media screen and (max-width: 400px) {
-    .DefaultSetup {
-        width: 85%;
-    }
+@media screen and (max-width: 450px) {
+    
 
-    .AboutAndContact-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: var(--white);
-        width: 90%;
 
-    }
-
-}
+};

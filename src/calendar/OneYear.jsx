@@ -1,16 +1,11 @@
-
 import React, { useState } from "react";
 
-// import navbar and footer
+// import jsx files
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
-import Footer from '../Footer.jsx';
-
-
-// import js files
 import Sidebar from './Sidebar.jsx';
+import OneYearMobile from './OneYearMobile.jsx';
+
 // import css files
-
-
 import './OneYear.css';
 
 
@@ -61,6 +56,9 @@ export default function OneYear() {
     }
 
     return (
+
+        <>
+   <OneYearMobile/>
         <div className="OneYear">
 
             <div className="OneYear-Calendar-Navbar">
@@ -119,5 +117,7 @@ export default function OneYear() {
 
         
         </div>
+
+        </>
     )
 }
