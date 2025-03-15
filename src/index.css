@@ -43,6 +43,7 @@ html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
+  max-width: 100%;
 }
 
 
@@ -60,7 +61,6 @@ html, body {
 
 body {
   background: var(--dark-purple);
-  min-width: 320px;
   line-height: 1.5;
   font-weight: 400;
   overflow: auto;
@@ -69,7 +69,6 @@ body {
 #root {
   margin: 0 auto;
   padding: 0;
-  min-width: 320px;
   overflow: auto;
 }
 
@@ -83,3 +82,7 @@ img {
   height: auto;
 }
 
+@media screen and (max-width: 400px) {
+
+  
+  }

@@ -1,5 +1,6 @@
 .Layout {
     margin: 0 auto;
     border: none;
+    min-width: 300px;
 
 }

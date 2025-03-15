@@ -30,38 +30,11 @@
     height: 20px;
     background: white;
     border-radius: 5px;
-    width: 300px;
 }
 
 .Navbar-portfolio-title:hover {
     cursor: pointer;
     transform: scale(1.03);
-}
-
-
-.important-note {
-    width: 80%;
-    height: 400px;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.portfolio-title:hover {
-    color: var(--bright-purple);
-    cursor: pointer;
-}
-
-
-.portfolio-title span {
-    color: var(--bright-purple);
-    font-weight: bold;
-    text-decoration: underline;
 }
 
 
@@ -99,7 +72,22 @@
 
 @media screen and (max-width: 400px) {
 .Navbar {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+.Navbar-portfolio-title {
+    display: flex;
+ justify-content: center;
+ justify-self: center;
+ margin: 0;
+ padding: 0;
+ border-radius: 0px;
 }
 
 }
