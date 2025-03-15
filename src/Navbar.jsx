@@ -1,10 +1,5 @@
 import React from "react";
-import { Link, Outlet } from 'react-router-dom';
-
-
-// Import components
-import Footer from './Footer.jsx';
-
+import { Link } from 'react-router-dom';
 
 
 // import css files 

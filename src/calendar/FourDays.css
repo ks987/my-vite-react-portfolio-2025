@@ -1,4 +1,8 @@
-
+.FourDays {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .FourDays-top-row {
     display: flex;

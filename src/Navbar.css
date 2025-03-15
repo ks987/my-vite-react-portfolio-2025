@@ -97,21 +97,9 @@
 }
 
 
-/* 
-@media only screen and (max-width: 860px) {
-    .Navbar-for-portfolio {
-        width: 300px;
-        margin: 0 auto;
-    }
-
-    .navbar-link {
-        margin: 5px;
-        padding: 8px;
-    }
+@media screen and (max-width: 400px) {
+.Navbar {
+    display: block;
 }
 
-
-@media screen and (max-width: 400px) {
-
-    
-} */
+}

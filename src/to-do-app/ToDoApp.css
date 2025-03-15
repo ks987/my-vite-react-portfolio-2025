@@ -2,14 +2,15 @@
 
 
 .ToDoApp {
-    width: 1080px;
     margin: 0 auto;
     border: 2px solid deeppink;
     border: none;
     background: var(--whitesmoke);
-   
-
     padding-bottom: 100px;
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 

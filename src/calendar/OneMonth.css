@@ -17,9 +17,13 @@
 
 
 .OneMonth {
-    width: 100%;
+
     border: 2px solid deeppink;
     border: none;
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
