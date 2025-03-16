@@ -1,13 +1,56 @@
 .OneYearMobile {
-    color: deeppink;
-    font-size: 24px;
+    color: var(--white);
+    font-size: 18px;
     text-align: center;
 }
 
 .OneYearMobile-Calendar-Navbar {
     border: 2px solid greenyellow;
+    border: none;
 }
 
+.OneYearMobile-arrows {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.OneYearMobile-title {
+  margin: 0px 10px;
+}
+
+.OneYearMobile-arrows i {
+  background: var(--white);
+  border: 1px solid var(--medium-gray);
+  width: 100px;
+  height: 30px;
+  margin:  0px 10px;
+  color: var(--bright-purple);
+}
+.OneYearMobile-arrows i:hover {
+  transform: scale(0.97);
+
+}
+
+
+.OneYearMobile-year {
+  border: 2px solid greenyellow;
+}
+
+.OneYearMobile-month-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.OneYearMobile-weekday {
+  display: flex;
+  flex-direction: row;
+}
+
+.OneYearMobile-day {
+  display: flex;
+  flex-direction: row;
+}
 
 @media screen and (min-width: 451px) {
 
