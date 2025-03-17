@@ -58,65 +58,65 @@ export default function OneYear() {
     return (
 
         <>
-   <OneYearMobile/>
-        <div className="OneYear">
+            <OneYearMobile />
+            <div className="OneYear">
 
-            <div className="OneYear-Calendar-Navbar">
-                <CalendarNavbar />
-            </div>
-
-
-            <br></br>
-
-            <div className="OneYear-top-row">
-                <button onClick={subtractYear}><i class="fa-solid fa-arrow-left"></i></button>
-                <div className="OneYear-month-year-label">{nextYear}</div>
-                <button onClick={addYear}><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-          
-
-            <div className="OneYear-sidebar-and-months">
+                <div className="OneYear-Calendar-Navbar">
+                    <CalendarNavbar />
+                </div>
 
 
-                <Sidebar />
+                <br></br>
+
+                <div className="OneYear-top-row">
+                    <button onClick={subtractYear}><i class="fa-solid fa-arrow-left"></i></button>
+                    <div className="OneYear-month-year-label">{nextYear}</div>
+                    <button onClick={addYear}><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
 
 
-                <div className="OneYear-months">
+                <div className="OneYear-sidebar-and-months">
 
-                    {monthNames.map((month, monthIndex) => (
-                        <div key={monthIndex} className="OneYear-month-box">
-                            <div className="OneYear-name-of-month-week-days">
-                                <div className="OneYear-month-title">{month}</div>
 
-                                <div className="OneYear-week">
-                                    {weekDayNames.map((dayOfWeek) => (
-                                        <div key={dayOfWeek} className="OneYear-week-day-name">{dayOfWeek}</div>
+                    <Sidebar />
 
-                                    ))}
 
-                                    {Array.from({ length: new Date(nextYear, monthIndex, 0).getDay() }).map((i) => (
-                                        <div key={`empty-${i}`} className="OneYear-empty-day"></div>
-                                    ))}
+                    <div className="OneYear-months">
 
-                                    {Array.from({ length: getDaysInMonth(monthIndex, year) }).map((_, day) => (
-                             
-                                  
-                                     ( <div key={day} className={`OneYear-one-day ${weekendColor}`}>{day + 1}</div>)
-                                  
-                                            ))}
+                        {monthNames.map((month, monthIndex) => (
+                            <div key={monthIndex} className="OneYear-month-box">
+                                <div className="OneYear-name-of-month-week-days">
+                                    <div className="OneYear-month-title">{month}</div>
 
+                                    <div className="OneYear-week">
+                                        {weekDayNames.map((dayOfWeek) => (
+                                            <div key={dayOfWeek} className="OneYear-week-day-name">{dayOfWeek}</div>
+
+                                        ))}
+
+                                        {Array.from({ length: new Date(nextYear, monthIndex, 0).getDay() }).map((i) => (
+                                            <div key={`empty-${i}`} className="OneYear-empty-day"></div>
+                                        ))}
+
+                                        {Array.from({ length: getDaysInMonth(monthIndex, year) }).map((_, day) => (
+
+
+                                            (<div key={day} className={`OneYear-one-day ${weekendColor}`}>{day + 1}</div>)
+
+                                        ))}
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    )
-                    )}
+                        )
+                        )}
+                    </div>
                 </div>
+
+
+
+
             </div>
-
-
-
-        
-        </div>
 
         </>
     )

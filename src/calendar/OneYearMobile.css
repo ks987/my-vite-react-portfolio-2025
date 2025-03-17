@@ -52,6 +52,35 @@
   flex-direction: row;
 }
 
+/* new styles */
+
+
+.OneYearMobile-sidebar-and-months {
+  margin: 3px;
+  border: 2px solid greenyellow;
+}
+
+.OneYearMobile-months {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.OneYearMobile-month-box {
+  margin: 3px;
+  border: 2px solid gold;
+  width: 60px;
+  height: 90px;
+}
+
+.OneYearMobile-month-box:hover {
+  background: gold;
+  cursor: pointer;
+}
+
+
+
 @media screen and (min-width: 451px) {
 
   .OneYearMobile {

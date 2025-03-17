@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
+import SidebarMobile from './SidebarMobile.jsx';
+
 import './OneYearMobile.css';
 
 
@@ -17,9 +19,9 @@ export default function OneYearMobile(){
     const [weekendColor, setWeekendColor] = useState('');
 
 
-    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Nov', 'Dec']
+    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
    const days = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
-   const weekdays = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+   const weekdayNames = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
     function addYear(){
 
     }
@@ -41,11 +43,11 @@ export default function OneYearMobile(){
             </div>
 
 
-        <div className="OneYearMobile-year">
-            {months.map((month) => (
+        {/* <div className="OneYearMobile-year">
+            {months.map((month, monthIndex) => (
                 <div className="OneYearMobile-month-box">
                     
-                    <div className="OneYearMobile-month-title">{month}</div>
+                    <div key={monthIndex} className="OneYearMobile-month-title">{month}</div>
 
                     {weekdays.map(weekday => (
                         <div className="OneYearMobile-weekday">{weekday}</div>
@@ -57,7 +59,33 @@ export default function OneYearMobile(){
                     
                     </div>
             ))}
+        </div> */}
+
+        <div className="OneYearMobile-sidebar-and-months">
+            <SidebarMobile/>
+
+            <div className="OneYearMobile-months">
+                {monthNames.map((month, monthIndex) => (
+                    // draw the boxes for each month 
+                    <div key={monthIndex} className="OneYearMobile-month-box">
+                    
+                    
+
+
+
+
+                    </div>
+    
+                ))}
+
+            </div>
+
+
+
         </div>
+
+
+
 
 
 

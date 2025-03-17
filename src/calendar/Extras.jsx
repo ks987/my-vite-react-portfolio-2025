@@ -146,6 +146,37 @@ export default function Extras() {
 
 
         </div> */}
+
+
+{/* <div className="Sidebar-HTML-dropdown">
+                    <label for="html-scale">Choose app size</label>
+                    <select name="html-scale" id="html-scale">
+                        <option value="fit">Fit</option>
+                        <option value="50%">50%</option>
+                        <option value="50%">75%</option>
+                        <option value="50%">90%</option>
+                        <option value="50%">100%</option>
+                        <option value="50%">125%</option>
+                        <option value="50%">150%</option>
+                        <option value="50%">200%</option>
+                    </select>
+
+                </div> */}
+
+
+                {/* <div className="Sidebar-CSS-dropdown">
+                    <button className="Sidebar-CSS-dropdown-button">Scale: </button>
+                    <div className="Sidebar-CSS-dropdown-content">
+                        <a href="#">Fit</a>
+                        <a href="#">50%</a>
+                        <a href="#">75%</a>
+                        <a href="#">90%</a>
+                        <a href="#">100%</a>
+                        <a href="#">125%</a>
+                        <a href="#">150%</a>
+                        <a href="#">200%</a>
+                    </div> 
+                </div> */}
         </div>
     )
 }
