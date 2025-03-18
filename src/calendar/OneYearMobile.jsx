@@ -1,95 +1,101 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
 import SidebarMobile from './SidebarMobile.jsx';
 
 import './OneYearMobile.css';
 
 
-export default function OneYearMobile(){
+export default function OneYearMobile() {
 
     const today = new Date();
     const day = today.getDate(); // get day of the month
     const month = today.getMonth() + 1; // Month is indexed at 0, so add 1
     const year = today.getFullYear();
     const dayOfWeek = 6 - today.getDay();
-    
 
-    const [yearArray, setYearArray] = useState([]);
+
     const [nextYear, setNextYear] = useState(year);
     const [weekendColor, setWeekendColor] = useState('');
 
-
     const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-   const days = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
-   const weekdayNames = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
-    function addYear(){
+    const weekDayNames = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
 
+
+    function getDaysInMonth(month, year) {
+        return new Date(year, month + 1, 0).getDate();
+    }
+
+    function addYear() {
+        setNextYear(nextYear + 1);
+    }
+
+    function subtractYear() {
+        setNextYear(nextYear - 1);
     }
 
 
+    // if it is a weekend, mark the day purple
+    function markWeekendsPurple() {
+        setWeekendColor('OneYearMobile-weekend');
+    }
 
-    return(
+    return (
         <div className="OneYearMobile">
-        
+
             <div className="OneYearMobile-Calendar-Navbar">
-                <CalendarNavbar/>
+                <CalendarNavbar />
             </div>
             <br></br>
 
             <div className="OneYearMobile-arrows">
-            <i className="fa-solid fa-arrow-left"></i>
-                <div className="OneYearMobile-title">2025</div>
+                <i className="fa-solid fa-arrow-left"></i>
+                <div className="OneYearMobile-title">{year}</div>
                 <i className="fa-solid fa-arrow-right"></i>
             </div>
 
 
-        {/* <div className="OneYearMobile-year">
-            {months.map((month, monthIndex) => (
-                <div className="OneYearMobile-month-box">
-                    
-                    <div key={monthIndex} className="OneYearMobile-month-title">{month}</div>
 
-                    {weekdays.map(weekday => (
-                        <div className="OneYearMobile-weekday">{weekday}</div>
+
+            <div className="OneYearMobile-sidebar-and-months">
+                <SidebarMobile />
+
+                <div className="OneYearMobile-months">
+                    {monthNames.map((month, monthIndex) => (
+                        // draw the boxes for each month 
+                        <div key={monthIndex} className="OneYearMobile-month-box">
+                          
+                                {/* print the month title */}
+                                <div className="OneYearMobile-month-title">{month}</div>
+
+                                <div className="OneYearMobile-week">
+                                    {/* print the weekday title */}
+                                    {weekDayNames.map((dayOfWeek) => (
+                                        <div key={dayOfWeek} className="OneYearMobile-week-day-title">{dayOfWeek}</div>
+
+                                    ))}
+                                    {/* draw empty day slots */}
+
+                                    {Array.from({ length: new Date(nextYear, monthIndex, 1).getDay() }).map((_, index) => (
+                                        <div key={`empty-${index}`} className="OneYearMobile-empty-day"></div>
+                                    ))}
+
+                                    {/* draw actual days of the month for each month of the year */}
+
+                                    {Array.from({ length: getDaysInMonth(monthIndex, year) }).map((_, day) => (
+                                        (<div key={day} className={`OneYearMobile-one-day ${weekendColor}`}>{day + 1}</div>)
+                                    ))}
+                                </div>
+
+                         
+                        </div>
                     ))}
-                    
-                    {days.map((day => (
-                        <div className="OneYearMobile-day">{day}</div>
-                    )))}
-                    
-                    </div>
-            ))}
-        </div> */}
-
-        <div className="OneYearMobile-sidebar-and-months">
-            <SidebarMobile/>
-
-            <div className="OneYearMobile-months">
-                {monthNames.map((month, monthIndex) => (
-                    // draw the boxes for each month 
-                    <div key={monthIndex} className="OneYearMobile-month-box">
-                    
-                    
 
 
+                </div>
 
-
-                    </div>
-    
-                ))}
 
             </div>
 
-
-
-        </div>
-
-
-
-
-
-
-            
 
         </div>
     )

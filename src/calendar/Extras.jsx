@@ -177,6 +177,26 @@ export default function Extras() {
                         <a href="#">200%</a>
                     </div> 
                 </div> */}
+
+
+
+                        {/* <div className="OneYearMobile-year">
+                            {months.map((month, monthIndex) => (
+                                <div className="OneYearMobile-month-box">
+                                    
+                                    <div key={monthIndex} className="OneYearMobile-month-title">{month}</div>
+                
+                                    {weekdays.map(weekday => (
+                                        <div className="OneYearMobile-weekday">{weekday}</div>
+                                    ))}
+                                    
+                                    {days.map((day => (
+                                        <div className="OneYearMobile-day">{day}</div>
+                                    )))}
+                                    
+                                    </div>
+                            ))}
+                        </div> */}
         </div>
     )
 }

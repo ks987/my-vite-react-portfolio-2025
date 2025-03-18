@@ -1,12 +1,12 @@
 .OneYearMobile {
-    color: var(--white);
-    font-size: 18px;
-    text-align: center;
+  color: var(--white);
+  font-size: 18px;
+  text-align: center;
 }
 
 .OneYearMobile-Calendar-Navbar {
-    border: 2px solid greenyellow;
-    border: none;
+  border: 2px solid greenyellow;
+  border: none;
 }
 
 .OneYearMobile-arrows {
@@ -24,54 +24,47 @@
   border: 1px solid var(--medium-gray);
   width: 100px;
   height: 30px;
-  margin:  0px 10px;
+  margin: 0px 10px;
   color: var(--bright-purple);
 }
+
 .OneYearMobile-arrows i:hover {
   transform: scale(0.97);
 
 }
 
 
-.OneYearMobile-year {
-  border: 2px solid greenyellow;
-}
-
-.OneYearMobile-month-box {
-  display: flex;
-  flex-direction: row;
-}
-
-.OneYearMobile-weekday {
-  display: flex;
-  flex-direction: row;
-}
-
-.OneYearMobile-day {
-  display: flex;
-  flex-direction: row;
-}
-
-/* new styles */
+/* styles for mobile yearly calendar itself */
 
 
 .OneYearMobile-sidebar-and-months {
   margin: 3px;
-  border: 2px solid greenyellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .OneYearMobile-months {
   display: flex;
+  flex-direction: row;
+  border: 1px solid greenyellow;
+  border: none;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 
 }
 
 .OneYearMobile-month-box {
   margin: 3px;
   border: 2px solid gold;
-  width: 60px;
-  height: 90px;
+  width: 30%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: top;
 }
 
 .OneYearMobile-month-box:hover {
@@ -79,7 +72,40 @@
   cursor: pointer;
 }
 
+/* .OneYearMobile-month-contents {
+  display: flex;
+  flex-direction: column;
+} */
 
+.OneYearMobile-month-title {
+  font-size: 12px;
+}
+
+
+.OneYearMobile-week {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.OneYearMobile-week-day-title,
+.OneYearMobile-empty-day,
+.OneYearMobile-one-day 
+{
+  font-size: 12px;
+  border: 1px solid magenta;
+  width: 10px;
+  height: 10px;
+  font-size: 8px;
+  margin: 1px;
+  line-height: 10px;
+  text-align: center;
+}
+
+.OneYearMobile-weekend {
+  background: greenyellow;
+  color: white;
+}
 
 @media screen and (min-width: 451px) {
 
@@ -88,3 +114,8 @@
   }
 
 }
+
+
+
+
+

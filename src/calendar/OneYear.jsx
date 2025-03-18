@@ -22,7 +22,6 @@ export default function OneYear() {
     const year = today.getFullYear(); // Full year
     const dayOfWeek = 6 - today.getDay();  //to start week on Monday
 
-    const [yearArray, setYearArray] = useState([]);
     const [nextYear, setNextYear] = useState(year);
     const [weekendColor, setWeekendColor] = useState('');
 
@@ -84,20 +83,23 @@ export default function OneYear() {
                     <div className="OneYear-months">
 
                         {monthNames.map((month, monthIndex) => (
+                            // draw the boxes for each month 
                             <div key={monthIndex} className="OneYear-month-box">
                                 <div className="OneYear-name-of-month-week-days">
+                                {/* print the month title */}
                                     <div className="OneYear-month-title">{month}</div>
 
                                     <div className="OneYear-week">
+                                {/* print the weekday title */}
                                         {weekDayNames.map((dayOfWeek) => (
                                             <div key={dayOfWeek} className="OneYear-week-day-name">{dayOfWeek}</div>
 
                                         ))}
-
-                                        {Array.from({ length: new Date(nextYear, monthIndex, 0).getDay() }).map((i) => (
-                                            <div key={`empty-${i}`} className="OneYear-empty-day"></div>
+                                {/* draw empty day slots */}
+                                        {Array.from({ length: new Date(nextYear, monthIndex, 0).getDay() }).map((_, index) => (
+                                            <div key={`empty-${index}`} className="OneYear-empty-day"></div>
                                         ))}
-
+                             {/* draw actual days of the month for each month of the year */}
                                         {Array.from({ length: getDaysInMonth(monthIndex, year) }).map((_, day) => (
 
 

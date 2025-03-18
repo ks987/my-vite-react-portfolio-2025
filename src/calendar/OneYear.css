@@ -55,15 +55,6 @@
 
 
 
-/* one-year sample note styles */
-.OneYear-sample-note {
-    border: 1px solid tomato;
-    border: none;
-    width: 300px;
-    height: 50px;
-    margin: 5px auto;
-}
-
 /* today's date styles */
 
 .OneYear-today {
@@ -82,13 +73,14 @@
     padding: 0;
 }
 
+
+/*  yearly calendar itself styles */
 .OneYear-months {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: 2px solid yellowgreen;
     border: none;
     height: 800px;
    
@@ -106,15 +98,9 @@
     justify-content: center;
     align-items: top;
 
-   
 }
 
-.OneYear-monthly-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  
-}
+
 .OneYear-month-title {
     font-size: 22px;
     margin: 10px;
