@@ -32,7 +32,7 @@ export default function Sidebar() {
     };
 
 
-    const calendarNames = ['Main Calendar', 'Sample Schedule', 'Holidays', 'Travel Calendar', 'Menu Calendar'];
+    const calendarNames = ['Main Calendar is Main Calendar ', 'Sample Schedule is Sample Schedule ', 'Holidays-Holidays-Holidays', 'Travel Calendar', 'Menu Calendar'];
 
     const [circleColor, setCircleColor] = useState(['gold', 'coral', 'yellowgreen', 'cornflowerblue', 'violet', 'deeppink', 'tomato', 'greenyellow', 'pink', 'lightblue']);
     const [isPickColorVisible, setIsPickColorVisible] = useState(true);
@@ -119,8 +119,9 @@ export default function Sidebar() {
                 onClick={toggleOverlay}>Add New Task</button>
 
             <div className="Sidebar-today">
-                <div>It is {currentHours12}:{currentMinutesFormatted} {amPm()}</div>
-                <div>Today is {getWeekday()}, </div>
+                <div>Today</div>
+                <div>{currentHours12}:{currentMinutesFormatted} {amPm()}</div>
+                <div>{getWeekday()}, </div>
                 <div>{monthsArray[month]} {day}, {year}</div>
             </div>
 
@@ -138,7 +139,7 @@ export default function Sidebar() {
 
                                 <i className={`${checked} Sidebar-custom-checkbox`}
                                     onClick={() => (toggleAllCheckboxes(index))}></i>
-                                {title}
+                                <div className="Sidebar-calendar-title">{title}</div>
 
 
                             </div>
