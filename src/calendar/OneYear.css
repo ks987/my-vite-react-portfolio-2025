@@ -1,13 +1,12 @@
-
-
 .OneYear {
-    border: 2px solid deeppink;
     border: none;
     font-size: 18px;
     background: var(--whitesmoke);
-    width: 90%;
+    width: 1200px;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0;
+    font-family: 'Jost';
 }
 
 
@@ -27,14 +26,14 @@
     border: 1px solid var(--medium-gray);
     width: 100px;
     height: 30px;
-    margin:  0px 10px;
+    margin: 0px 10px;
     color: var(--bright-purple);
 }
 
 .OneYear-top-row button:hover {
     transform: scale(0.97);
     cursor: pointer;
-    
+
 }
 
 .OneYear-month-year-label {
@@ -68,7 +67,6 @@
 .OneYear-sidebar {
     width: 250px;
     height: 600px;
-    border: 1px solid blue;
     margin: 0;
     padding: 0;
 }
@@ -76,20 +74,19 @@
 
 /*  yearly calendar itself styles */
 .OneYear-months {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
     justify-content: center;
-    align-items: center;
     width: 100%;
     border: none;
-    height: 800px;
-   
 }
 
 
 .OneYear-month-box {
     margin: 5px;
-    width: 250px;
+    width: 210px;
+    width: auto;
     height: 250px;
     height: 280px;
     border: 1px solid var(--purple);
@@ -103,39 +100,26 @@
 
 .OneYear-month-title {
     font-size: 22px;
+    text-align: center;
     margin: 10px;
 }
 
 .OneYear-week {
     display: flex;
     flex-wrap: wrap;
-
 }
 
-.OneYear-week-day-name {
+
+.OneYear-week-day-name,
+.OneYear-one-day,
+.OneYear-empty-day {
+    border: 1px solid var(--purple);
     border: 1px solid var(--whitesmoke);
-    margin: 1.5px;
-    width: 30px;
-    height: 30px;
-    font-size: 12px;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.OneYear-week-day-name:hover {
-    cursor: pointer;
-    border: 1px solid var(--bright-purple);
-}
-
-.OneYear-one-day {
-    border: 1px solid var(--whitesmoke);
     margin: 1.5px;
-    width: 30px;
-    height: 30px;
-    font-size: 12px;
-    font-size: 18px;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,14 +131,6 @@
 }
 
 
-.OneYear-empty-day {
-    border: 1px solid var(--whitesmoke);
-    margin: 1.5px;
-    width: 30px;
-    height: 30px;
-    font-size: 12px;
-    font-size: 18px;
-}
 
 
 
@@ -166,26 +142,61 @@
     color: var(--bright-purple);
 }
 
-@media screen and (max-width: 1400px) {
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .OneYear {
+        border: 2px solid deeppink;
+        border: none;
+        font-size: 18px;
+        background: var(--whitesmoke);
+        width: 1000px;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0;
+        font-family: 'Jost';
+    } 
+
+
+    .OneYear-month-box {
+        margin: 5px;
+        width: 150px;
+        height: 150px;
+        height: 280px;
+        border: 1px solid var(--purple);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: top;
+
+    }
+
+
+
+    .OneYear-week-day-name,
+    .OneYear-one-day,
+    .OneYear-empty-day {
+        border: 1px solid var(--whitesmoke);
+        border: 1px solid gold;
+        margin: 1.5px;
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 
 }
 
 
-@media screen and (max-width: 1000px) {
 
-
- 
-
-}
-
-
-
-@media screen and (max-width: 900px) {
-
-  
-
-}
+@media screen and (max-width: 900px) {}
 
 
 
@@ -195,5 +206,5 @@
     .OneYear {
         display: none;
     }
-    
+
 }
