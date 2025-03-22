@@ -76,7 +76,7 @@ export default function OneYearMobile() {
                              
                                 {/* draw empty day slots */}
 
-                                {Array.from({ length: new Date(nextYear, monthIndex, 1).getDay() }).map((_, index) => (
+                                {Array.from({ length: new Date(nextYear, monthIndex, 0).getDay() }).map((_, index) => (
                                     <div key={`empty-${index}`} className="OneYearMobile-empty-day"></div>
                                 ))}
 
