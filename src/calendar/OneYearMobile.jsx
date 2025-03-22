@@ -63,30 +63,35 @@ export default function OneYearMobile() {
                     {monthNames.map((month, monthIndex) => (
                         // draw the boxes for each month 
                         <div key={monthIndex} className="OneYearMobile-month-box">
-                          
-                                {/* print the month title */}
-                                <div className="OneYearMobile-month-title">{month}</div>
 
-                                <div className="OneYearMobile-week">
-                                    {/* print the weekday title */}
-                                    {weekDayNames.map((dayOfWeek) => (
-                                        <div key={dayOfWeek} className="OneYearMobile-week-day-title">{dayOfWeek}</div>
+                            {/* print the month title */}
+                            <div className="OneYearMobile-month-title">{month}</div>
 
-                                    ))}
-                                    {/* draw empty day slots */}
+                            <div className="OneYearMobile-week">
+                                {/* print the weekday title */}
+                                {weekDayNames.map((dayOfWeek) => (
+                                    <div key={dayOfWeek} className="OneYearMobile-week-day-title">{dayOfWeek}</div>
 
-                                    {Array.from({ length: new Date(nextYear, monthIndex, 1).getDay() }).map((_, index) => (
-                                        <div key={`empty-${index}`} className="OneYearMobile-empty-day"></div>
-                                    ))}
+                                ))}
+                             
+                                {/* draw empty day slots */}
 
-                                    {/* draw actual days of the month for each month of the year */}
+                                {Array.from({ length: new Date(nextYear, monthIndex, 1).getDay() }).map((_, index) => (
+                                    <div key={`empty-${index}`} className="OneYearMobile-empty-day"></div>
+                                ))}
 
-                                    {Array.from({ length: getDaysInMonth(monthIndex, year) }).map((_, day) => (
-                                        (<div key={day} className={`OneYearMobile-one-day ${weekendColor}`}>{day + 1}</div>)
-                                    ))}
-                                </div>
+                            
 
-                         
+                                {/* draw actual days of the month for each month of the year */}
+
+                                {Array.from({ length: getDaysInMonth(monthIndex, year) }).map((_, day) => (
+                                    (<div key={day} className={`OneYearMobile-one-day ${weekendColor}`}>{day + 1}</div>)
+                                ))}
+
+                                
+                            </div>
+
+
                         </div>
                     ))}
 
