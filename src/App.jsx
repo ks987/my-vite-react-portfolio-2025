@@ -11,7 +11,7 @@ import Layout from './Layout.jsx';
 // Import portfolio pages
 
 import AboutAndContact from './about-and-contact/About-and-contact.jsx';
-import Calendar from './calendar/Calendar.jsx';
+import CalendarLayout from './calendar/CalendarLayout.jsx';
 import ToDoApp from './to-do-app/ToDoApp.jsx';
 
 
@@ -31,32 +31,33 @@ function App() {
 
   return (
 
-      <Routes>
+    <Routes>
 
-        {/* portfolio landing page routes */}
-        <Route path='/' element={<Layout />}>
+      {/* portfolio landing page routes */}
+      <Route path='/' element={<Layout />}>
 
-          <Route exact path='about-and-contact' element={<AboutAndContact />}></Route>
-          <Route index element={<Calendar />}></Route>
-          <Route exact path='calendar-in-react' element={<Calendar />}></Route>
-          <Route exact path='to-do-app-in-react' element={<ToDoApp />}></Route>
+        <Route exact path='about-and-contact' element={<AboutAndContact />}></Route>
+        <Route index element={<Calendar />}></Route>
+        <Route exact path='calendar-in-react' element={<CalendarLayout />}></Route>
+        <Route exact path='to-do-app-in-react' element={<ToDoApp />}></Route>
 
-        </Route>
+      </Route>
 
-        {/* calendar application routes */}
+      {/* calendar application routes */}
 
+      <Route exact path='calendar-in-react' element={<CalendarLayout />}>
 
         <Route exact path='/go-to-day' element={<OneDay />}></Route>
         <Route exact path='/go-to-four-days' element={<FourDays />}></Route>
         <Route exact path='/go-to-week' element={<OneWeek />}></Route>
         <Route exact path='/go-to-month' element={<OneMonth />}></Route>
         <Route exact path='/go-to-year' element={<OneYear />}></Route>
+      </Route>
 
+      {/* to-do application routes */}
 
-        {/* to-do application routes */}
+    </Routes>
 
-      </Routes>
-   
   )
 }
 

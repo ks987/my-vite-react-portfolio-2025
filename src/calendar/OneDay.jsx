@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import Overlay from './Overlay.jsx';
-import SampleGrid from './SampleGrid.jsx';
+
 
 // import navbar, footer, and sidebar
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
