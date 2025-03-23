@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 
 // import js files
-import PickCalendarColor from '../PickCalendarColor.jsx';
+import PickCalendarColor from './PickCalendarColor.jsx';
 import CreatedNewCalendar from './Created-new-calendar.jsx';
 // import css files
 

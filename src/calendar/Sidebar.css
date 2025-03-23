@@ -12,6 +12,7 @@
     background: var(--whitesmoke);
     background: linear-gradient(45deg, var(--purple), var(--light-purple));
     background: linear-gradient(45deg, var(--purple), var(--light-purple));
+  
 }
 
 .Sidebar-add-new-task-btn {
@@ -20,9 +21,13 @@
     background: var(--light-purple);
     color: var(--black);
     border: 2px solid var(--white);
-    margin: 25px 10px 0px 10px;
     border-radius: 5px;
     font-size: 16px;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 20px 30px;
 }
 
 .Sidebar-add-new-task-btn:hover {
@@ -47,15 +52,21 @@ border: 2px solid var(--bright-purple);
 
 .Sidebar-title {
     font-weight: normal;
-    text-decoration: underline;
     font-size: 18px;
+    margin: 20px 0px;
+    background: var(--light-purple);
+    border: 2px solid var(--white);
+    border-radius: 5px;
+display: flex;
+justify-self: center;
+padding: 0px 5px;
+margin: 20px 0px 20px 30px;
 }
 
 .Sidebar-calendars-section {
     margin: 0 auto;
     padding-right: 30px;
     width: 200px;
-    border: 1px solid greenyellow;
     width: 100%;
     font-size: 16px;
     text-align: center;
@@ -109,11 +120,10 @@ border: 2px solid var(--bright-purple);
 }
 
 .Sidebar-calendar-title {
-    color: deeppink;
     display: flex;
-    border: 2px solid green;
     flex-wrap: wrap;
 }
+
 
 .Sidebar-color-picker-box {
     width: 200px;
@@ -135,6 +145,8 @@ border: 2px solid var(--bright-purple);
 }
 
 
+
+
 /* add new calendar styles */
 
 .Sidebar-add-calendar-btn {
@@ -143,10 +155,10 @@ border: 2px solid var(--bright-purple);
     height: 30px;
     font-size: 14px;
     background: var(--light-purple);
-    margin: 10px;
     border-radius: 5px;
     border: 2px solid var(--white);
     color: var(--black);
+    margin: 10px 0px 10px 30px;
 
 
 }
