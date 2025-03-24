@@ -1,21 +1,5 @@
 
 
-:root {
-
-    --bright-purple: #b852fc;
-    --purple: #b191ff;
-    --light-purple: #e8dfff;
-    --sand: #ffc65e;
-
-    --whitesmoke: #f5f5f5;
-    --white: #fff;
-    --black: #222;
-    --medium-gray: #bbb;
-    --light-gray: #eee;
-
-}
-
-
 .OneMonth {
 
     border: 2px solid deeppink;
@@ -24,12 +8,9 @@
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    background: var(--white);
+    font-family: 'Jost';
 }
-
-
-
-
-
 
 
 /* OneMonth  */
@@ -45,7 +26,7 @@
     border: 2px solid var(--sand);
     width: 200px;
     height: 300px;
-    background: white;
+    background: var(--white);
     position: absolute;
 }
 
@@ -116,7 +97,7 @@
 /* inserted task styles */
 
 .OneMonth-inserted-task-row {
-    font-size: 10px;
+    font-size: 12px;
     display: flex;
 }
 

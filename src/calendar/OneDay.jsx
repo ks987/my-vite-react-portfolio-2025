@@ -6,7 +6,7 @@ import Overlay from './Overlay.jsx';
 // import navbar, footer, and sidebar
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
 import Footer from '../Footer.jsx'
-import Sidebar from './Sidebar.jsx';
+import Sidebar from './sidebar/Sidebar.jsx';
 
 // import sample tasks
 import TaskCode from './sample-tasks/TaskCode.jsx';

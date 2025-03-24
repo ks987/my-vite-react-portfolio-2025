@@ -10,7 +10,7 @@ import Footer from '../Footer.jsx';
 // import other js files 
 import Overlay from './Overlay.jsx';
 import {tasksInDatabase} from './database-sample.jsx';
-import Sidebar from './Sidebar.jsx';
+import Sidebar from './sidebar/Sidebar.jsx';
 
 
 // import css files

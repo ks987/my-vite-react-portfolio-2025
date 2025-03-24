@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
-import SidebarMobile from './SidebarMobile.jsx';
+import SidebarMobile from './sidebar/SidebarMobile.jsx';
 
 import './OneYearMobile.css';
 

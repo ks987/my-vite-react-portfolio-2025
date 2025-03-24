@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import PickCalendarColor from './sidebar/PickCalendarColor.jsx';
-import AddNewCalendar from './sidebar/Add-new-calendar.jsx';
-import CreatedNewCalendar from './sidebar/Created-new-calendar.jsx';
+import PickCalendarColor from './PickCalendarColor.jsx';
+import AddNewCalendar from './Add-new-calendar.jsx';
+import CreatedNewCalendar from './Created-new-calendar.jsx';
 
 
 import './Sidebar.css';

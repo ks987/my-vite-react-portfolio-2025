@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 // import jsx files
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
-import Sidebar from './Sidebar.jsx';
+import Sidebar from './sidebar/Sidebar.jsx';
 import OneYearMobile from './OneYearMobile.jsx';
 
 // import css files

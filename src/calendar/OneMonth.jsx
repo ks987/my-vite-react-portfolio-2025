@@ -5,7 +5,7 @@ import { tasksInDatabase } from './database-sample.jsx';
 // import js files
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
 import Overlay from './Overlay.jsx';
-import Sidebar from './Sidebar.jsx';
+import Sidebar from './sidebar/Sidebar.jsx';
 import Footer from '../Footer.jsx';
 
 
@@ -163,8 +163,8 @@ export default function OneMonth() {
                                 {index}
                                 <div className="OneMonth-inserted-tasks">
                                     <div className="OneMonth-inserted-task-row">
-                                        <div className="OneMonth-inserted-time">all day</div>
-                                        <div className="OneMonth-inserted-task"> Code</div>
+                                        <div className="OneMonth-inserted-time">6:00 AM = </div>
+                                        <div className="OneMonth-inserted-task">Code</div>
                                     </div>
 
                                     <button className="OneMonth-number-of-tasks"
