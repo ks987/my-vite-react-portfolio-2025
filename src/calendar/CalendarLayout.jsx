@@ -1,5 +1,5 @@
 import React from "react";
-import {Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 // import jsx files
 import OneYear from './OneYear.jsx';
@@ -11,12 +11,18 @@ import './CalendarLayout.css';
 
 export default function CalendarLayout() {
 
-        return(
+        return (
                 <>
-                <CalendarNavbar/>
-                <Outlet/>
+
+                        <div className="CalendarLayout-navbar">
+                                <CalendarNavbar />
+                        </div>
+                        <div className="CalendarLayout-main-page">
+                                <Outlet />
+                        </div>
+
                 </>
-      
+
         )
 };
 

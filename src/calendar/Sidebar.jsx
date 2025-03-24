@@ -32,7 +32,7 @@ export default function Sidebar() {
     };
 
 
-    const calendarNames = ['Main Calendar is Main Calendar ', 'Sample Schedule is Sample Schedule ', 'Holidays-Holidays-Holidays', 'Travel Calendar', 'Menu Calendar'];
+    const calendarNames = ['Main Calendar', 'Sample Schedule ', 'Holidays', 'Travel Calendar', 'Calendar #5'];
 
     const [circleColor, setCircleColor] = useState(['gold', 'coral', 'yellowgreen', 'cornflowerblue', 'violet', 'deeppink', 'tomato', 'greenyellow', 'pink', 'lightblue']);
     const [isPickColorVisible, setIsPickColorVisible] = useState(true);

@@ -1,0 +1,9 @@
+
+
+.CalendarLayout-navbar {
+margin: 0 auto;
+border: 2px solid deeppink;
+display: flex;
+justify-content: center;
+}
+
