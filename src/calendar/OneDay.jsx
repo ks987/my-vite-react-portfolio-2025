@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom';
 import Overlay from './Overlay.jsx';
 
 
-// import navbar, footer, and sidebar
+
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
-import Footer from '../Footer.jsx'
 import Sidebar from './sidebar/Sidebar.jsx';
 
 // import sample tasks
@@ -54,84 +53,19 @@ export default function OneDay() {
     const onlyYear = year;
     const modifiedDate = `${onlyMonth} ${onlyDay}, ${onlyYear}`;
 
-
-    // const [nextDay, setNextDay] = useState(day);
-    // const [nextMonth, setNextMonth] = useState(monthsArray[month]);
-    // const [nextYear, setNextYear] = useState(year);
-
     const [nextDay, setNextDay] = useState(parseInt(day));
     const [nextMonth, setNextMonth] = useState(monthsArray[month]);
     const [nextYear, setNextYear] = useState(year);
 
-    // change to the previous day
-    function oldSubtractOneDay() {
 
-
-        if (nextDay <= 31 && nextMonth === 'April' || 'June' || 'September' || 'November') {
-            setNextMonth(monthsArray[monthsArray.indexOf(nextMonth)]);
-            setNextDay(nextDay - 1);
-            setNextYear(nextYear);
-        } else if (nextDay === 1 && nextMonth === 'April' || 'June' || 'September' || 'November') {
-            setNextMonth(monthsArray[monthsArray.indexOf(nextMonth) - 1]);
-            setNextDay(31);
-            setNextYear(nextYear);
-        } else if (nextMonth === 'January' && nextDay === 1) {
-            setNextMonth(monthsArray[11]);
-            setNextDay(31);
-            setNextYear(parseInt(nextYear) - 1);
-        }
+    function changeDate(offset) {
+        const newDate = new Date(currDate);
+        newDate.setDate(newDate)
 
     }
-    // change to the next day
-
-    function oldAddOneDay() {
-
-
-        if ((nextDay === 31) && (nextMonth === 'January' || 'March' || 'May' || 'July' || 'August' || 'October' || 'December')) {
-            setNextMonth(monthsArray[monthsArray.indexOf(nextMonth) + 1]);
-            setNextDay(1);
-            setNextYear(nextYear);
-        } else if ((nextDay === 30) && (nextMonth === 'April' || 'June' || 'September' || 'November')) {
-            setNextMonth(monthsArray[monthsArray.indexOf(nextMonth)]);
-            setNextDay(30);
-            setNextYear(nextYear);
-        } else if ((nextDay <= '32') && (nextMonth !== 'February')) {
-            setNextMonth(monthsArray[monthsArray.indexOf(nextMonth)]);
-            setNextDay(parseInt(nextDay) + 1);
-            setNextYear(nextYear);
-        } else if (nextMonth === 'December' && nextDay === 1) {
-            setNextMonth(monthsArray[0]);
-            setNextYear(parseInt(nextYear) + 1);
-        } else if (nextYear % 4 === 0 && nextMonth === 'February') {
-            setNextMonth(monthsArray[monthsArray.indexOf(nextMonth)]);
-            setNextDay(29);
-        } else if (nextMonth === 'December' && nextDay === 31) {
-            setNextDay(1);
-            setNextYear(parseInt(nextYear) + 1);
-        } else if (nextMonth === 'February' && nextDay < '29') {
-            setNextDay(parseInt(nextDay) + 1);
-            setNextMonth(monthsArray[monthsArray.indexOf(nextMonth + 1)]);
-        }
-
-
-
-    };
-
-
-
-
-    // function changeDate(offset) {
-    //     const date = new Date(nextYear, monthsArray.indexOf(nextMonth), nextDay);
-    //     date.setDate(date.getDate() + offset);
-    //     setNextDay(date.getDate());
-    //     setNextDay()
-    // }
-
-
-
-
 
     return (
+
         <div className="OneDay">
 
             {isVisible && <Overlay />}
@@ -154,40 +88,9 @@ export default function OneDay() {
 
             <div className="OneDay-sidebar-and-schedule">
                 <Sidebar />
-     
-                <div className="OneDay-schedule">
-
-                    <div className="OneDay-times">
-                        <div className="OneDay-time-offset-top"></div>
-                        {timeArray.map((time) => (
 
 
-                            <div className="OneDay-time-in-schedule">{time}</div>
-
-
-                        ))}
-
-                        <div className="OneDay-time-offset-bottom"></div>
-
-                    </div>
-
-
-                    <div className="OneDay-timeslots">
-                        <div className="OneDay-timeslot-for-12am"></div>
-
-                        {timeArray.map(() => (
-                            <div className="OneDay-timeslots-row">
+</div>
+</div>
             
-                            </div>
-                        ))}
-
-                    </div>
-                </div>
-            </div>
-
-
-            <Footer/>
-        </div>
-    )
-};
-
+)}

@@ -38,7 +38,7 @@
 }
 
 /* weekly table styles */
-.Sidebar-and-one-week {
+.OneWeek-sidebar-and-one-week {
     display: flex;
     justify-content: left;
     align-items: top;
@@ -46,16 +46,31 @@
     height: 1300px;
     border: 2px solid deeppink;
     border: none;
+    
 }
 
 
-.OneWeek-table {
+.OneWeek-seven-columns {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: start;
     justify-content: center;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OLD STYLES */
 
 .OneWeek-table-row-1 {
     display: flex;
@@ -123,3 +138,5 @@
 .OneWeek-timeslot:hover {
     cursor: pointer;
 }
+
+
