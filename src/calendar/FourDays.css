@@ -28,17 +28,27 @@
 }
 
 
+.FourDays-sidebar-and-four-days {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 
 .FourDays-four-columns {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    border: 2px solid greenyellow;
+    width: 800px;
+    height: 400px;
 }
 
-.FourDays-four-columns div {
-    margin: 10px;
-    transform: scale(0.75);
+
+
+.FourDays-one-column {
+    border: 1px solid gold;
+    width: 100px;
+    height: auto;
+
 }
-
-
-
