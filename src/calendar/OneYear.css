@@ -1,7 +1,6 @@
 .OneYear {
     border: none;
-    font-size: 18px;
-    background: var(--whitesmoke);
+    background: var(--white);
     width: 1200px;
     max-width: 1200px;
     margin: 0 auto;
