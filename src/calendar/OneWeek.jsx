@@ -44,30 +44,34 @@ export default function OneWeek() {
 
 
     const addDay = () => {
-        setCurrentDate((previousDate) => new Date(previousDate.setDate(previousDate.getDate() + 1)));
+        setCurrentDate((previousDate) => new Date(previousDate.setDate(previousDate.getDate() + 7)));
     }
 
     const subtractDay = () => {
-        setCurrentDate((previousDate) => new Date(previousDate.setDate(previousDate.getDate() - 1)));
+        setCurrentDate((previousDate) => new Date(previousDate.setDate(previousDate.getDate() - 7)));
     }
 
-    const fourDaysLater = new Date(currentDate);
-    fourDaysLater.setDate(currentDate.getDate() + 6);
+    const sevenDaysLater = new Date(currentDate);
+    sevenDaysLater.setDate(currentDate.getDate() + 6);
+
+    const goToToday = () => {
+        setCurrentDate(new Date());
+    }
 
 
     return (
-        <div className="FourDays">
+        <div className="OneWeek">
 
             <CalendarNavbar />
 
             <br></br>
 
             <div className="OneWeek-top-row">
-
+                <div className="OneWeek-go-to-today" onClick={goToToday}>TODAY</div>
                 <button onClick={subtractDay}><i class="fa-solid fa-arrow-left"></i></button>
                 <div className="OneWeek-month-year-label-start">{currentDate.toDateString()}</div>
                 <div className="OneWeek-month-year-dash"> – </div>
-                <div className="OneWeek-month-year-label-end">{fourDaysLater.toDateString()}</div>
+                <div className="OneWeek-month-year-label-end">{sevenDaysLater.toDateString()}</div>
                 <button onClick={addDay}><i class="fa-solid fa-arrow-right"></i></button>
 
 
@@ -78,28 +82,36 @@ export default function OneWeek() {
                 <Sidebar />
 
                 <div className="OneWeek-seven-columns">
-                    {/* Print the date of the column */}
+
+                <div className="OneWeek-times-column">
+                        <div className="OneWeek-empty-rectangle-1"></div>
+                        {timesArray.map((t, indexTime) => (
+                            <>
+                                <div key={indexTime} className="OneWeek-times-row">{t}<span>------</span></div>
+                            </>
+                        ))}
+                        <div className="OneWeek-empty-rectangle-2"></div>
+
+                    </div>
+  
 
                     {Array.from({ length: 7 }).map((_, index) => {
                         const columnDate = new Date(currentDate);
                         columnDate.setDate(currentDate.getDate() + index);
 
                         return (
-                            <div key={index} className="OneWeek-one-column">
+                            <div key={index} className="OneWeek-one-empty-column">
                                 <div className="OneWeek-day-title">{columnDate.toDateString()}</div>
 
-                                {timesArray.map((time, timeIndex) => (
+                                {timesArray.map((time, slotIndex) => (
 
-                                    <div className="OneWeek-one-day-title-column">{time}
-                                        {Array.from({ length: 6 }).map((_, col) => {
-                                            <div key={timeIndex} className="OneWeek-one-day-row">read a book</div>
-                                        })}
-
+                
+                                            <div key={slotIndex} className="OneWeek-one-day-slot"></div>
+                                  
+                                ))}
 
                                     </div>
 
-                                ))}
-                            </div>
                         );
                     })}
                 </div>

@@ -1,0 +1,72 @@
+
+
+/* OLD STYLES */
+
+/* .OneWeek-table-row-1 {
+    display: flex;
+}
+
+.OneWeek-all-other-rows {
+    display: flex;
+    flex-direction: column;
+}
+
+.OneWeek-table-row {
+    display: flex;
+}
+
+
+.OneWeek-table-corner {
+    border: 1px solid var(--whitesmoke);
+    width: 130px;
+    height: 50px;
+    background: var(--light-purple);
+    background: var(--whitesmoke);
+}
+
+
+.OneWeek-table-time {
+    border: 1px solid var(--white);
+    width: 130px;
+    height: 50px;
+    background: var(--light-purple);
+}
+
+
+.OneWeek-table-time:hover {
+    background: var(--white);
+    cursor: pointer;
+}
+
+.OneWeek-day-of-week-and-date {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--medium-gray);
+    width: 130px;
+    height: 50px;
+}
+
+.OneWeek-day-of-week-and-date:hover {
+    background: var(--light-purple);
+    cursor: pointer;
+}
+
+.OneWeek-day-of-week {
+    width: 130px;
+    height: 25px;
+    border: none;
+}
+
+
+
+.OneWeek-timeslot {
+    border: 1px solid var(--medium-gray);
+    width: 130px;
+    height: 50px;
+}
+
+.OneWeek-timeslot:hover {
+    cursor: pointer;
+}
+
+ */

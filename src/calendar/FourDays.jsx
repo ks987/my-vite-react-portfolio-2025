@@ -47,7 +47,7 @@ export default function FourDays() {
     const fourDaysLater = new Date(currentDate);
     fourDaysLater.setDate(currentDate.getDate() + 3);
 
-    const goToToday = () =>  {
+    const goToToday = () => {
         setCurrentDate(new Date());
     }
 
@@ -61,7 +61,6 @@ export default function FourDays() {
 
             <div className="FourDays-top-row">
                 <div className="FourDays-go-to-today" onClick={goToToday}>TODAY</div>
-
                 <button onClick={subtractDay}><i class="fa-solid fa-arrow-left"></i></button>
                 <div className="month-year-label-start">{currentDate.toDateString()}</div>
                 <div className="month-year-dash"> – </div>
@@ -75,18 +74,18 @@ export default function FourDays() {
                 <Sidebar />
 
                 <div className="FourDays-four-columns">
-                    {/* Print the date of the column */}
+                   
 
                     <div className="FourDays-times-column">
                         <div className="FourDays-empty-rectangle-1"></div>
                         {timesArray.map((t, indexTime) => (
                             <>
-                            <div key={indexTime} className="FourDays-times-row">{t}<span>------</span></div>
-                   
+                                <div key={indexTime} className="FourDays-times-row">{t}<span>------</span></div>
+
                             </>
                         ))}
-                                <div className="FourDays-empty-rectangle-2"></div>
-                      
+                        <div className="FourDays-empty-rectangle-2"></div>
+
                     </div>
 
 
@@ -99,7 +98,7 @@ export default function FourDays() {
                             return (
                                 <div key={index} className="FourDays-one-empty-column">
                                     <div className="FourDays-day-title">{columnDate.toDateString()}</div>
-                    
+
                                     {timesArray.map((time, slotIndex) => (
 
                                         <div key={slotIndex} className="FourDays-one-day-slot"></div>
