@@ -12,19 +12,29 @@
 }
 
 
+.FourDays-go-to-today {
+    border: 1px solid var(--bright-purple);
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.FourDays-go-to-today:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
 
 .FourDays-top-row button {
     background: var(--white);
     border: 1px solid var(--medium-gray);
     width: 100px;
     height: 30px;
-    margin:  0px 10px;
+    margin: 0px 10px;
     color: var(--bright-purple);
 }
 
 .FourDays-top-row button:hover {
     transform: scale(0.97);
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 
@@ -32,7 +42,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
- 
+
 }
 
 
@@ -40,7 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: start;
-   border: none;
+    border: none;
     width: 800px;
     height: 400px;
 }
@@ -83,6 +93,10 @@
 
 }
 
+.FourDays-empty-rectangle-2 {
+    height: 15px;
+}
+
 .FourDays-slot-columns {
     display: flex;
 
@@ -93,7 +107,7 @@
 }
 
 .FourDays-one-day-slot {
-    border:0.75px solid var(--medium-gray);
+    border: 0.75px solid var(--medium-gray);
     width: 150px;
     height: 50px;
     box-shadow: var(--shadow-1);

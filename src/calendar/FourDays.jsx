@@ -37,15 +37,19 @@ export default function FourDays() {
 
 
     const addDay = () => {
-        setCurrentDate((previousDate) => new Date(previousDate.setDate(previousDate.getDate() + 1)));
+        setCurrentDate((previousDate) => new Date(previousDate.setDate(previousDate.getDate() + 2)));
     }
 
     const subtractDay = () => {
-        setCurrentDate((previousDate) => new Date(previousDate.setDate(previousDate.getDate() - 1)));
+        setCurrentDate((previousDate) => new Date(previousDate.setDate(previousDate.getDate() - 2)));
     }
 
     const fourDaysLater = new Date(currentDate);
     fourDaysLater.setDate(currentDate.getDate() + 3);
+
+    const goToToday = () =>  {
+        setCurrentDate(new Date());
+    }
 
 
     return (
@@ -56,6 +60,7 @@ export default function FourDays() {
             <br></br>
 
             <div className="FourDays-top-row">
+                <div className="FourDays-go-to-today" onClick={goToToday}>TODAY</div>
 
                 <button onClick={subtractDay}><i class="fa-solid fa-arrow-left"></i></button>
                 <div className="month-year-label-start">{currentDate.toDateString()}</div>
@@ -80,6 +85,7 @@ export default function FourDays() {
                    
                             </>
                         ))}
+                                <div className="FourDays-empty-rectangle-2"></div>
                       
                     </div>
 
