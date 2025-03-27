@@ -55,7 +55,6 @@
 }
 
 
-
 .OneMonth-sidebar-and-one-month {
     display: flex;
     width: 100%;
@@ -69,25 +68,37 @@
 
 /* monthly calendar itself - styles */
 
-.OneMonth-monthly-calendar {
+.OneMonth-week-names {
+    display: flex;
+}
+.OneMonth-week-title {
+    width: 120px;
+    text-align: center;
+}
+
+.OneMonth-draw-month {
     border: 1px solid var(--bright-purple);
     border: none;
-    width: 100%;
     margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
 
 }
 
+.OneMonth-day-title {
+    border: 1px solid black;
+    width: 120px;
+    height: 80px;
+}
+
 .OneMonth-title-slot {
     width: 40px;
     height: 20px;
-    border: 1px solid magenta;
     border: none;
 }
 
-.OneMonth-slot {
-    width: 13.5%;
+.OneMonth-one-day-slot {
+    width: 120px;
     height: 80px;
     border: 1px solid var(--medium-gray);
 }
