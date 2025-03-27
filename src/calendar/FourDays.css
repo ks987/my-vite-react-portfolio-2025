@@ -1,6 +1,6 @@
 .FourDays {
-    width: 90%;
     max-width: 1200px;
+    height: 1600px;
     margin: 0 auto;
     background: var(--white);
 }
@@ -32,6 +32,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+ 
 }
 
 
@@ -39,16 +40,62 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    border: 2px solid greenyellow;
+   border: none;
     width: 800px;
     height: 400px;
 }
 
 
+.FourDays-times-column {
+    border: none;
+    box-shadow: var(--shadow-light);
+}
 
-.FourDays-one-column {
-    border: 1px solid gold;
+.FourDays-empty-rectangle-1 {
+    border: 1px solid var(--dark-purple);
+    border: 0.75px solid transparent;
+    border-top: 0.75px solid var(--medium-gray);
     width: 100px;
-    height: auto;
+    height: 50px;
+    height: 35px;
+}
 
+.FourDays-times-row {
+    border: 0.75px solid transparent;
+    width: 100px;
+    height: 50px;
+    text-align: right;
+
+}
+
+.FourDays-times-row span {
+    color: var(--medium-gray);
+    border: 1px solid transparent;
+    display: inline-block;
+}
+
+.FourDays-day-title {
+    height: 50px;
+    border: 0.75px solid var(--medium-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.FourDays-slot-columns {
+    display: flex;
+
+}
+
+.FourDays-one-empty-column {
+    height: auto;
+}
+
+.FourDays-one-day-slot {
+    border:0.75px solid var(--medium-gray);
+    width: 150px;
+    height: 50px;
+    box-shadow: var(--shadow-1);
+    box-shadow: var(--shadow-light);
 }

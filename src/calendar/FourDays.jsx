@@ -62,10 +62,9 @@ export default function FourDays() {
                 <div className="month-year-dash"> – </div>
                 <div className="month-year-label-end">{fourDaysLater.toDateString()}</div>
                 <button onClick={addDay}><i class="fa-solid fa-arrow-right"></i></button>
-
-
-
             </div>
+
+            <br></br>
             <div className="FourDays-sidebar-and-four-days">
 
                 <Sidebar />
@@ -73,20 +72,37 @@ export default function FourDays() {
                 <div className="FourDays-four-columns">
                     {/* Print the date of the column */}
 
-                    {Array.from({ length: 4 }).map((_, index) => {
-                        const columnDate = new Date(currentDate);
-                        columnDate.setDate(currentDate.getDate() + index);
+                    <div className="FourDays-times-column">
+                        <div className="FourDays-empty-rectangle-1"></div>
+                        {timesArray.map((t, indexTime) => (
+                            <>
+                            <div key={indexTime} className="FourDays-times-row">{t}<span>------</span></div>
+                   
+                            </>
+                        ))}
+                      
+                    </div>
 
-                        return (
-                            <div key={index} className="FourDays-one-column">
-                                <div className="FourDays-day-title">{columnDate.toDateString()}</div>
 
-                                {timesArray.map((time, timeIndex) => (
-                                    <div key={timeIndex} className="FourDays-one-day-row">{time}</div>
-                                ))}
-                            </div>
-                        );
-                    })}
+                    <div className="FourDays-slot-columns">
+
+                        {Array.from({ length: 4 }).map((_, index) => {
+                            const columnDate = new Date(currentDate);
+                            columnDate.setDate(currentDate.getDate() + index);
+
+                            return (
+                                <div key={index} className="FourDays-one-empty-column">
+                                    <div className="FourDays-day-title">{columnDate.toDateString()}</div>
+                    
+                                    {timesArray.map((time, slotIndex) => (
+
+                                        <div key={slotIndex} className="FourDays-one-day-slot"></div>
+
+                                    ))}
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
 
             </div>
