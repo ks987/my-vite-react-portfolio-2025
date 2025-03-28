@@ -27,8 +27,23 @@ export default function OneMonth() {
     // Get number of days in the current month
     const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
 
-    
+    //Get the weekday index of the first day od the month such as 0 = Sunday, 6 = Saturday
+    const firstDayIndex = new Date(currentYear, currentMonth, 0).getDay();
 
+    // Create an array for the calendar grid (including leading empty days)
+    const monthDays = Array.from({ length: firstDayIndex }).fill(null).concat(
+        Array.from({ length: daysInMonth }, (_, index) => index + 1)
+    );
+
+
+
+    const addOneMonth = () => {
+        setCurrentDate(new Date(currentYear, currentMonth + 1, 1));
+    };
+
+    const subtractOneMonth = () => {
+        setCurrentDate(new Date(currentYear, currentMonth - 1, 1));
+    };
 
 
 
@@ -69,10 +84,11 @@ export default function OneMonth() {
             <br></br>
 
             <div className="OneMonth-top-row">
+                <div className="OneMonth-go-to-today" onClick={goToToday}>TODAY</div>
                 <button
                     onClick={subtractOneMonth}
                 ><i class="fa-solid fa-arrow-left"></i></button>
-                <div className="month-year-label">{nextMonth}{' '}{nextYear}</div>
+                <div className="month-year-label">{months[currentMonth]}{currentYear}</div>
                 <button
                     onClick={addOneMonth}
                 ><i class="fa-solid fa-arrow-right"></i></button>
@@ -92,18 +108,12 @@ export default function OneMonth() {
                     </div>
 
                     <div className="OneMonth-draw-month">
+                        {monthDays.map((day, index) => (
+                            <div key={index} className="OneMonth-day-title">
+                                {day !== null ? day : ""}
+                            </div>
 
-                        {Array.from({ length: 31 }).map((_, index) => {
-                            const columnDate = new Date(currentDate);
-                            columnDate.setDate(currentDate.getDate() + index);
-
-                            return (
-
-                                <div className="OneMonth-day-title">{columnDate.getDate()}</div>
-
-                            );
-                        })}
-
+                        ))}
 
                     </div>
                 </div>
