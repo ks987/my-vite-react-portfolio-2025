@@ -43,13 +43,33 @@ export default function OneWeek() {
 
 
 
-    const addDay = () => {
-        setCurrentDate((previousDate) => new Date(previousDate.setDate(previousDate.getDate() + 7)));
-    }
+    // const addDay = () => {
+    //     setCurrentDate((previousDate) => new Date(previousDate.setDate(previousDate.getDate() + 7)));
+    // }
 
-    const subtractDay = () => {
-        setCurrentDate((previousDate) => new Date(previousDate.setDate(previousDate.getDate() - 7)));
-    }
+    // const subtractDay = () => {
+    //     setCurrentDate((previousDate) => new Date(previousDate.setDate(previousDate.getDate() - 7)));
+    // }
+
+
+    const addWeek = () => {
+        setCurrentDate((previousDate) => {
+            const newDate = new Date(previousDate);
+            newDate.setDate(newDate.getDate() + 7);
+            return newDate;
+        });
+    };
+
+    const subtractWeek = () => {
+        setCurrentDate((previousDate) => {
+            const newDate = new Date(previousDate);
+            newDate.setDate(newDate.getDate() - 7);
+            return newDate;
+        });
+    };
+
+
+
 
     const sevenDaysLater = new Date(currentDate);
     sevenDaysLater.setDate(currentDate.getDate() + 6);
@@ -68,11 +88,11 @@ export default function OneWeek() {
 
             <div className="OneWeek-top-row">
                 <div className="OneWeek-go-to-today" onClick={goToToday}>TODAY</div>
-                <button onClick={subtractDay}><i class="fa-solid fa-arrow-left"></i></button>
+                <button onClick={subtractWeek}><i class="fa-solid fa-arrow-left"></i></button>
                 <div className="OneWeek-month-year-label-start">{currentDate.toDateString()}</div>
                 <div className="OneWeek-month-year-dash"> – </div>
                 <div className="OneWeek-month-year-label-end">{sevenDaysLater.toDateString()}</div>
-                <button onClick={addDay}><i class="fa-solid fa-arrow-right"></i></button>
+                <button onClick={addWeek}><i class="fa-solid fa-arrow-right"></i></button>
 
 
 
@@ -83,7 +103,7 @@ export default function OneWeek() {
 
                 <div className="OneWeek-seven-columns">
 
-                <div className="OneWeek-times-column">
+                    <div className="OneWeek-times-column">
                         <div className="OneWeek-empty-rectangle-1"></div>
                         {timesArray.map((t, indexTime) => (
                             <>
@@ -93,7 +113,7 @@ export default function OneWeek() {
                         <div className="OneWeek-empty-rectangle-2"></div>
 
                     </div>
-  
+
 
                     {Array.from({ length: 7 }).map((_, index) => {
                         const columnDate = new Date(currentDate);
@@ -105,12 +125,12 @@ export default function OneWeek() {
 
                                 {timesArray.map((time, slotIndex) => (
 
-                
-                                            <div key={slotIndex} className="OneWeek-one-day-slot"></div>
-                                  
+
+                                    <div key={slotIndex} className="OneWeek-one-day-slot"></div>
+
                                 ))}
 
-                                    </div>
+                            </div>
 
                         );
                     })}

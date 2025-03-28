@@ -33,16 +33,22 @@ export default function FourDays() {
     // const [nextMonth, setNextMonth] = useState(month);
     // const [nextYear, setNextYear] = useState(year);
 
+    const addFourDays = () => {
+        setCurrentDate((previousDate) => {
+            const newDate = new Date(previousDate);
+            newDate.setDate(newDate.getDate() + 4);
+            return newDate;
+        });
+    };
 
+    const subtractFourDays = () => {
+        setCurrentDate((previousDate) => {
+            const newDate = new Date(previousDate);
+            newDate.setDate(newDate.getDate() - 4);
+            return newDate;
+        });
+    };
 
-
-    const addDay = () => {
-        setCurrentDate((previousDate) => new Date(previousDate.setDate(previousDate.getDate() + 2)));
-    }
-
-    const subtractDay = () => {
-        setCurrentDate((previousDate) => new Date(previousDate.setDate(previousDate.getDate() - 2)));
-    }
 
     const fourDaysLater = new Date(currentDate);
     fourDaysLater.setDate(currentDate.getDate() + 3);
@@ -61,11 +67,11 @@ export default function FourDays() {
 
             <div className="FourDays-top-row">
                 <div className="FourDays-go-to-today" onClick={goToToday}>TODAY</div>
-                <button onClick={subtractDay}><i class="fa-solid fa-arrow-left"></i></button>
+                <button onClick={subtractFourDays}><i class="fa-solid fa-arrow-left"></i></button>
                 <div className="month-year-label-start">{currentDate.toDateString()}</div>
                 <div className="month-year-dash"> – </div>
                 <div className="month-year-label-end">{fourDaysLater.toDateString()}</div>
-                <button onClick={addDay}><i class="fa-solid fa-arrow-right"></i></button>
+                <button onClick={addFourDays}><i class="fa-solid fa-arrow-right"></i></button>
             </div>
 
             <br></br>
