@@ -1,7 +1,11 @@
 
 
 import React from 'react';
+import { useState, lazy, Suspense } from "react";
+import Loading from './Loading.jsx';
+
 import { Routes, Route } from 'react-router-dom';
+
 import './App.css'
 
 // import main layout
@@ -28,35 +32,39 @@ import OneYear from './calendar/OneYear.jsx';
 
 
 function App() {
-  // const [count, setCount] = useState(0)
+
 
   return (
 
-    <Routes>
+<div>
 
-      {/* portfolio landing page routes */}
-      <Route path='' element={<Layout />}>
-        <Route index element={<CalendarLayout />}></Route>
-        <Route exact path='/about-and-contact' element={<AboutAndContact />}></Route>
-        <Route exact path='/calendar-in-react' element={<CalendarLayout />}></Route>
-        <Route exact path='/to-do-app-in-react' element={<ToDoApp />}></Route>
 
-      </Route>
 
-      {/* calendar application routes */}
+  <Routes>
 
-      <Route exact path='' element={<Layout />}>
-        <Route exact path='/go-to-day' element={<OneDay />}></Route>
-        <Route exact path='/go-to-four-days' element={<FourDays />}></Route>
-        <Route exact path='/go-to-week' element={<OneWeek />}></Route>
-        <Route exact path='/go-to-month' element={<OneMonth />}></Route>
-        <Route exact path='/go-to-year' element={<OneYear />}></Route>
-      </Route>
+    {/* portfolio landing page routes */}
+    <Route path='' element={<Layout />}>
+      <Route index element={<CalendarLayout />}></Route>
+      <Route exact path='/about-and-contact' element={<AboutAndContact />}></Route>
+      <Route exact path='/calendar-in-react' element={<CalendarLayout />}></Route>
+      <Route exact path='/to-do-app-in-react' element={<ToDoApp />}></Route>
 
-      {/* to-do application routes */}
+    </Route>
 
-    </Routes>
+    {/* calendar application routes */}
 
+    <Route exact path='' element={<Layout />}>
+      <Route exact path='/go-to-day' element={<OneDay />}></Route>
+      <Route exact path='/go-to-four-days' element={<FourDays />}></Route>
+      <Route exact path='/go-to-week' element={<OneWeek />}></Route>
+      <Route exact path='/go-to-month' element={<OneMonth />}></Route>
+      <Route exact path='/go-to-year' element={<OneYear />}></Route>
+    </Route>
+
+    {/* to-do application routes */}
+
+  </Routes>
+  </div>
   )
 }
 
