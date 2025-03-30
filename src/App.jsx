@@ -1,8 +1,6 @@
 
 
 import React from 'react';
-import { useState, lazy, Suspense } from "react";
-import Loading from './Loading.jsx';
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -38,7 +36,7 @@ function App() {
 
 <div>
 
-
+<h3>The React App is currently rendering.</h3>
 
   <Routes>
 
@@ -48,6 +46,7 @@ function App() {
       <Route exact path='/about-and-contact' element={<AboutAndContact />}></Route>
       <Route exact path='/calendar-in-react' element={<CalendarLayout />}></Route>
       <Route exact path='/to-do-app-in-react' element={<ToDoApp />}></Route>
+
 
     </Route>
 
@@ -59,6 +58,7 @@ function App() {
       <Route exact path='/go-to-week' element={<OneWeek />}></Route>
       <Route exact path='/go-to-month' element={<OneMonth />}></Route>
       <Route exact path='/go-to-year' element={<OneYear />}></Route>
+
     </Route>
 
     {/* to-do application routes */}
