@@ -19,7 +19,7 @@
 
 import React from "react";
 import { StrictMode } from "react";
-import { HashRouter } from "react-router-dom";
+import { HashRouter } from "react-router";
 import { createRoot } from "react-dom/client";
 
 import "./index.css";

@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router";
 
 // import jsx files
 import OneYear from './OneYear.jsx';

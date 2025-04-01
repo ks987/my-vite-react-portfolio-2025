@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useEffect, useState } from "react";
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router';
 
 import './App.css'
 
@@ -40,8 +40,6 @@ function App() {
   return (
 
 <div>
-
-<h3>The React App is currently rendering.</h3>
 
   <Routes>
 
