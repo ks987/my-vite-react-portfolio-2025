@@ -16,6 +16,8 @@ export default function OneYearMobile() {
 
     const [nextYear, setNextYear] = useState(year);
     const [weekendColor, setWeekendColor] = useState('');
+    const [currentDate, setCurrentDate] = useState(new Date());
+
 
     const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     const weekDayNames = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
@@ -39,6 +41,12 @@ export default function OneYearMobile() {
         setWeekendColor('OneYearMobile-weekend');
     }
 
+
+    const goToToday = () => {
+        setCurrentDate(new Date());
+    }
+
+
     return (
         <div className="OneYearMobile">
 
@@ -48,6 +56,7 @@ export default function OneYearMobile() {
             <br></br>
 
             <div className="OneYearMobile-arrows">
+            <div className="OneYearMobile-go-to-today" onClick={goToToday}>TODAY</div>
                 <i className="fa-solid fa-arrow-left" onClick={subtractYear}></i>
                 <div className="OneYearMobile-title">{nextYear}</div>
                 <i className="fa-solid fa-arrow-right" onClick={addYear}></i>

@@ -2,16 +2,38 @@
   color: var(--white);
   font-size: 18px;
   text-align: center;
+  width: 96%;
+  width: 92%;
+  margin: 0 auto;
 }
 
-.OneYearMobile-Calendar-Navbar {
-  border: none;
+
+
+.OneYearMobile-go-to-today {
+  border: 1px solid var(--bright-purple);
+  padding: 5px 15px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  color: var(--black);
+  margin-left: 2px;
 }
+
+
+.OneYearMobile-go-to-today:hover {
+  cursor: pointer;
+  transform: scale(0.97);
+}
+
+
 
 .OneYearMobile-arrows {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-self: center;
+  justify-content: center;
+  background: var(--white);
+  height: 60px;
+  max-width: 444px;
 }
 
 .OneYearMobile-title {
@@ -24,15 +46,18 @@
   background: var(--white);
   border: 1px solid var(--medium-gray);
   width: 100px;
-  height: 30px;
+  height: 25px;
   margin: 0px 10px;
+  padding-top: 5px;
   color: var(--bright-purple);
 }
 
 .OneYearMobile-arrows i:hover {
   transform: scale(0.97);
-
+  cursor: pointer;
 }
+
+
 
 
 /* styles for mobile yearly calendar itself */
@@ -48,8 +73,11 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;
-  justify-content: center;
   width: 100%;
+  height: auto;
+  border: 1px solid var(--sand);
+  border: none;
+  margin: 0 auto;
 
 }
 
@@ -57,6 +85,7 @@
   margin: 3px;
   border: 2px solid var(--white);
   width: 110px;
+  width: auto;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -83,7 +112,6 @@
 
 .OneYearMobile-month-title {
   font-size: 14px;
-
 }
 
 
@@ -116,7 +144,7 @@
 }
 
 .OneYearMobile-one-day:hover {
-  border: 0.5px solid var(--bright-purple);
+  border: 1px solid var(--bright-purple);
 }
 
 .OneYearMobile-weekday {
@@ -139,40 +167,61 @@
 
 }
 
-@media screen and (max-width: 375px) {
-
-  .OneYearMobile-month-box {
-    margin: 1px;
-    border: 2px solid white;
-    width: 100px;
-    height: auto;
-    background: var(--white);
-    color: var(--black);
-  
-  }
 
 
-  .OneYearMobile-week-day-title,
-  .OneYearMobile-empty-day,
-  .OneYearMobile-one-day {
-    font-size: 9px;
-    border: 2px solid var(--white);
-    width: 9px;
-    height: 9px;
-    margin: 0px;
-    line-height: 10px;
-    font-family: 'Jost';
+@media screen and (max-width: 370px) {
+
+  .OneYearMobile {
+    color: var(--white);
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin: 0px 2px;
+
   }
   
+
+  
+.OneYearMobile-arrows {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.OneYearMobile-title {
+  margin: 0px 10px;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.OneYearMobile-arrows i {
+  background: var(--white);
+  border: 1px solid var(--medium-gray);
+  width: 100px;
+  height: 25px;
+  margin: 0px 10px;
+  padding-top: 5px;
+  color: var(--bright-purple);
+}
+
+.OneYearMobile-arrows i:hover {
+  transform: scale(0.97);
+  cursor: pointer;
 }
 
 
-@media screen and (max-width: 350px) {
+
+  .OneYearMobile-months {
+    gap: 3px;
+  }
+
 
   .OneYearMobile-month-box {
     margin: 1px;
     border: 2px solid white;
-    width: 90px;
+    width: 88px;
     height: auto;
     background: var(--white);
     color: var(--black);
@@ -184,12 +233,15 @@
   .OneYearMobile-empty-day,
   .OneYearMobile-one-day {
     font-size: 8px;
+    font-weight: bold;
     border: 2px solid var(--white);
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
     margin: 0px;
     line-height: 10px;
     font-family: 'Jost';
+    border: 1px solid var(--bright-purple);
+    border: 1px solid transparent;
   }
   
 }
