@@ -50,7 +50,11 @@
         justify-content: center;
         justify-self: center;
         width: 90%;
-     
+    
+    }
+
+    .Footer-bar {
+        font-size: 14px;
     }
 
     .Footer-rectangle {

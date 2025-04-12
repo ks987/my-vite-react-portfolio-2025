@@ -97,15 +97,26 @@
 .OneYearMobile-empty-day,
 .OneYearMobile-one-day {
   font-size: 11px;
-  border: 2px solid var(--white);
+  border: 0.5px solid var(--white);
   width: 11px;
   height: 11px;
-  margin: 0px;
+  padding: 1.5px;
   line-height: 10px;
   text-align: center;
   background: var(--white);
   color: var(--black);
   font-family: 'Jost';
+}
+
+.OneYearMobile-one-day {
+  border: 0.5px solid var(--light-purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.OneYearMobile-one-day:hover {
+  border: 0.5px solid var(--bright-purple);
 }
 
 .OneYearMobile-weekday {

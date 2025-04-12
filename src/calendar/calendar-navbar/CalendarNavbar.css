@@ -46,7 +46,8 @@
 
     .calendar-link {
     
-        font-size: 18px;
+        font-size: 14px;
+        padding: 0px 3px;
     }
 
 }

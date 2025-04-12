@@ -147,3 +147,15 @@ transform: scale(1.03);
 
 /* on very big screens */
 
+
+
+
+
+/* MOBILE SCREENS */
+@media screen and (max-width: 450px) {
+
+    .OneMonth {
+        display: none;
+    } 
+
+}

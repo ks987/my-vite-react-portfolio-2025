@@ -1,3 +1,140 @@
 .OneMonthMobile {
-    border: 2px solid greenyellow;
+
+    border: none;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--white);
+    font-family: 'Jost';
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* OneMonth  */
+.OneMonthMobile-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 94%;
+}
+
+
+/* all tasks popup styles */
+.OneMonthMobile-all-tasks-popup {
+    border: 2px solid var(--sand);
+    width: 200px;
+    height: 300px;
+    background: var(--white);
+    position: absolute;
+}
+
+
+
+/* a single task popup styles */
+
+
+
+/* one month styles */
+.OneMonthMobile-go-to-today {
+    border: 1px solid var(--bright-purple);
+    padding: 5px 15px;
+    padding: 7px 10px;
+    border-radius: 10px;
+}
+
+
+.OneMonthMobile-go-to-today:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+}
+
+
+.OneMonthMobile-top-row button {
+    background: var(--white);
+    border: 1px solid var(--medium-gray);
+    width: 100px;
+    width: 80px;
+    height: 40px;
+    margin: 0px 10px;
+    color: var(--bright-purple);
+}
+
+.OneMonthMobile-top-row button:hover {
+    transform: scale(0.97);
+    cursor: pointer;
+
+}
+
+
+.OneMonthMobile-sidebar-and-one-month {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 2px solid var(--sand);
+    border: none;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+
+.OneMonthMobile-everything-container {
+    width: 100%;
+}
+
+
+/* monthly calendar itself - styles */
+
+.OneMonthMobile-week-names {
+    display: flex;
+    padding: 0;
+
+
+}
+
+.OneMonthMobile-week-title {
+    width: 13.5%;
+    text-align: center;
+    border: 1px solid var(--light-purple);
+    border: 1px solid white;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg, var(--purple), var(--light-purple));
+    background: var(--white);
+    background: var(--bright-purple);
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+
+}
+
+.OneMonthMobile-draw-month {
+    border: none;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    align-self: center;
+
+    /* width: 364px; */
+}
+
+.OneMonthMobile-day-title {
+    border: 1px solid var(--light-purple);
+    width: 13.5%;
+    height: 35px;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+ 
+
+
+}
+
+.OneMonthMobile-day-title:hover {
+    border: 1px solid var(--bright-purple);
 }

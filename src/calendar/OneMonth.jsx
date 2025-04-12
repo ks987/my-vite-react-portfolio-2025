@@ -5,6 +5,8 @@ import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
 import Overlay from './Overlay.jsx';
 import Sidebar from './calendar-sidebar/Sidebar.jsx';
 
+import OneMonthMobile from './OneMonthMobile.jsx';
+
 
 // import css files
 import './OneMonth.css';
@@ -78,55 +80,60 @@ export default function OneMonth() {
 
 
     return (
-        <div className="OneMonth">
-            <CalendarNavbar />
 
-            <br></br>
+        <>
+            <OneMonthMobile />
 
-            <div className="OneMonth-top-row">
-                <div className="OneMonth-go-to-today" onClick={goToToday}>TODAY</div>
-                <button
-                    onClick={subtractOneMonth}
-                ><i class="fa-solid fa-arrow-left"></i></button>
-                <div className="month-year-label">{months[currentMonth]}{currentYear}</div>
-                <button
-                    onClick={addOneMonth}
-                ><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
+            <div className="OneMonth">
+                <CalendarNavbar />
 
+                <br></br>
 
-
-            <div className="OneMonth-sidebar-and-one-month">
-
-                <Sidebar />
-
-                <div className="OneMonth-everything-container">
-                    <div className="OneMonth-week-names">
-                        {weekDayThreeLetters.map((weekDay) => (
-                            <div className="OneMonth-week-title">{weekDay}</div>
-                        ))}
-                    </div>
-
-                    <div className="OneMonth-draw-month">
-                        {monthDays.map((day, index) => (
-                            <div key={index} className="OneMonth-day-title">
-                                {day !== null ? day : ""}
-                            </div>
-
-                        ))}
-
-                    </div>
+                <div className="OneMonth-top-row">
+                    <div className="OneMonth-go-to-today" onClick={goToToday}>TODAY</div>
+                    <button
+                        onClick={subtractOneMonth}
+                    ><i class="fa-solid fa-arrow-left"></i></button>
+                    <div className="month-year-label">{months[currentMonth]}{currentYear}</div>
+                    <button
+                        onClick={addOneMonth}
+                    ><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
 
 
 
+                <div className="OneMonth-sidebar-and-one-month">
+
+                    <Sidebar />
+
+                    <div className="OneMonth-everything-container">
+                        <div className="OneMonth-week-names">
+                            {weekDayThreeLetters.map((weekDay) => (
+                                <div className="OneMonth-week-title">{weekDay}</div>
+                            ))}
+                        </div>
+
+                        <div className="OneMonth-draw-month">
+                            {monthDays.map((day, index) => (
+                                <div key={index} className="OneMonth-day-title">
+                                    {day !== null ? day : ""}
+                                </div>
+
+                            ))}
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <br></br>
+                <br></br>
+
+
+
             </div>
-            <br></br>
-            <br></br>
-
-
-
-        </div >
+        </>
     )
 }
 

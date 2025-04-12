@@ -100,6 +100,12 @@ export default function SidebarMobile(){
             setAddNewCalendarOn(!addNewCalendarOn);
             event.stopPropagation();
         }
+
+
+
+        // current time
+
+        
     
 
 
