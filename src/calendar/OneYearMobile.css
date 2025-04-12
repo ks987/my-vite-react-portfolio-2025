@@ -106,12 +106,17 @@
   font-family: 'Jost';
 }
 
+.OneYearMobile-weekday {
+  color: var(--black);
+}
 
 
 .OneYearMobile-weekend {
-  background: greenyellow;
-  color: white;
+  color: var(--bright-purple);
 }
+
+
+
 
 @media screen and (min-width: 451px) {
 

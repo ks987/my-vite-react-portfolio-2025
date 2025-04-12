@@ -3,14 +3,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid gold;
+    border: 3px solid var(--sand);
     width: 200px;
     height: 200px;
     margin: 100px auto;
+    background: var(--white);
+    font-size: 20px;
 }
+
+
 
 .Page404 i {
     font-size: 55px;
-    color: gold;
+    color: var(--sand);
     text-align: center;
 }
+
+.Page404 i:hover {
+    transform: scale(0.97);
+    cursor: pointer;
+    }
+    

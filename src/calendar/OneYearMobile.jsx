@@ -84,10 +84,23 @@ export default function OneYearMobile() {
 
                                 {/* draw actual days of the month for each month of the year */}
 
-                                {Array.from({ length: getDaysInMonth(monthIndex, year) }).map((_, day) => (
-                                    (<div key={day} className={`OneYearMobile-one-day ${weekendColor}`}>{day + 1}</div>)
-                                ))}
+                                {Array.from({ length: getDaysInMonth(monthIndex, year) }).map((_, day) => {
+                                    const date = new Date(nextYear, monthIndex, day + 1);
+                                    const isWeekend = date.getDay() === 0 || date.getDay() === 6;  //Sunday = 0, Saturday = 6
+                                    return (
+                                        <div 
+                                        key={day}
+                                        className={`OneYearMobile-one-day ${isWeekend ? 'OneYearMobile-weekend' : 'OneYearMobile-weekday'}`}
+                                        >
+                                            {day + 1}
+                                            </div>
+                                    );
 
+                                })}
+                                
+                                
+                                
+          
                                 
                             </div>
 

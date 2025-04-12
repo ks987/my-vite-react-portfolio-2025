@@ -39,7 +39,7 @@ function App() {
 
         {/* portfolio landing page routes */}
         <Route path='' element={<Layout />}>
-          <Route index element={<OneYear />}></Route>
+          <Route index element={<NotebookApp />}></Route>
           <Route exact path='/about-and-contact' element={<AboutAndContact />}></Route>
           <Route exact path='/calendar-in-react' element={<OneYear />}></Route>
           <Route exact path='/notebook-app-in-react' element={<NotebookApp />}></Route>
