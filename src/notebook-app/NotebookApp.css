@@ -1,22 +1,23 @@
-.Notepad {
+.NotebookApp {
     border: 2px solid var(--purple);
     border: none;
 }
 
-.Notepad-one-note {
+.NotebookApp-one-note {
     width: 150px;
     height: 50px;
     border: 2px solid var(--bright-purple);
     margin: 10px;
+    background: var(--white);
 }
 
-.Notepad-one-note:hover {
+.NotebookApp-one-note:hover {
     cursor: pointer;
     border: 2px solid var(--sand);
 }
 
 
-.Notepad-create-new-note-btn {
+.NotebookApp-create-new-note-btn {
     border: 2px solid var(--purple);
     padding: 10px 25px;
     border-radius: 5px;
@@ -30,12 +31,12 @@
 
 }
 
-.Notepad-create-new-note-btn:hover {
+.NotebookApp-create-new-note-btn:hover {
     cursor: pointer;
     border: 2px solid var(--sand);
 }
 
-.Notepad-all-notes {
+.NotebookApp-all-notes {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -43,6 +44,7 @@
 
 }
 
-.Notepad-empty-block-of-space {
+.NotebookApp-empty-block-of-space {
     height: 150px;
 }
+

@@ -39,7 +39,7 @@ export default function NotebookApp() {
  
 
     return (
-        <div className="Notepad">
+        <div className="NotebookApp">
 
             {!createNewNote && <NotebookOverlay />}
   
@@ -47,12 +47,12 @@ export default function NotebookApp() {
 
             <div>
 
-                <button className="Notepad-create-new-note-btn" onClick={toOpenCreateNote}>{buttonText}</button>
+                <button className="NotebookApp-create-new-note-btn" onClick={toOpenCreateNote}>{buttonText}</button>
                 {!openExistingNote && <ViewNote />}
 
-                <div className="Notepad-all-notes">
+                <div className="NotebookApp-all-notes">
                     {arrayOfNotes.map((title => (
-                        <div className="Notepad-one-note" onClick={toOpenNote}>Note # {title}</div>
+                        <div className="NotebookApp-one-note" onClick={toOpenNote}>Note # {title}</div>
                     )))}
                 </div>
 
@@ -61,7 +61,7 @@ export default function NotebookApp() {
                 <br></br>
 
 
-                <div className="Notepad-empty-block-of-space"></div>
+                <div className="NotebookApp-empty-block-of-space"></div>
 
             </div>
         </div>
