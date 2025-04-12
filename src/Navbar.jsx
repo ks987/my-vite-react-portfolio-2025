@@ -18,7 +18,9 @@ export default function Navbar() {
             <nav className="Navbar-for-portfolio">
                 <Link id="about-and-contact" className="navbar-link" to='/about-and-contact'>About</Link>
                 <Link id="calendar-app" className="navbar-link" to='/calendar-in-react'>Calendar App</Link>
+                <Link id="notebook-app" className="navbar-link" to='/notebook-app-in-react'>Notebook App</Link>
                 <Link id="to-do-app" className="navbar-link" to='/to-do-app-in-react'>To-Do App</Link>
+              
             </nav>
 
         </div>

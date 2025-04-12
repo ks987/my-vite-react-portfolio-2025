@@ -30,13 +30,13 @@ export default function AboutAndContact() {
 
                     <h3>Projects</h3>
                     <p>I’ve built several projects: landing pages, productivity tools 
-                        (calendar app and to-do list). 
+                        (calendar app, notebook app, to-do list). 
                         You can view my projects by clicking on
                         tabs at the top of the website page.</p>
 
                     <h3>About this portfolio</h3>
                     <p>
-                        The front-end of this website is built with React.js, powered by Vite, styled with CSS, WordPress is used for content management, the website is hosted on Hostinger.
+                        The front-end of this website is built with React.js, powered by Vite, styled with CSS, PHP is used for content management, the website is hosted on Hostinger.
                     </p>
 
                 </div>
