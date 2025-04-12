@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
-import SidebarMobile from './sidebar/SidebarMobile.jsx';
+import SidebarMobile from './calendar-sidebar/SidebarMobile.jsx';
 
 import './OneYearMobile.css';
 
@@ -48,9 +48,9 @@ export default function OneYearMobile() {
             <br></br>
 
             <div className="OneYearMobile-arrows">
-                <i className="fa-solid fa-arrow-left"></i>
-                <div className="OneYearMobile-title">{year}</div>
-                <i className="fa-solid fa-arrow-right"></i>
+                <i className="fa-solid fa-arrow-left" onClick={subtractYear}></i>
+                <div className="OneYearMobile-title">{nextYear}</div>
+                <i className="fa-solid fa-arrow-right" onClick={addYear}></i>
             </div>
 
 

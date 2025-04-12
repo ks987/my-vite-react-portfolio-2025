@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
-import Sidebar from './sidebar/Sidebar.jsx';
+import Sidebar from './calendar-sidebar/Sidebar.jsx';
 
 import './FourDays.css';
 

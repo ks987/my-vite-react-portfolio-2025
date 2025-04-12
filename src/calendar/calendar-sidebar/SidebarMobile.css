@@ -1,0 +1,35 @@
+.SidebarMobile {
+    color: var(--white);
+    border: 2px solid var(--white);
+    padding: 10px;
+    margin: 10px;
+    background: var(--bright-purple);
+    width: 90%;
+}
+
+
+.SidebarMobile-add-new-task-btn {
+    display: flex;
+    background: var(--bright-purple);
+    color: var(--white);
+    padding: 10px 20px;
+    border: 2px solid var(--white);
+    border-radius: 10px;
+
+}
+
+.SidebarMobile-add-new-task-btn:hover {
+
+    cursor: pointer;
+    transform: scale(0.97);
+
+}
+
+.SidebarMobile-today {
+    display: flex;
+    justify-content: center;
+}
+
+.SidebarMobile-today div {
+    margin: 5px;
+}

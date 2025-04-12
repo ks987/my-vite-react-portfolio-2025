@@ -4,12 +4,12 @@ import Overlay from './Overlay.jsx';
 
 
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
-import Sidebar from './sidebar/Sidebar.jsx';
+import Sidebar from './calendar-sidebar/Sidebar.jsx';
 
 // import sample tasks
-import TaskCode from './sample-tasks/TaskCode.jsx';
-import TaskGroceries from './sample-tasks/TaskGroceries.jsx';
-import TaskReading from './sample-tasks/TaskReading.jsx';
+import TaskCode from './calendar-sample-tasks/TaskCode.jsx';
+import TaskGroceries from './calendar-sample-tasks/TaskGroceries.jsx';
+import TaskReading from './calendar-sample-tasks/TaskReading.jsx';
 
 
 // styles

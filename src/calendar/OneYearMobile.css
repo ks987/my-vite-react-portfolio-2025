@@ -16,6 +16,8 @@
 
 .OneYearMobile-title {
   margin: 0px 10px;
+  color: var(--black);
+  font-weight: bold;
 }
 
 .OneYearMobile-arrows i {

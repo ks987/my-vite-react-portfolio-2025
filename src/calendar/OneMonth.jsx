@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 // import js files
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
 import Overlay from './Overlay.jsx';
-import Sidebar from './sidebar/Sidebar.jsx';
+import Sidebar from './calendar-sidebar/Sidebar.jsx';
 
 
 // import css files
