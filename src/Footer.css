@@ -7,7 +7,6 @@
     height: 100px;
     padding-top: 50px;
     padding-bottom: 150px;
-    border: 2px solid yellowgreen;
     border: none;
 }
 
@@ -66,3 +65,14 @@
 
 
 }
+
+
+@media screen and (max-width: 280px) {
+    
+ 
+ .Footer-bar {
+    font-size: 10px;
+ }
+
+
+};

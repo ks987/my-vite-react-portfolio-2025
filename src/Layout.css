@@ -4,3 +4,19 @@
     border: none;
 }
 
+.Layout-error-message {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 280px) {
+    
+.Layout-error-message {
+    display: block;
+}
+
+.Layout-main-page {
+    display: none;
+}
+};
