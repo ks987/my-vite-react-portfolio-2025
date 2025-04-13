@@ -78,16 +78,27 @@
     }
 
     .navbar-link {
-        margin: 2px;
+        margin: 1px;
         padding: 3px 10px;
-        padding: 2px 2px;
+        padding: 2px 1px;
         border-radius: 5px;
-        font-size: 10px;
+        font-size: 12px;
         font-weight: bold;
         box-shadow: var(--shadow-1);
     }
 
 }
+
+@media screen and (max-width: 355px) {
+
+    .navbar-link {
+        margin: 1px;
+        padding: 2px 1px;
+        font-size: 11px;
+    }
+
+}
+
 
 @media screen and (max-width: 322px) {
 

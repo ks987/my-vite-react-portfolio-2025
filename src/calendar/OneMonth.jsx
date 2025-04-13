@@ -94,7 +94,7 @@ export default function OneMonth() {
                     <button
                         onClick={subtractOneMonth}
                     ><i class="fa-solid fa-arrow-left"></i></button>
-                    <div className="month-year-label">{months[currentMonth]}{currentYear}</div>
+                    <div className="month-year-label">{months[currentMonth]} {currentYear}</div>
                     <button
                         onClick={addOneMonth}
                     ><i class="fa-solid fa-arrow-right"></i></button>

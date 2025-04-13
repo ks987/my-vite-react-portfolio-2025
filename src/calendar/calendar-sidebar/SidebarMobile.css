@@ -37,7 +37,16 @@
 
 .SidebarMobile-today div {
     margin: 3px;
-  
-    font-size: 13px;
+    font-size: 16px;
     
+}
+
+@media screen and (max-width: 372px) {
+
+    .SidebarMobile-today div {
+        margin: 3px;
+        font-size: 14px;
+        
+    }
+
 }

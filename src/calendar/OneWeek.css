@@ -132,23 +132,13 @@
 
 
 
+/* MOBILE SCREENS */
+@media screen and (max-width: 450px) {
 
+    .OneWeek {
+        display: none;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 

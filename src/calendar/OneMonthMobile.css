@@ -130,11 +130,19 @@
     border-radius: 0px;
     display: flex;
     justify-content: center;
- 
-
-
 }
+
 
 .OneMonthMobile-day-title:hover {
     border: 1px solid var(--bright-purple);
+}
+
+
+/* MOBILE SCREENS */
+@media screen and (min-width: 451px) {
+
+    .OneMonthMobile {
+        display: none;
+    }
+
 }

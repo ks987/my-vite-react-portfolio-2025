@@ -6,7 +6,7 @@ import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
 import Overlay from './Overlay.jsx';
 import { tasksInDatabase } from './database-sample.jsx';
 import Sidebar from './calendar-sidebar/Sidebar.jsx';
-
+import OneWeekMobile from './OneWeekMobile.jsx';
 
 // import css files
 import './OneWeek.css';
@@ -80,6 +80,8 @@ export default function OneWeek() {
 
 
     return (
+        <>
+        <OneWeekMobile/>
         <div className="OneWeek">
 
             <CalendarNavbar />
@@ -138,6 +140,7 @@ export default function OneWeek() {
 
             </div>
         </div>
+        </>
 
 
 

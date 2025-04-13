@@ -241,7 +241,11 @@
 }
 
 
-@media screen and (max-width: 370px) {
+
+
+@media screen and (max-width: 372px) {
+
+
 
 
   .OneYearMobile-months {
@@ -251,7 +255,7 @@
 
 
   .OneYearMobile-month-box {
-    width: 110px;
+    width: 100px;
     height: auto;
 
   }
@@ -263,8 +267,8 @@
     font-size: 10px;
     font-weight: bold;
     border: 2px solid var(--white);
-    width: 10px;
-    height: 10px;
+    width: 9px;
+    height: 9px;
     margin: 0px;
     line-height: 10px;
     font-family: 'Jost';
