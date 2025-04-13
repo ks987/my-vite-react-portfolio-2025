@@ -1,30 +1,106 @@
 .OneWeekMobile {
-    border: 2px solid gold;
+    margin-left: 10px;
+    width: 1100px;
 }
 
-.OneWeekMobile-times {
-display: flex;
-position: absolute;
-top: 200px;
-}
-
-.OneWeekMobile-one-hour {
-    margin: 3px;
-    width: 30px;
-    height: 220px;
-    border: 1px solid greenyellow;
-    transform: rotate(90deg);
-
-}
-
-
-.OneWeekMobile-weekday-per-hour {
-
+.OneWeekMobile-navbar {
     display: flex;
-    flex-direction: row;
+    position: sticky;
+    left: 10px;
+    top: 0;
+    z-index: 100;
+    width: 370px;
+    margin-left: 10px;
+}
+
+
+.OneWeekMobile-schedule-container {
+    display: flex;
+    background: var(--white);
+}
+
+
+.OneWeekMobile-first-column {
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    height: 1100px;
+    
+    background: var(--white);
+}
+
+.OneWeekMobile-empty-corner {
+    height: 70px;
+    border: 0.5px solid var(--purple);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.OneWeekMobile-add-btn {
+    border: 2px solid var(--white);
+    background: var(--bright-purple);
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 16px;
+}
+.OneWeekMobile-add-btn:hover {
+    transform: scale(0.97);
+    cursor: pointer;
+}
+
+
+.OneWeekMobile-hour-title {
+    width: 90px;
+    border: 0.5px solid var(--purple);
+    border: 0.5px solid transparent;
+    height: 40px;
+    font-weight: bold;
+    color: var(--black);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    justify-content: right;
+}
+
+
+.OneWeekMobile-other-columns {
+    display: flex;
+    background: var(--white);
+}
+
+
+.OneWeekMobile-day-title {
+    text-align: center;
+    color: var(--purple);
+    font-weight: bold;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
-.OneWeekMobile-one-day {
-    border: 1px solid coral;
+.OneWeekMobile-hour-slot {
+    border: 0.5px solid var(--purple);
+    height: 40px;
+    width: 130px;
+    background: var(--white);
 }
+
+
+
+
+/* MOBILE SCREENS */
+@media screen and (max-width: 450px) {
+
+
+}
+
+

@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 
-
+import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
 import './OneWeekMobile.css';
 
 
@@ -18,48 +18,46 @@ export default function OneWeekMobile() {
         '3:00 PM', '4:00 PM', '5:00 PM', '6:00 PM', '7:00 PM', '8:00 PM', '9:00 PM', '10:00 PM', '11:00 PM'];
 
 
-
-
     return (
         <div className="OneWeekMobile">
-            <div>One Week Mobile </div>
 
-
-            <div className="OneWeekMobile-grid">
-                <div className="OneWeekMobile-header">
-                    <div className="OneWeekMobile-time-label"></div>{/* empty corner */}
-                    {weekDayThreeLetters.map((day) => (
-                        <div key={day} className="OneWeekMobile-day-header">{day}</div>
-                    ))}
-
-                </div>
-
-                {
-                    timesArray.map((time) => (
-
-                        <div key={time} className="OneWeekMobile-row">
-
-                            {time}
-                            <div className="OneWeekMobile-time-label">
-                                {
-                                    weekDayThreeLetters.map((oneDay) => (
-                                        <div key={oneDay + time} className="OneWeekMobile-tile">{oneDay}</div>
-                                    ))}
-
-                            </div>
-
-                        </div>
-
-
-                    ))
-                }
+            <div className="OneWeekMobile-navbar">
+                <CalendarNavbar />
             </div>
 
-
-            <div>something else</div>
-
+            <br></br>
 
 
+
+            <div className="OneWeekMobile-schedule-container">
+                <div className="OneWeekMobile-first-column">
+
+                    <div className="OneWeekMobile-empty-corner">
+
+                        <button className="OneWeekMobile-add-btn">Add new task</button>
+
+                    </div>
+                    {timesArray.map((hour) => (
+                        <div className="OneWeekMobile-hour-title">{hour}  ----</div>
+
+                    ))}
+                </div>
+
+                <div className="OneWeekMobile-other-columns">
+                    {
+                        weekDayThreeLetters.map((weekday => (
+                            <div className="OneWeekMobile-weekday">
+                                <div className="OneWeekMobile-day-title">{weekday}</div>
+                                {
+                                    timesArray.map((time) => (
+                                        <div className="OneWeekMobile-hour-slot"></div>
+                                    ))
+                                }
+                            </div>
+                        )))
+                    }
+                </div>
+            </div>
         </div>
     )
 }
