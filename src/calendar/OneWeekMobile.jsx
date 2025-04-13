@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
+import CurrentTimeMobile from './calendar-sidebar/CurrentTimeMobile.jsx';
 import './OneWeekMobile.css';
 
 
@@ -27,6 +28,7 @@ export default function OneWeekMobile() {
 
             <br></br>
 
+            <CurrentTimeMobile/>
 
 
             <div className="OneWeekMobile-schedule-container">
