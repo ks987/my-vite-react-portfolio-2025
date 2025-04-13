@@ -22,44 +22,55 @@ export default function OneWeekMobile() {
     return (
         <div className="OneWeekMobile">
 
-            <div className="OneWeekMobile-navbar">
-                <CalendarNavbar />
+            <div className="OneWeekMobile-top-section">
+                <div className="OneWeekMobile-navbar">
+                    <CalendarNavbar />
+                    <br></br>
+                    <CurrentTimeMobile />
+                    <br></br>
+
+                </div>
+                <div className="OneWeekMobile-row">
+
+                    <button className="OneWeekMobile-add-btn">Add new task</button>
+                    <div className="OneWeekMobile-day-titles">
+                        {weekDayThreeLetters.map((dayTitle) => (
+                            <div className="OneWeekMobile-day-title">{dayTitle}</div>
+                        ))}
+                    </div>
+
+
+                </div>
+
             </div>
-
-            <br></br>
-
-            <CurrentTimeMobile/>
-
 
             <div className="OneWeekMobile-schedule-container">
                 <div className="OneWeekMobile-first-column">
-
-                    <div className="OneWeekMobile-empty-corner">
-
-                        <button className="OneWeekMobile-add-btn">Add new task</button>
-
-                    </div>
+                    <div className="OneWeekMobile-empty-corner"></div>
                     {timesArray.map((hour) => (
                         <div className="OneWeekMobile-hour-title">{hour}  ----</div>
 
                     ))}
                 </div>
 
+
+
                 <div className="OneWeekMobile-other-columns">
                     {
                         weekDayThreeLetters.map((weekday => (
-                            <div className="OneWeekMobile-weekday">
-                                <div className="OneWeekMobile-day-title">{weekday}</div>
+                            <div className="OneWeekMobile-weekdays">
                                 {
                                     timesArray.map((time) => (
                                         <div className="OneWeekMobile-hour-slot"></div>
                                     ))
                                 }
                             </div>
+
                         )))
                     }
                 </div>
             </div>
         </div>
+
     )
 }
