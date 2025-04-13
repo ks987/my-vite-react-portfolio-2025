@@ -1,0 +1,70 @@
+.CurrentTimeMobile {
+    color: var(--white);
+    border: 2px solid var(--white);
+    padding: 10px;
+    margin: 10px;
+    background: var(--bright-purple);
+    width: 298px;
+    z-index: 100;
+    position: sticky;
+    left: 10px;
+    top: 0;
+    margin-left: 10px;
+}
+
+
+.CurrentTimeMobile-add-new-task-btn {
+    display: flex;
+    background: var(--bright-purple);
+    color: var(--white);
+    padding: 10px 20px;
+    border: 2px solid var(--white);
+    border-radius: 10px;
+
+}
+
+.CurrentTimeMobile-add-new-task-btn:hover {
+
+    cursor: pointer;
+    transform: scale(0.97);
+
+}
+
+.CurrentTimeMobile-today {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+    padding: 3px;
+    margin-left: -5px;
+
+}
+
+.CurrentTimeMobile-today div {
+    margin: 3px;
+    font-size: 14px;
+    
+}
+
+@media screen and (max-width: 372px) {
+    .CurrentTimeMobile {
+        color: var(--white);
+        border: 2px solid var(--white);
+        padding: 10px;
+        margin: 10px;
+        background: var(--bright-purple);
+        width: 298px;
+        z-index: 100;
+        position: sticky;
+        left: 0;
+        top: 0;
+        margin-left: 0px;
+    }
+
+    
+    .CurrentTimeMobile-today div {
+        margin: 3px;
+        font-size: 13px;
+    }
+
+}
