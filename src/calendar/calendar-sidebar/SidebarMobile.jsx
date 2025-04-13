@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 import './SidebarMobile.css';
 
@@ -105,6 +105,18 @@ export default function SidebarMobile(){
 
         // current time
 
+        const [currTime, setCurrTime] = useState(new Date());
+        useEffect(() => {
+            const interval = setInterval(() => {
+                setCurrTime(new Date()); 
+            }, 1000); // update every second
+
+            return () => clearInterval(interval); // Cleanup on unmount
+
+
+            }, []);
+
+
         
     
 
@@ -118,9 +130,11 @@ export default function SidebarMobile(){
 
             <div className="SidebarMobile-today">
                 <div>Today</div>
-                <div>{currentHours12}:{currentMinutesFormatted} {amPm()}</div>
+                {/* <div>{currentHours12}:{currentMinutesFormatted} {amPm()}</div> */}
+                <div>{currTime.toLocaleTimeString()}</div>
                 <div>{getWeekday()}, </div>
                 <div>{monthsArray[month]} {day}, {year}</div>
+      
             </div>
 
         </div>
