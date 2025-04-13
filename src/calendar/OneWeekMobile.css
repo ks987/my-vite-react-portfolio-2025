@@ -1,0 +1,30 @@
+.OneWeekMobile {
+    border: 2px solid gold;
+}
+
+.OneWeekMobile-times {
+display: flex;
+position: absolute;
+top: 200px;
+}
+
+.OneWeekMobile-one-hour {
+    margin: 3px;
+    width: 30px;
+    height: 220px;
+    border: 1px solid greenyellow;
+    transform: rotate(90deg);
+
+}
+
+
+.OneWeekMobile-weekday-per-hour {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.OneWeekMobile-one-day {
+    border: 1px solid coral;
+}

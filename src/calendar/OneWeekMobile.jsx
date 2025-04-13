@@ -1,21 +1,12 @@
-import {React, useState} from "react";
+import { React, useState } from "react";
 
 
+import './OneWeekMobile.css';
 
 
+export default function OneWeekMobile() {
 
-export default function OneWeekMobile(){
 
-
-    // const toggleOverlay = () => {
-    //     setIsVisible(!isVisible);
-
-    // }
-
-    // const today = new Date();
-    // const day = today.getDate(); // day of the month
-    // const month = today.getMonth() + 1; // Month is indexed at 0, so add 1
-    // const year = today.getFullYear(); // Full year
 
 
     const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
@@ -26,66 +17,46 @@ export default function OneWeekMobile(){
         '7:00 AM', '8:00 AM', '9:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '1:00 PM', '2:00 PM',
         '3:00 PM', '4:00 PM', '5:00 PM', '6:00 PM', '7:00 PM', '8:00 PM', '9:00 PM', '10:00 PM', '11:00 PM'];
 
-    // const [nextDay, setNextDay] = useState(day);
-    // const [nextMonth, setNextMonth] = useState(month);
-    // const [nextYear, setNextYear] = useState(year);
 
 
 
-
-    // const addDay = () => {
-    //     setCurrentDate((previousDate) => new Date(previousDate.setDate(previousDate.getDate() + 7)));
-    // }
-
-    // const subtractDay = () => {
-    //     setCurrentDate((previousDate) => new Date(previousDate.setDate(previousDate.getDate() - 7)));
-    // }
-
-
-    // const addWeek = () => {
-    //     setCurrentDate((previousDate) => {
-    //         const newDate = new Date(previousDate);
-    //         newDate.setDate(newDate.getDate() + 7);
-    //         return newDate;
-    //     });
-    // };
-
-
-
-    // const subtractWeek = () => {
-    //     setCurrentDate((previousDate) => {
-    //         const newDate = new Date(previousDate);
-    //         newDate.setDate(newDate.getDate() - 7);
-    //         return newDate;
-    //     });
-    // };
-
-
-
-
-    // const sevenDaysLater = new Date(currentDate);
-    // sevenDaysLater.setDate(currentDate.getDate() + 6);
-
-    // const goToToday = () => {
-    //     setCurrentDate(new Date());
-    // }
-
-
-
-    return(
+    return (
         <div className="OneWeekMobile">
             <div>One Week Mobile </div>
 
-            <div className="OneWeekMobile-week">
+
+            <div className="OneWeekMobile-grid">
+                <div className="OneWeekMobile-header">
+                    <div className="OneWeekMobile-time-label"></div>{/* empty corner */}
+                    {weekDayThreeLetters.map((day) => (
+                        <div key={day} className="OneWeekMobile-day-header">{day}</div>
+                    ))}
+
+                </div>
+
                 {
-                    weekDayThreeLetters.map((weekday) => (
-                        <div>{weekday}</div>
+                    timesArray.map((time) => (
+
+                        <div key={time} className="OneWeekMobile-row">
+
+                            {time}
+                            <div className="OneWeekMobile-time-label">
+                                {
+                                    weekDayThreeLetters.map((oneDay) => (
+                                        <div key={oneDay + time} className="OneWeekMobile-tile">{oneDay}</div>
+                                    ))}
+
+                            </div>
+
+                        </div>
+
+
                     ))
                 }
-
             </div>
 
-<div>something else</div>
+
+            <div>something else</div>
 
 
 
