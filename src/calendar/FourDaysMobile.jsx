@@ -52,8 +52,9 @@ export default function FourDaysMobile() {
             <div className="FourDaysMobile-top-section">
                 <div className="FourDaysMobile-navbar">
                     <CalendarNavbar />
-                  
-                    <br></br>
+       
+     
+                  <div className="FourDaysMobile-title">Four Days</div>
 
                     <SidebarMobile />
                     <br></br>

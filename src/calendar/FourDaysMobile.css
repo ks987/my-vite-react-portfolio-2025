@@ -3,6 +3,13 @@
     width: 1100px;
 }
 
+
+.FourDaysMobile-title {
+margin-top: 10px;
+font-weight: bold;
+}
+
+
 .FourDaysMobile-top-section {
 position: sticky;
 z-index: 14;
