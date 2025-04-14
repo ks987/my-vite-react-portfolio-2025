@@ -2,12 +2,12 @@ import { React, useState } from "react";
 
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
 import CurrentTimeMobile from './calendar-sidebar/CurrentTimeMobile.jsx';
+import SidebarMobile from './calendar-sidebar/SidebarMobile.jsx';
+
 import './OneWeekMobile.css';
 
 
 export default function OneWeekMobile() {
-
-
 
 
     const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
@@ -26,13 +26,12 @@ export default function OneWeekMobile() {
                 <div className="OneWeekMobile-navbar">
                     <CalendarNavbar />
                     <br></br>
-                    <CurrentTimeMobile />
+                    <SidebarMobile/>
                     <br></br>
 
                 </div>
                 <div className="OneWeekMobile-row">
-
-                    <button className="OneWeekMobile-add-btn">Add new task</button>
+                <div className="OneWeekMobile-start-of-row"></div>
                     <div className="OneWeekMobile-day-titles">
                         {weekDayThreeLetters.map((dayTitle) => (
                             <div className="OneWeekMobile-day-title">{dayTitle}</div>
