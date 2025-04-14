@@ -17,7 +17,7 @@ export default function FourDaysMobile() {
         '7:00 AM', '8:00 AM', '9:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '1:00 PM', '2:00 PM',
         '3:00 PM', '4:00 PM', '5:00 PM', '6:00 PM', '7:00 PM', '8:00 PM', '9:00 PM', '10:00 PM', '11:00 PM'];
 
-      const [currentDate, setCurrentDate] = useState(new Date());
+    const [currentDate, setCurrentDate] = useState(new Date());
 
     const addFourDays = () => {
         setCurrentDate((previousDate) => {
@@ -50,44 +50,71 @@ export default function FourDaysMobile() {
         <div className="FourDaysMobile">
 
             <div className="FourDaysMobile-top-section">
-                <div className="FourDaysMobile-navbar">
-                    <CalendarNavbar />
-       
-     
-                  <div className="FourDaysMobile-title">Four Days</div>
+                <div className="FourDaysMobile-no-weekdays-included">
+                    <div className="FourDaysMobile-navbar">
+                        <CalendarNavbar />
 
-                    <SidebarMobile />
-                    <br></br>
+                        <div className="FourDaysMobile-title">Four Days</div>
 
-<div className="FourDaysMobile-switch-date">
-    {/* <div className="FourDaysMobile-go-to-today" onClick={goToToday}>TODAY</div> */}
-    <br></br>
-    <button onClick={subtractFourDays}><i class="fa-solid fa-arrow-left"></i></button>
-    <div className="FourDaysMobile-month-year-label-start">{currentDate.toDateString()}</div>
-    <div className="FourDaysMobile-month-year-dash"> – </div>
-    <div className="FourDaysMobile-month-year-label-end">{fourDaysLater.toDateString()}</div>
-    <button onClick={addFourDays}><i class="fa-solid fa-arrow-right"></i></button>
-</div>
+                        <SidebarMobile />
+                        <br></br>
 
-                </div>
+                    </div>
 
-
-                <div className="FourDaysMobile-row">
-                    <div className="FourDaysMobile-start-of-row"></div>
-                    <div className="FourDaysMobile-day-titles">
-                        {weekDayThreeLetters.map((dayTitle) => (
-                            <div className="FourDaysMobile-day-title">{dayTitle}</div>
-                        ))}
+                    <div className="FourDaysMobile-switch-date">
+                        {/* <div className="FourDaysMobile-go-to-today" onClick={goToToday}>TODAY</div> */}
+                        <br></br>
+                        <button onClick={subtractFourDays}><i class="fa-solid fa-arrow-left"></i></button>
+                        <div className="FourDaysMobile-month-year-label-start">{currentDate.toDateString()}</div>
+                        <div className="FourDaysMobile-month-year-dash"></div>
+                        <div className="FourDaysMobile-month-year-label-end">{fourDaysLater.toDateString()}</div>
+                        <button onClick={addFourDays}><i class="fa-solid fa-arrow-right"></i></button>
                     </div>
 
 
                 </div>
 
+                <div className="FourDaysMobile-week-row">
+
+                    <div className="FourDaysMobile-start-of-row"></div>
+                    <div className="FourDaysMobile-day-titles">
+                        {Array.from({ length: 4 }).map((_, index) => {
+                            const columnDate = new Date(currentDate);
+                            columnDate.setDate(currentDate.getDate() + index);
+
+                            return (
+                                <div key={index} className="FourDaysMobile-weekdays">
+                                    <div className="FourDaysMobile-day-title">{columnDate.toDateString()}</div>
+
+                                </div>
+                            );
+                        })}
+
+                    </div>
+                </div>
+
+
             </div>
 
+            <div className="FourDaysMobile-all-day-task-row">
+                    <div className="FourDaysMobile-all-day-label">all day</div>
+                    {weekDayThreeLetters.map((oneWeekDay) => (
+                        <div className="FourDaysMobile-all-day-slot"></div>
+                    ))}
+
+                </div>
+                
+
             <div className="FourDaysMobile-schedule-container">
+
+
+                
+
+
+
+
                 <div className="FourDaysMobile-first-column">
-                    {/* <div className="FourDaysMobile-empty-corner-2"></div> */}
+
                     {timesArray.map((hour) => (
                         <div className="FourDaysMobile-hour-title">
                             {hour}
@@ -100,19 +127,22 @@ export default function FourDaysMobile() {
 
 
 
-                <div className="FourDaysMobile-other-columns">
-                    {
-                        weekDayThreeLetters.map((weekday => (
-                            <div className="FourDaysMobile-weekdays">
-                                {
-                                    timesArray.map((time) => (
-                                        <div className="FourDaysMobile-hour-slot"></div>
-                                    ))
-                                }
-                            </div>
+                <div className="FourDaysMobile-slot-columns">
 
-                        )))
-                    }
+
+                    {Array.from({ length: 4 }).map((_, index) => {
+                        const columnDate = new Date(currentDate);
+                        columnDate.setDate(currentDate.getDate() + index);
+
+                        return (
+                            <div key={index} className="FourDaysMobile-weekdays">
+                                {timesArray.map((time, slotIndex) => (
+                                    <div key={slotIndex} className="FourDaysMobile-hour-slot"></div>
+
+                                ))}
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         </div>
