@@ -113,3 +113,12 @@
     box-shadow: var(--shadow-1);
     box-shadow: var(--shadow-light);
 }
+
+/* MOBILE SCREENS */
+@media screen and (max-width: 450px) {
+
+    .FourDays {
+        display: none;
+    }
+
+}

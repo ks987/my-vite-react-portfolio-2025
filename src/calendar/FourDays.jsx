@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
 import Sidebar from './calendar-sidebar/Sidebar.jsx';
-
+import FourDaysMobile from './FourDaysMobile.jsx';
 import './FourDays.css';
 
 export default function FourDays() {
@@ -59,6 +59,9 @@ export default function FourDays() {
 
 
     return (
+        <>
+        <FourDaysMobile/>
+        
         <div className="FourDays">
 
             <CalendarNavbar />
@@ -119,7 +122,7 @@ export default function FourDays() {
             </div>
         </div>
 
-
+        </>
 
     )
 }

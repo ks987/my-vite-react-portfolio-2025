@@ -1,0 +1,230 @@
+.FourDaysMobile {
+    margin-left: 10px;
+    width: 1100px;
+}
+
+.FourDaysMobile-top-section {
+position: sticky;
+z-index: 14;
+top: 0;
+left: 0;
+border: none;
+}
+
+
+.FourDaysMobile-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    left: 10px;
+    top: 0;
+    z-index: 12;
+    width: 370px;
+    margin-left: 10px;
+    background: var(--white);
+}
+
+
+.FourDaysMobile-switch-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid greenyellow;
+    width: 300px;
+    font-size: 12px;
+}
+
+
+.FourDaysMobile-go-to-today {
+    border: 1px solid var(--bright-purple);
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.FourDaysMobile-go-to-today:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.FourDaysMobile-top-row button {
+    background: var(--white);
+    border: 1px solid var(--medium-gray);
+    width: 100px;
+    height: 30px;
+    margin: 0px 10px;
+    color: var(--bright-purple);
+}
+
+.FourDaysMobile-top-row button:hover {
+    transform: scale(0.97);
+    cursor: pointer;
+}
+
+
+.FourDaysMobile-row {
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    border: none;
+    position: sticky;
+    left: 10px;
+    top: 0;
+    z-index: 12;
+    background: var(--white);
+}
+
+
+.FourDaysMobile-start-of-row {
+    width: 105px;
+    height: 100px;
+    border: none;
+}
+
+
+.FourDaysMobile-day-titles {
+    display: flex;
+}
+
+.FourDaysMobile-day-title {
+    border: 0.5px solid var(--purple);
+    text-align: center;
+    color: var(--purple);
+    font-weight: bold;
+    height: 92px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.FourDaysMobile-add-btn {
+    border: 2px solid var(--white);
+    background: var(--bright-purple);
+    height: 50px;
+    width: 90px;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 16px;
+    margin: 10px;
+
+}
+
+
+.FourDaysMobile-add-btn:hover {
+    transform: scale(0.97);
+    cursor: pointer;
+}
+
+
+
+
+.FourDaysMobile-schedule-container {
+    display: flex;
+    background: var(--white);
+}
+
+.FourDaysMobile-empty-corner {
+    height: 70px;
+    height: 1px;
+    border: 0.5px solid var(--purple);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FourDaysMobile-empty-corner-2 {
+    border: 1px solid deeppink;
+}
+
+
+.FourDaysMobile-first-column {
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    height: 1100px;
+    background: var(--white);
+    margin-left: 0;
+}
+
+
+
+
+
+.FourDaysMobile-hour-title {
+    width: 90px;
+    border: 0.5px solid var(--purple);
+    border: 0.5px solid transparent;
+    height: 40px;
+    font-weight: bold;
+    color: var(--black);
+    font-size: 15px;
+    display: flex;
+    align-items: start;
+    padding-left: 15px;
+    justify-content: right;
+    margin-left: 0;
+    border-right: 0.5px solid var(--purple);
+}
+
+.FourDaysMobile-line {
+    background: #000;
+    height: 2px;
+    width: 18px;
+    margin-top: -1px;
+
+}
+
+
+.FourDaysMobile-other-columns {
+    display: flex;
+    flex-direction: row;
+    background: var(--white);
+}
+
+
+
+
+.FourDaysMobile-hour-slot {
+    border: 0.5px solid var(--purple);
+    height: 40px;
+    width: 130px;
+    background: var(--white);
+}
+
+
+
+
+@media screen and (min-width: 451px) {
+
+.FourDaysMobile {
+    display: none;
+}
+}
+
+
+
+
+@media screen and (max-width: 370px) {
+    .FourDaysMobile-navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        left: 0;
+        top: 0;
+        z-index: 12;
+        margin-left: 0;
+        width: 300px;
+        width: 30%;
+        background: var(--white);
+    }    
+   
+    }
+    
+    
