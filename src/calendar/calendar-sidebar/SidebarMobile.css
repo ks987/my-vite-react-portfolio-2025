@@ -50,3 +50,17 @@
     }
 
 }
+
+@media screen and (max-width: 372px) {
+
+    .SidebarMobile {
+        width: 250px;
+    }
+
+    .SidebarMobile-today div {
+        margin: 3px;
+        font-size: 12px;
+        
+    }
+
+}

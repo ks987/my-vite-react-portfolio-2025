@@ -1,6 +1,7 @@
 .OneWeekMobile {
     margin-left: 10px;
-    width: 1000px;
+  
+    width: 1100px;
 }
 
 .OneWeekMobile-top-section {
@@ -8,11 +9,14 @@ position: sticky;
 z-index: 14;
 top: 0;
 left: 0;
+border: none;
 }
 
 .OneWeekMobile-navbar {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: sticky;
     left: 10px;
     top: 0;
@@ -26,21 +30,18 @@ left: 0;
     width: 1100px;
     display: flex;
     align-items: center;
-    border: 1px solid coral;
     border: none;
     position: sticky;
     left: 10px;
     top: 0;
     z-index: 12;
     background: var(--white);
-    margin-left: 10px;
 }
 
 
 .OneWeekMobile-start-of-row {
     width: 105px;
     height: 100px;
-    border: 1px solid deeppink;
     border: none;
 }
 
@@ -50,9 +51,7 @@ left: 0;
 }
 
 .OneWeekMobile-day-title {
-    border: 1px solid var(--purple);
-    width: 135px;
-    height: 70px;
+    border: 0.5px solid var(--purple);
     text-align: center;
     color: var(--purple);
     font-weight: bold;
@@ -89,18 +88,20 @@ left: 0;
 .OneWeekMobile-schedule-container {
     display: flex;
     background: var(--white);
-    margin-left: 10px;
 }
 
 .OneWeekMobile-empty-corner {
     height: 70px;
+    height: 1px;
     border: 0.5px solid var(--purple);
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.OneWeekMobile-empty-corner-2 {
+    border: 1px solid deeppink;
+}
 
 
 .OneWeekMobile-first-column {
@@ -110,6 +111,7 @@ left: 0;
     z-index: 10;
     height: 1100px;
     background: var(--white);
+    margin-left: 0;
 }
 
 
@@ -125,9 +127,19 @@ left: 0;
     color: var(--black);
     font-size: 15px;
     display: flex;
-    align-items: center;
+    align-items: start;
     padding-left: 15px;
     justify-content: right;
+    margin-left: 0;
+    border-right: 0.5px solid var(--purple);
+}
+
+.OneWeekMobile-line {
+    background: #000;
+    height: 2px;
+    width: 18px;
+    margin-top: -1px;
+
 }
 
 
@@ -149,7 +161,7 @@ left: 0;
 
 
 
-/* MOBILE SCREENS */
+
 @media screen and (min-width: 451px) {
 
 .OneWeekMobile {
@@ -158,3 +170,24 @@ left: 0;
 }
 
 
+
+
+@media screen and (max-width: 370px) {
+    .OneWeekMobile-navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        left: 0;
+        top: 0;
+        z-index: 12;
+        margin-left: 0;
+        width: 300px;
+        width: 30%;
+        background: var(--white);
+    }    
+   
+    }
+    
+    

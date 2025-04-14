@@ -26,12 +26,12 @@ export default function OneWeekMobile() {
                 <div className="OneWeekMobile-navbar">
                     <CalendarNavbar />
                     <br></br>
-                    <SidebarMobile/>
+                    <SidebarMobile />
                     <br></br>
 
                 </div>
                 <div className="OneWeekMobile-row">
-                <div className="OneWeekMobile-start-of-row"></div>
+                    <div className="OneWeekMobile-start-of-row"></div>
                     <div className="OneWeekMobile-day-titles">
                         {weekDayThreeLetters.map((dayTitle) => (
                             <div className="OneWeekMobile-day-title">{dayTitle}</div>
@@ -45,9 +45,13 @@ export default function OneWeekMobile() {
 
             <div className="OneWeekMobile-schedule-container">
                 <div className="OneWeekMobile-first-column">
-                    <div className="OneWeekMobile-empty-corner"></div>
+                    {/* <div className="OneWeekMobile-empty-corner-2"></div> */}
                     {timesArray.map((hour) => (
-                        <div className="OneWeekMobile-hour-title">{hour}  ----</div>
+                        <div className="OneWeekMobile-hour-title">
+                            {hour}
+                            <div className="OneWeekMobile-line"></div>
+                        </div>
+
 
                     ))}
                 </div>
