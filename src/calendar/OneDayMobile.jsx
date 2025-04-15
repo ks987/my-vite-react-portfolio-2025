@@ -36,8 +36,8 @@ export default function OneDayMobile() {
     };
 
 
-    const fourDaysLater = new Date(currentDate);
-    fourDaysLater.setDate(currentDate.getDate() + 1);
+    const oneDayLater = new Date(currentDate);
+    oneDayLater.setDate(currentDate.getDate() + 1);
 
     const goToToday = () => {
         setCurrentDate(new Date());

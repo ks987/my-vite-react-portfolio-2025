@@ -3,28 +3,21 @@
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.link-highlighted {
-    border: 2px solid var(--sand);
-}
-
-
-.OneDay {
     background: var(--white);
     color: var(--black);
 }
 
 
-.OneDay-top-row {
+.OneDay-switch-date {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 
 
-.OneDay-top-row button {
+.OneDay-switch-date button {
     background: var(--white);
     border: 1px solid var(--medium-gray);
     width: 100px;
@@ -33,192 +26,38 @@
     color: var(--bright-purple);
 }
 
-.OneDay-top-row button:hover {
+.OneDay-switch-date button:hover {
     transform: scale(0.97);
     cursor: pointer;
 
 }
 
-
-/* add new task button styles  */
-
-.OneDay-add-new-task-btn {
-    background: var(--white);
-    background: var(--purple);
-    padding: 10px 20px;
-    border: 1px solid var(--bright-purple);
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    
-
-}
-
-.OneDay-add-new-task-btn:hover {
-    transform: scale(0.97);
-    cursor: pointer;
-}
-
-
-/* buttons styles */
-.toolbar-calendar {
-    border: 2px solid var(--white);
-    display: flex;
-    height: 30px;
-    margin-bottom: 10px;
-}
-
-.calendar-color-btn {
-    padding: 5px;
-    color: #222;
-    background: var(--white);
-    background: none;
-    border: none;
-    margin: 5px;
-    border: 1px solid var(--medium-gray);
-    border: none;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-
-.color-btn-text {
-    display: none;
-    color: transparent;
-    width: 50px;
-    font-size: 12px;
-}
-
-.calendar-color-btn:hover .color-btn-text {
-    display: block;
-    cursor: pointer;
-    font-weight: bold;
-    color: var(--black);
-    background: none;
-}
-
-.calendar-color-btn:hover {
-    display: block;
-    cursor: pointer;
-    font-weight: bold;
-    background: none;
-}
-
-
-
-/* timestamp on schedule*/
-
-.time-stamp-on-schedule {
-    color: var(--black);
-}
-
-ul li {
-    list-style: none;
-}
-
-
-.schedule-container {
-    margin-top: 50px;
-}
-
-.schedule-slot {
-    border: 0.125px solid var(--medium-gray);
-    border: none;
-    width: 90%;
-    height: 60px;
-    margin: 3px;
-    background: var(--white);
-    display: flex;
-    align-items: center;
-    margin: 3px auto;
-
-
-}
-
-.time-stamp-on-schedule {
-
-    border: none;
-    width: 50px;
-}
-
-
-/* OneDay schedule styles */
 .OneDay-sidebar-and-schedule {
     display: flex;
-    width: 100%;
-    align-items: top;
-    justify-content: left;
-    border: none;
-    justify-self: center;
-    margin-top: 10px;
 }
 
-.OneDay-schedule {
-    border: 1px solid var(--bright-purple);
-    border: none;
-    width: 100%;
-    margin: 0px auto;
+
+.OneDay-slot-columns {
+    max-width: 1200px;
+ 
+}
+
+
+.OneDay-day-row {
     display: flex;
-    flex-wrap: wrap;
-}
-
-.OneDay-timeslots {
-    width: 70%;
-    min-width: 150px;
-    margin: 10px auto;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid deeppink;
-    border: none;
-}
-
-.OneDay-time-offset-top {
-    border: 1px solid deeppink;
-    border: 1px solid var(--light-purple);
-    background: var(--light-purple);
-    width: 80px;
-    height: 46px;
-    height: 16px;
-}
-
-.OneDay-time-in-schedule {
-    border: none;
-    width: 80px;
-    height: 60px;
-    background: var(--light-purple);
-    border: 1px solid var(--light-purple);
-}
-
-.OneDay-time-offset-bottom {
-
-    border: 1px solid var(--light-purple);
-    background: var(--light-purple);
-    width: 80px;
-    height: 16px;
-}
-
-.OneDay-timeslot-for-12am {
-    width: 80%;
-    min-width: 250px;
-    border: 1px solid var(--medium-gray);
-    border: 1px solid var(--light-purple);
-    height: 60px;
-    height: 30px;
-    background: var(--light-purple);
 }
 
 
-.OneDay-timeslots-row {
-    width: 80%;
-    min-width: 250px;
-    border: 1px solid var(--medium-gray);
-    height: 60px;
+.OneDay-hour-label {
+    width: 100px;
+    height: 50px;
+    border: 0.5px solid var(--purple);
 }
 
-.OneDay-timeslots-row:hover {
-cursor: pointer;
 
+.OneDay-hour-slot {
+    width: 750px;
+    border: 0.5px solid var(--purple);
 }
 
 

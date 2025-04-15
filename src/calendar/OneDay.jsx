@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import Overlay from './Overlay.jsx';
-
-
-
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
 import Sidebar from './calendar-sidebar/Sidebar.jsx';
 import OneDayMobile from './OneDayMobile.jsx';
+
 // import sample tasks
 import TaskCode from './calendar-sample-tasks/TaskCode.jsx';
 import TaskGroceries from './calendar-sample-tasks/TaskGroceries.jsx';
@@ -20,6 +18,7 @@ export default function OneDay() {
 
     const [isVisible, setIsVisible] = useState(false);
     const [currDate, setCurrDate] = useState(new Date());
+    const [currentDate, setCurrentDate] = useState(new Date());
 
     function openOverlay() {
         setIsVisible(!isVisible);
@@ -63,36 +62,84 @@ export default function OneDay() {
 
     }
 
+
+    const addOneDay = () => {
+        setCurrentDate((previousDate) => {
+            const newDate = new Date(previousDate);
+            newDate.setDate(newDate.getDate() + 1);
+            return newDate;
+        });
+    };
+
+    const subtractOneDay = () => {
+        setCurrentDate((previousDate) => {
+            const newDate = new Date(previousDate);
+            newDate.setDate(newDate.getDate() - 1);
+            return newDate;
+        });
+    };
+
+
+    const oneDayLater = new Date(currentDate);
+    oneDayLater.setDate(currentDate.getDate() + 1);
+
+    const goToToday = () => {
+        setCurrentDate(new Date());
+    }
+
+
+
     return (
-<>
+        <>
 
-<OneDayMobile/>
+            <OneDayMobile />
 
-        <div className="OneDay">
+            <div className="OneDay">
 
-            {isVisible && <Overlay />}
+                {isVisible && <Overlay />}
 
-            <CalendarNavbar />
+                <CalendarNavbar />
+                <br></br>
 
-            <br></br>
+                <div className="OneDay-switch-date">
+                    {/* <div className="FourDaysMobile-go-to-today" onClick={goToToday}>TODAY</div> */}
+                    <br></br>
+                    <button onClick={subtractOneDay}><i class="fa-solid fa-arrow-left"></i></button>
+                    <div className="OneDay-month-year-label-start">{currentDate.toDateString()}</div>
+                    <button onClick={addOneDay}><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
 
-            <div className="OneDay-top-row">
-                <button>
-                    <i className="fa-solid fa-arrow-left"></i></button>
 
-                <div className="month-year-label">{nextMonth} {nextDay}, {nextYear}</div>
+                <br></br>
 
-                <button>
-                    <i className="fa-solid fa-arrow-right"></i></button>
+                <div className="OneDay-sidebar-and-schedule">
+                    <Sidebar />
+
+                    <div className="OneDay-slot-columns">
+
+
+                        {Array.from({ length: 1 }).map((_, index) => {
+                            const columnDate = new Date(currentDate);
+                            columnDate.setDate(currentDate.getDate() + index);
+
+                            return (
+                                <div key={index} className="OneDay-weekdays">
+                                    {timeArray.map((time, slotIndex) => (
+                                        <div className="OneDay-day-row">
+                                        <div key={slotIndex} className="OneDay-hour-label">{time}</div>
+                                        <div key={slotIndex} className="OneDay-hour-slot"></div>
+                                        </div>
+                                    ))}
+                                </div>
+                            );
+                        })}
+                    </div>
+
+
+
+
+                </div>
             </div>
-
-            <br></br>
-
-            <div className="OneDay-sidebar-and-schedule">
-                <Sidebar />
-
-
-</div>
-</div>
-</>
-)}
+        </>
+    )
+}
