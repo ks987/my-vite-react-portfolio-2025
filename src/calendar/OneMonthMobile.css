@@ -13,6 +13,13 @@
     align-items: center;
 }
 
+.OneMonthMobile-title {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+
 
 /* OneMonth  */
 .OneMonthMobile-top-row {

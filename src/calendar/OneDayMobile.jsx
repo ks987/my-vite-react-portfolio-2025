@@ -1,8 +1,11 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
 import SidebarMobile from './calendar-sidebar/SidebarMobile.jsx';
 
+
+
+import { loadEvents, saveEvents } from "./calendar-utils/calendar-storage.jsx";
 
 import './OneDayMobile.css';
 
@@ -47,6 +50,23 @@ export default function OneDayMobile() {
 
 
 
+
+    // load previous tasks and save new tasks to the localStorage 
+
+    const [events, setEvents] = useState(loadEvents);
+
+    // Update localStorage whenever events change
+    useEffect(() => {
+        saveEvents(events);
+    }, [events]);
+
+    const addEvent = (event) => {
+        setEvents((prev) => [...prev, event]);
+    };
+
+
+
+
     return (
         <div className="OneDayMobile">
 
@@ -61,6 +81,9 @@ export default function OneDayMobile() {
                         <br></br>
 
                     </div>
+
+                  
+
 
                     <div className="OneDayMobile-switch-date">
                         {/* <div className="FourDaysMobile-go-to-today" onClick={goToToday}>TODAY</div> */}
@@ -93,7 +116,7 @@ export default function OneDayMobile() {
                 </div>
             </div>
 
-{/* draw a row of all day tasks */}
+            {/* draw a row of all day tasks */}
 
             <div className="OneDayMobile-all-day-task-row">
                 <div className="OneDayMobile-all-day-label">all day</div>
@@ -105,7 +128,7 @@ export default function OneDayMobile() {
 
 
 
-{/* draw a column of times for the schedule */}
+                {/* draw a column of times for the schedule */}
                 <div className="OneDayMobile-first-column">
 
                     {timesArray.map((hour) => (

@@ -7,7 +7,10 @@
   margin: 0 auto;
 }
 
-
+.OneYearMobile-title {
+  margin-top: 10px;
+  font-weight: bold;
+}
 
 .OneYearMobile-go-to-today {
   border: 1px solid var(--bright-purple);

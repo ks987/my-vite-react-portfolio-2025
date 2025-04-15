@@ -91,7 +91,7 @@
 
     .SidebarMobile {
         width: 250px;
-        margin: 0;
+      margin: 3px;
     }
 
     .SidebarMobile-current-date div {

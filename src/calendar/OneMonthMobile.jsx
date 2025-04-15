@@ -73,6 +73,7 @@ export default function OneMonthMobile() {
 
         <div className="OneMonthMobile">
             <CalendarNavbar />
+            <div className="OneMonthMobile-title">One Month</div>
             <SidebarMobile/>
             <div className="OneMonthMobile-top-row">
                     <button

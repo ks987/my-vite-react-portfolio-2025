@@ -8,8 +8,16 @@ import './CalendarNavbar.css';
 export default function CalendarNavbar() {
     return (
         <div className="CalendarNavbar">
+            <div className="CalendarNavbar-top-row">
+
+<button onClick={() => {
+                        localStorage.removeItem("schedulerEvents");
+                        setEvents([]);
+                    }}>Clear All Data</button>
 
             <div className="CalendarNavbar-title">Calendar</div>
+            </div>
+<br></br>
 
             <nav className="CalendarNavbar-itself">
                 <Link id="open-one-day-btn" className="calendar-link" to='/go-to-day'>Day</Link>

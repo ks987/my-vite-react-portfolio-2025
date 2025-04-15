@@ -25,7 +25,9 @@ export default function OneWeekMobile() {
             <div className="OneWeekMobile-top-section">
                 <div className="OneWeekMobile-navbar">
                     <CalendarNavbar />
-                    <br></br>
+
+                    <div className="OneWeekMobile-title">One Week</div>
+                   
                     <SidebarMobile />
                     <br></br>
 

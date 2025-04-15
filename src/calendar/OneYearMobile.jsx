@@ -54,7 +54,7 @@ export default function OneYearMobile() {
             <div className="OneYearMobile-Calendar-Navbar">
                 <CalendarNavbar />
             </div>
-
+            <div className="OneYearMobile-title">One Year</div>
 
             <SidebarMobile />
 
