@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import Overlay from './Overlay.jsx';
+import CalendarAddNewTask from './calendar-sidebar/Calendar-add-new-task.jsx';
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
 import Sidebar from './calendar-sidebar/Sidebar.jsx';
 import OneDayMobile from './OneDayMobile.jsx';
+
 
 // import sample tasks
 import TaskCode from './calendar-sample-tasks/TaskCode.jsx';
@@ -96,7 +97,7 @@ export default function OneDay() {
 
             <div className="OneDay">
 
-                {isVisible && <Overlay />}
+                {isVisible && <CalendarAddNewTask />}
 
                 <CalendarNavbar />
                 <br></br>
@@ -139,6 +140,7 @@ export default function OneDay() {
 
 
                 </div>
+                <br></br>
             </div>
         </>
     )

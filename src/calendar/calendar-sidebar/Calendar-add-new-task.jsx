@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { React, useState } from "react";
 
 // Import js files
-import "./database-sample.jsx";
+import "../database-sample.jsx";
 
 // Import css files
-import "./Overlay.css";
+import "./Calendar-add-new-task.css";
 
-export default function Overlay() {
+export default function CalendarAddNewTask() {
       // to open or close the overlay
     const [isVisible, setIsVisible] = useState(false);
     const [isToDelete, setIsToDelete] = useState(false);
@@ -60,49 +60,57 @@ export default function Overlay() {
 
     return (
         <div>
+            {/* show or hide the delete confirmation note */}
             {isToDelete && (
-                <div className="Overlay-discard-delete-note">
+                <div className="CalendarAddNewTask-discard-delete-note">
                     <br />
                     <h4>Discard unsaved note?</h4>
                     <br />
-                    <button className="Overlay-cancel-btn" onClick={showOverlay}>Cancel</button>
-                    <button className="Overlay-discard-btn" onClick={hideOverlay}>Discard</button>
+                    <button className="CalendarAddNewTask-cancel-btn" onClick={showOverlay}>Cancel</button>
+                    <button className="CalendarAddNewTask-discard-btn" onClick={hideOverlay}>Discard</button>
                 </div>
             )}
 
             {!isVisible && (
-                <div className="Overlay">
-                    <button className="Overlay-close-btn" onClick={areYouSure}>X</button>
+                <div className="CalendarAddNewTask">
+                    <button className="CalendarAddNewTask-close-btn" onClick={areYouSure}>X</button>
                     <input
                         type="text"
-                        className="Overlay-event-title"
+                        className="CalendarAddNewTask-event-title"
                         placeholder="Add title"
                         value={inputValue}
                         onChange={(event) => setInputValue(event.target.value)}
                     />
 
-                    <div className="Overlay-date-row">
-                        <input type="text" className="Overlay-day-of-week" value={dayOfWeek} onChange={(e) => setDayOfWeek(e.target.value)} />
-                        <input type="text" className="Overlay-month" value={month} onChange={(e) => setMonth(e.target.value)} />
-                        <input type="text" className="Overlay-day" value={day} onChange={(e) => setDay(e.target.value)} />
-                        <div className="Overlay-comma">, </div>
-                        <input type="text" className="Overlay-year" value={year} onChange={(e) => setYear(e.target.value)} />
-                        <div className="Overlay-at"> @ </div>
+                    <div className="CalendarAddNewTask-date-row">
+
+                        <input type="text" className="CalendarAddNewTask-day-of-week" value={dayOfWeek} onChange={(e) => setDayOfWeek(e.target.value)} />
+                        <input type="text" className="CalendarAddNewTask-month" value={month} onChange={(e) => setMonth(e.target.value)} />
+                        <input type="text" className="CalendarAddNewTask-day" value={day} onChange={(e) => setDay(e.target.value)} />
+                        <div className="CalendarAddNewTask-comma">, </div>
+                        <input type="text" className="CalendarAddNewTask-year" value={year} onChange={(e) => setYear(e.target.value)} />
+                       <br></br>
+                       </div>
+
+                       <div className="CalendarAddNewTask-time-row">
+
+                        <div className="CalendarAddNewTask-at"> @ </div>
                         <input type="text" className="Overlay-starting-time" value={startTime} onChange={(e) => setStartTime(e.target.value)} />
-                        <div className="Overlay-time-dash">-</div>
+                        <div className="CalendarAddNewTask-time-dash">-</div>
                         <input type="text" className="Overlay-ending-time" value={endTime} onChange={(e) => setEndTime(e.target.value)} />
                     </div>
 
-                    <div className="Overlay-note">Add description</div>
+                    <div className="CalendarAddNewTask-note">Add description</div>
+                    
                     <textarea
-                        className="Overlay-description"
+                        className="CalendarAddNewTask-description"
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
                         placeholder="Add description here..."
                     />
 
-                    <div className="Overlay-calendar-name-and-color">
-                        <button className="Overlay-picked-calendar" onClick={() => setShowCalendars(!showCalendars)}>
+                    <div className="CalendarAddNewTask-calendar-name-and-color">
+                        <button className="CalendarAddNewTask-picked-calendar" onClick={() => setShowCalendars(!showCalendars)}>
                             {calendarName}
                         </button>
 
@@ -114,10 +122,10 @@ export default function Overlay() {
                             </div>
                         )}
 
-                        <div className="Overlay-event-color" style={{ background: calendarColor }}></div>
+                        <div className="CalendarAddNewTask-event-color" style={{ background: calendarColor }}></div>
                     </div>
 
-                    <button className="Overlay-save-event-btn">Save</button>
+                    <button className="CalendarAddNewTask-save-event-btn">Save</button>
                 </div>
             )}
         </div>

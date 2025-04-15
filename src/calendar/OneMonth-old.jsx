@@ -4,7 +4,7 @@ import { tasksInDatabase } from './database-sample.jsx';
 
 // import js files
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
-import Overlay from './Overlay.jsx';
+import CalendarAddNewTask from './Calendar-add-new-task.jsx';
 import Sidebar from './sidebar/Sidebar.jsx';
 import Footer from '../Footer.jsx';
 

@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 
+
+import CalendarAddNewTask from './Calendar-add-new-task.jsx';
+
 import './SidebarMobile.css';
 
 
@@ -33,17 +36,19 @@ export default function SidebarMobile() {
 
     const [circleColor, setCircleColor] = useState(['gold', 'coral', 'yellowgreen', 'cornflowerblue', 'violet', 'deeppink', 'tomato', 'greenyellow', 'pink', 'lightblue']);
     const [isPickColorVisible, setIsPickColorVisible] = useState(true);
-    const [checkedItems, setCheckedItems] = useState({ calendarNames }); // track checked conditions for every calendar
+    const [checkedItems, setCheckedItems] = useState(calendarNames.map(() => true));
+    ; // track checked conditions for every calendar
     const [checked, setChecked] = useState('fa-solid fa-square-check');
     const [addNewCalendarOn, setAddNewCalendarOn] = useState(true);
 
 
-    // toggle visiblity of overlay with assigning tasks
-    const [isOverlayVisible, setIsOverlayVisible] = useState(false);
-    // toggle visiblity of overlay with assigning tasks
+    // toggle visiblity of add-new-task field with assigning tasks
+    const [isAddNewTaskVisible, setIsAddNewTaskVisible] = useState(false);
 
-    const toggleOverlay = () => {
-        setIsOverlayVisible(!isOverlayVisible);
+    // toggle visiblity of add-new-task field with assigning tasks
+
+    const toggleAddNewTaskField = () => {
+        setIsAddNewTaskVisible(!isAddNewTaskVisible);
     }
 
 
@@ -117,7 +122,7 @@ export default function SidebarMobile() {
 
     }, []);
 
-// go to today's date
+    // go to today's date
 
     const goToToday = () => {
         setCurrentDate(new Date());
@@ -129,12 +134,15 @@ export default function SidebarMobile() {
 
     return (
         <div className="SidebarMobile">
+
+            {isAddNewTaskVisible && <CalendarAddNewTask />}
+
             <div className="SidebarMobile-top-row">
 
-            <button className="SidebarMobile-add-new-task-btn"
-                onClick={toggleOverlay}>Add New Task</button>
+                <button className="SidebarMobile-add-new-task-btn"
+                    onClick={toggleAddNewTaskField}>Add New Task</button>
 
-            <button className="SidebarMobile-go-to-today-btn" onClick={goToToday}>Go to Today</button>
+                <button className="SidebarMobile-go-to-today-btn" onClick={goToToday}>Go to Today</button>
             </div>
             <div className="SidebarMobile-current-date">
                 <div></div>

@@ -14,7 +14,7 @@
 }
 
 
-.Overlay {
+.CalendarAddNewTask {
     margin: 10px auto;
     border: 2px solid var(--purple);
     height: 400px;
@@ -34,12 +34,12 @@
     transform: translate(-50%, 0%);
 }
 
-.Overlay:hover {
+.CalendarAddNewTask:hover {
     cursor: pointer;
 }
 
 
-.Overlay-close-btn {
+.CalendarAddNewTask-close-btn {
     border: 2px solid var(--purple);
     border: none;
     color: var(--bright-purple);
@@ -54,28 +54,31 @@
     margin: 3px;
 }
 
-.Overlay-close-btn:hover {
+.CalendarAddNewTask-close-btn:hover {
     cursor: pointer;
     transform: scale(0.97);
 }
 
-.Overlay-event-title {
+.CalendarAddNewTask-event-title {
+    display: block;
     border: none;
     border-bottom: 1px solid var(--medium-gray);
     width: 80%;
+    margin: 0 auto;
     margin-bottom: 10px;
     margin-top: 50px;
+    height: 30px;
 }
 
-.Overlay-event-title:focus {
+.CalendarAddNewTask-event-title:focus {
     outline: none;
 
 }
 
 
-/* Overlay date row */
+/* CalendarAddNewTask date row */
 
-.Overlay-date-row {
+.CalendarAddNewTask-date-row {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,46 +86,86 @@
 }
 
 
-.Overlay-date-row input {
+.CalendarAddNewTask-date-row input {
+    border: 1px solid white;
+    border: none;
+    margin: 2px;
+    height: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+ }
+
+.CalendarAddNewTask-date-row input:focus {
+    outline: none;
+}
+
+
+.CalendarAddNewTask-comma {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 16px;
+}
+ 
+
+.CalendarAddNewTask-at  {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.CalendarAddNewTask-time-row {
+    display: flex;
+
+}
+
+.CalendarAddNewTask-time-row input {
+    width: 70px;
     border: 1px solid white;
     border: none;
     margin: 2px;
     height: 25px;
     font-size: 14px;
     text-align: center;
- }
+}
 
-.Overlay-date-row input:focus {
-    outline: none;
+.CalendarAddNewTask-time-row input:focus {
+   outline: none;
 }
 
 
-.Overlay-day-of-week {
+.CalendarAddNewTask-day-of-week {
     width: 60px;
 }
 
-.Overlay-month {
+.CalendarAddNewTask-month {
     width: 60px;
 }
 
-.Overlay-day {
+.CalendarAddNewTask-day {
     width: 40px;
 }
 
-.Overlay-year {
+.CalendarAddNewTask-year {
     width: 50px;
 }
 
-.Overlay-starting-time {
+.CalendarAddNewTask-starting-time {
     width: 60px;
 }
 
-.Overlay-ending-time {
+.CalendarAddNewTask-ending-time {
     width: 60px;
 }
 
 
-.Overlay-description {
+.CalendarAddNewTask-note {
+    color: var(--black);
+    font-weight: bold;
+}
+
+.CalendarAddNewTask-description {
     border: 1px solid var(--medium-gray);
     width: 95%;
     height: 100px;
@@ -137,7 +180,7 @@
 }
 
 
-.Overlay-description:focus {
+.CalendarAddNewTask-description:focus {
     outline: none;
 }
 
@@ -146,26 +189,26 @@
 
 /* Overlay calendar name and color */
 
-.Overlay-calendar-name-and-color {
+.CalendarAddNewTask-calendar-name-and-color {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 200px;
 }
 
-.Overlay-calendar-name-and-color div {
+.CalendarAddNewTask-calendar-name-and-color div {
     margin: 0px 3px;
     font-size: 20px;
 }
 
-.Overlay-event-color {
+.CalendarAddNewTask-event-color {
     border-radius: 50%;
     width: 30px;
     height: 30px;
 }
 
 
-.Overlay-save-event-btn {
+.CalendarAddNewTask-save-event-btn {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -179,7 +222,7 @@
     font-size: 17px;
 }
 
-.Overlay-save-event-btn:hover {
+.CalendarAddNewTask-save-event-btn:hover {
     cursor: pointer;
     transform: scale(0.97)
 }
@@ -191,7 +234,7 @@
 
 /* discard or delete note */
 
-.Overlay-discard-delete-note {
+.CalendarAddNewTask-discard-delete-note {
     width: 200px;
     height: 150px;
     border: 1px solid var(--black);
@@ -207,7 +250,7 @@
     margin: 0 auto;
 }
 
-.Overlay-cancel-btn {
+.CalendarAddNewTask-cancel-btn {
     border: 1px solid var(--purple);
     padding: 10px;
     background: var(--white);
@@ -217,7 +260,7 @@
     font-weight: bold;
 }
 
-.Overlay-discard-btn {
+.CalendarAddNewTask-discard-btn {
     border: 1px solid var(--purple);
     padding: 10px;
     background: var(--white);
@@ -226,8 +269,8 @@
 
 }
 
-.Overlay-cancel-btn:hover,
-.Overlay-discard-btn:hover {
+.CalendarAddNewTask-cancel-btn:hover,
+.CalendarAddNewTask-discard-btn:hover {
     cursor: pointer;
     background: var(--purple);
     transform: scale(0.97);
@@ -242,4 +285,34 @@
 
 @media only screen and (max-width: 850px) {
     
+}
+
+
+/* ON MOBILE SCREENS */
+
+@media only screen and (max-width: 450px) {
+    .CalendarAddNewTask {
+      
+        max-width: 286px;
+        min-width: 286px;
+      
+    }
+
+    .CalendarAddNewTask-date-row {
+        display: flex;
+    }
+
+    .CalendarAddNewTask-date-row  input{
+        font-size: 12px;
+        width: 50px;
+    }
+
+    .CalendarAddNewTask-description  {
+ 
+        max-width: 240px;
+        min-width: 240px;
+        max-height: 130px;
+        min-height: 130px;
+    }
+
 }

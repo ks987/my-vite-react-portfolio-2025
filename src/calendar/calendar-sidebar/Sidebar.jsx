@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import PickCalendarColor from './PickCalendarColor.jsx';
 import AddNewCalendar from './Add-new-calendar.jsx';
 import CreatedNewCalendar from './Created-new-calendar.jsx';
-
+import CalendarAddNewTask from './Calendar-add-new-task.jsx';
 
 import './Sidebar.css';
 
