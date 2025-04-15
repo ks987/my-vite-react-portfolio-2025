@@ -1,0 +1,332 @@
+.OneDayMobile {
+    width: 1100px;
+}
+
+
+.OneDayMobile-title {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.OneDayMobile-top-section {
+    position: sticky;
+    z-index: 14;
+    top: 0;
+    left: 0;
+    border: none;
+}
+
+.OneDayMobile-no-weekdays-included {
+    position: sticky;
+    z-index: 14;
+    top: 0;
+    left: 0;
+    background: var(--white);
+}
+
+
+.OneDayMobile-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    left: 10px;
+    top: 0;
+    z-index: 12;
+    width: 370px;
+    margin-left: 10px;
+    background: var(--white);
+}
+
+
+.OneDayMobile-switch-date {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid greenyellow;
+    border: none;
+    width: 300px;
+    font-size: 12px;
+
+}
+
+
+.OneDayMobile-go-to-today {
+    border: 1px solid var(--bright-purple);
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.OneDayMobile-go-to-today:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.OneDayMobile-month-year-label-start {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.OneDayMobile-month-year-dash {
+    font-weight: bold;
+    width: 10px;
+    height: 2px;
+    background: var(--black);
+    margin-right: 3px;
+}
+
+.OneDayMobile-month-year-label-end {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.OneDayMobile-switch-date button {
+    background: var(--white);
+    border: 1px solid var(--medium-gray);
+    width: 100px;
+    height: 30px;
+    margin: 0px 10px;
+    color: var(--bright-purple);
+}
+
+.OneDayMobile-switch-date button:hover {
+    transform: scale(0.97);
+    cursor: pointer;
+}
+
+
+.OneDayMobile-week-row {
+    width: 1099px;
+    display: flex;
+    align-items: center;
+    border: none;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 12;
+    background: var(--white);
+    padding-left: 1px;
+}
+
+
+.OneDayMobile-start-of-row {
+    width: 105px;
+    height: 100px;
+    border: none;
+}
+
+
+.OneDayMobile-day-titles {
+    display: flex;
+}
+
+.OneDayMobile-day-title {
+    border: 0.5px solid var(--purple);
+    text-align: center;
+    color: var(--purple);
+    font-weight: bold;
+    height: 92px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+
+}
+
+
+.OneDayMobile-add-btn {
+    border: 2px solid var(--white);
+    background: var(--bright-purple);
+    height: 50px;
+    width: 90px;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 16px;
+    margin: 10px;
+
+}
+
+
+.OneDayMobile-add-btn:hover {
+    transform: scale(0.97);
+    cursor: pointer;
+}
+
+
+/* schedule container styles */
+
+.OneDayMobile-schedule-container {
+    display: flex;
+    background: var(--white);
+}
+
+.OneDayMobile-all-day-task-row {
+    display: flex;
+    flex-direction: row;
+    background: var(--white);
+
+}
+
+.OneDayMobile-all-day-label {
+    height: 100px;
+    height: auto;
+    width: 105px;
+    border: 0.5px solid var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.OneDayMobile-all-day-slot {
+    border: 0.5px solid var(--purple);
+    width: 130px;
+    width: 200px;
+    height: 100px;
+    height: auto;
+}
+
+.OneDayMobile-empty-corner {
+    height: 70px;
+    height: 1px;
+    border: 0.5px solid var(--purple);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.OneDayMobile-empty-corner-2 {
+    border: 1px solid deeppink;
+}
+
+
+.OneDayMobile-first-column {
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    height: auto;
+    background: var(--white);
+    margin-left: 0;
+}
+
+
+
+.OneDayMobile-hour-title {
+    width: 90px;
+    border: 0.5px solid var(--purple);
+    border: 0.5px solid transparent;
+    height: 40px;
+    font-weight: bold;
+    color: var(--black);
+    font-size: 15px;
+    display: flex;
+    align-items: start;
+    padding-left: 15px;
+    justify-content: right;
+    margin-left: 0;
+    border-right: 0.5px solid var(--purple);
+}
+
+.OneDayMobile-line {
+    background: #000;
+    height: 2px;
+    width: 18px;
+    margin-top: -1px;
+
+}
+
+
+.OneDayMobile-slot-columns {
+    display: flex;
+    flex-direction: row;
+    background: var(--white);
+}
+
+.OneDayMobile-day-title {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 50px;
+}
+
+
+.OneDayMobile-hour-slot {
+    border: 0.5px solid var(--purple);
+    height: 40px;
+    width: 130px;
+    width: 200px;
+    background: var(--white);
+}
+
+
+
+
+@media screen and (min-width: 451px) {
+
+    .OneDayMobile {
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (max-width: 370px) {
+    .OneDayMobile-navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        left: 0;
+        top: 0;
+        z-index: 12;
+        margin-left: 0;
+        width: 300px;
+        width: 30%;
+        background: var(--white);
+    }
+
+
+    .OneDayMobile-switch-date {
+        width: 300px;
+        font-size: 12px;
+    }
+
+
+    .OneDayMobile-go-to-today {
+        border: 1px solid var(--bright-purple);
+        padding: 5px 15px;
+        border-radius: 10px;
+    }
+
+    .OneDayMobile-go-to-today:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+
+    .OneDayMobile-switch-date button {
+        background: var(--white);
+        border: 1px solid var(--medium-gray);
+        width: 60px;
+        height: 30px;
+        margin: 0px 10px;
+        color: var(--bright-purple);
+    }
+
+    .OneDayMobile-switch-date button:hover {
+        transform: scale(0.97);
+        cursor: pointer;
+    }
+
+
+
+}

@@ -5,7 +5,7 @@ import Overlay from './Overlay.jsx';
 
 import CalendarNavbar from './calendar-navbar/CalendarNavbar.jsx';
 import Sidebar from './calendar-sidebar/Sidebar.jsx';
-
+import OneDayMobile from './OneDayMobile.jsx';
 // import sample tasks
 import TaskCode from './calendar-sample-tasks/TaskCode.jsx';
 import TaskGroceries from './calendar-sample-tasks/TaskGroceries.jsx';
@@ -64,6 +64,9 @@ export default function OneDay() {
     }
 
     return (
+<>
+
+<OneDayMobile/>
 
         <div className="OneDay">
 
@@ -91,5 +94,5 @@ export default function OneDay() {
 
 </div>
 </div>
-            
+</>
 )}

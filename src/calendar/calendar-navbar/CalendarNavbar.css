@@ -3,7 +3,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 3px;
 }
+
+
 
 .CalendarNavbar-title {
     margin-bottom: 10px;
@@ -57,6 +60,17 @@
     .calendar-link {
         font-size: 14px;
         padding: 2px 5.5px;
+    }
+
+}
+
+@media screen and (max-width: 325px) {
+
+    .calendar-link {
+        font-size: 12px;
+        font-weight: bold;
+        padding: 2px 2px;
+        border: 1px solid var(--bright-purple);
     }
 
 }

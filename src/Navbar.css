@@ -3,6 +3,7 @@
 .Navbar {
     margin: 0 auto;
     padding: 0;
+    width: 98%;
 }
 
 .Navbar-portfolio-title {
@@ -44,6 +45,7 @@
     border-radius: 5px;
     font-size: 18px;
     box-shadow: var(--shadow-1);
+    font-weight: bold;
 }
 
 .navbar-link:hover {
@@ -94,7 +96,7 @@
     .navbar-link {
         margin: 1px;
         padding: 2px 1px;
-        font-size: 11px;
+        font-size: 10px;
     }
 
 }
@@ -105,7 +107,8 @@
     .navbar-link {
         margin: 1px;
         padding: 2px 1px;
-        font-size: 10px;
+        font-size: 9.5px;
+        font-weight: bold;
     }
 
 }

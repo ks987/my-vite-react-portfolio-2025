@@ -53,20 +53,21 @@ export default function OneYearMobile() {
             <div className="OneYearMobile-Calendar-Navbar">
                 <CalendarNavbar />
             </div>
-            <br></br>
+
+
+            <SidebarMobile />
 
             <div className="OneYearMobile-arrows">
-            <div className="OneYearMobile-go-to-today" onClick={goToToday}>TODAY</div>
-                <i className="fa-solid fa-arrow-left" onClick={subtractYear}></i>
+                <button><i className="fa-solid fa-arrow-left" onClick={subtractYear}></i></button>
                 <div className="OneYearMobile-title">{nextYear}</div>
-                <i className="fa-solid fa-arrow-right" onClick={addYear}></i>
+                <button><i className="fa-solid fa-arrow-right" onClick={addYear}></i></button>
             </div>
 
 
 
 
-            <div className="OneYearMobile-sidebar-and-months">
-                <SidebarMobile />
+            <div className="OneYearMobile-container-for-months">
+         
 
                 <div className="OneYearMobile-months">
                     {monthNames.map((month, monthIndex) => (

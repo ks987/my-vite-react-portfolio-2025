@@ -191,7 +191,7 @@ ul li {
 }
 
 .OneDay-time-offset-bottom {
-    border: 1px solid deeppink;
+
     border: 1px solid var(--light-purple);
     background: var(--light-purple);
     width: 80px;
@@ -221,3 +221,12 @@ cursor: pointer;
 
 }
 
+
+/* MOBILE SCREENS */
+@media screen and (max-width: 450px) {
+
+    .OneDay {
+        display: none;
+    }
+
+}

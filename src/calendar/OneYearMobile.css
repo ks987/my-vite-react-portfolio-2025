@@ -42,13 +42,20 @@
   font-weight: bold;
 }
 
+
+.OneYearMobile-arrows button {
+  background: var(--white);
+  color: var(--black);
+  border: 1px solid var(--medium-gray);
+  width: 50px;
+  height: 40px;
+}
+
 .OneYearMobile-arrows i {
   background: var(--white);
-  border: 1px solid var(--medium-gray);
-  width: 100px;
-  height: 25px;
   margin: 0px 10px;
-  padding-top: 5px;
+  font-size: 18px;
+  font-weight: bold;
   color: var(--bright-purple);
 }
 
@@ -63,7 +70,7 @@
 /* styles for mobile yearly calendar itself */
 
 
-.OneYearMobile-sidebar-and-months {
+.OneYearMobile-container-for-months {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -306,21 +313,6 @@
   margin: 0px 10px;
   color: var(--black);
   font-weight: bold;
-}
-
-.OneYearMobile-arrows i {
-  background: var(--white);
-  border: 1px solid var(--medium-gray);
-  width: 100px;
-  height: 25px;
-  margin: 0px 10px;
-  padding-top: 5px;
-  color: var(--bright-purple);
-}
-
-.OneYearMobile-arrows i:hover {
-  transform: scale(0.97);
-  cursor: pointer;
 }
 
 

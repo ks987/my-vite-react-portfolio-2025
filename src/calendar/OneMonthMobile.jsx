@@ -68,19 +68,13 @@ export default function OneMonthMobile() {
 
 
 
-
-
-
     return (
 
 
         <div className="OneMonthMobile">
-<br></br>
             <CalendarNavbar />
-            <br></br>
-
+            <SidebarMobile/>
             <div className="OneMonthMobile-top-row">
-                    <div className="OneMonthMobile-go-to-today" onClick={goToToday}>TODAY</div>
                     <button
                         onClick={subtractOneMonth}
                     ><i class="fa-solid fa-arrow-left"></i></button>
@@ -89,11 +83,7 @@ export default function OneMonthMobile() {
                         onClick={addOneMonth}
                     ><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
-
-
-
-            <SidebarMobile/>
-
+           
 
             <div className="OneMonthMobile-everything-container">
                 <div className="OneMonthMobile-week-names">

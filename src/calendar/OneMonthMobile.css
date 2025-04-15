@@ -20,8 +20,15 @@
     align-items: center;
     justify-content: center;
     width: 94%;
+    padding-bottom: 3px;
 }
 
+
+.OneMonthMobile-month-year-label {
+    font-size: 15px;
+    color: var(--black);
+    font-weight: bold;
+}
 
 /* all tasks popup styles */
 .OneMonthMobile-all-tasks-popup {
@@ -58,9 +65,12 @@
     border: 1px solid var(--medium-gray);
     width: 100px;
     width: 80px;
+    width: 50px;
     height: 40px;
     margin: 0px 10px;
     color: var(--bright-purple);
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .OneMonthMobile-top-row button:hover {
@@ -145,4 +155,15 @@
         display: none;
     }
 
+}
+
+
+@media screen and (max-width: 325px) {
+
+    .OneMonthMobile-month-year-label {
+        font-size: 14px;
+        color: var(--black);
+        font-weight: bold;
+    }
+    
 }
