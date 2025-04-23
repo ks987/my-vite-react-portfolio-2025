@@ -1,0 +1,21 @@
+.GalleryGalleryMode-artwork-div {
+    width: 290px;
+    height: 290px;
+    margin: 5px auto;
+    border: 2px solid var(--bright-purple);
+}
+
+.GalleryGalleryMode-artwork-div:hover {
+    border: 2px solid var(--sand);
+}
+
+.GalleryGalleryMode-artwork-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.GalleryGalleryMode-image {
+    height: 90%;
+    display: flex;
+    justify-self: center;
+}

@@ -14,9 +14,11 @@ import Layout from './Layout.jsx';
 
 import AboutAndContact from './about-and-contact/About-and-contact.jsx';
 import CalendarLayout from './calendar/CalendarLayout.jsx';
+
 import NotebookApp from './notebook-app/NotebookApp.jsx';
-import ToDoApp from './to-do-app/ToDoApp.jsx';
-import Page404  from './page-not-found/page-not-found.jsx';
+import ArtGalleryLayout from './art-gallery/ArtGallery-layout.jsx';
+// import ToDoApp from './to-do-app/ToDoApp.jsx';
+import Page404 from './page-not-found/page-not-found.jsx';
 
 
 // Import calendar app subpages
@@ -27,7 +29,12 @@ import OneWeek from './calendar/OneWeek.jsx';
 import OneMonth from './calendar/OneMonth.jsx';
 import OneYear from './calendar/OneYear.jsx';
 
-// Import to-do app subpages
+// Import gallery app subpages
+
+import GalleryGalleryMode from './art-gallery/GalleryGalleryMode.jsx';
+import GalleryGridMode from './art-gallery/GalleryGridMode.jsx';
+import GalleryColumnMode from './art-gallery/GalleryColumnMode.jsx';
+
 
 function App() {
 
@@ -43,7 +50,8 @@ function App() {
           <Route exact path='/about-and-contact' element={<AboutAndContact />}></Route>
           <Route exact path='/calendar-in-react' element={<OneYear />}></Route>
           <Route exact path='/notebook-app-in-react' element={<NotebookApp />}></Route>
-          <Route exact path='/to-do-app-in-react' element={<ToDoApp />}></Route>
+          <Route exact path='/art-gallery-in-react' element={<ArtGalleryLayout />}></Route>
+          {/* <Route exact path='/to-do-app-in-react' element={<ToDoApp />}></Route> */}
           <Route exact path='*' element={<Page404 />}></Route>
 
 
@@ -62,7 +70,16 @@ function App() {
 
         </Route>
 
-        {/* to-do application routes */}
+        {/* gallery application routes */}
+
+        <Route exact path='' element={<Layout />}>
+
+            <Route index element={<GalleryGridMode />}></Route>
+            <Route exact path='/grid-mode' element={<GalleryGridMode />}></Route>
+            <Route exact path='/gallery-mode' element={<GalleryGalleryMode />}></Route>
+            <Route exact path='/column-mode' element={<GalleryColumnMode />}></Route>
+
+        </Route>
 
 
 

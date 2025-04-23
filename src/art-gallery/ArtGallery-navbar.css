@@ -1,0 +1,28 @@
+.ArtGalleryNavbar-title {
+    font-style: italic;
+    text-align: center;
+}
+
+
+.ArtGalleryNavbar-menu {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+.ArtGalleryNavbar-menu button {
+    background: var(--white);
+    border: none;
+    margin: 5px;
+    padding: 7px 7px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+.ArtGalleryNavbar-menu button:hover {
+    transform: scale(0.97);
+    cursor: pointer;
+}

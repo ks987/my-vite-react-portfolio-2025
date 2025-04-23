@@ -126,7 +126,6 @@ export default function CurrentTimeMobile(){
 
             <div className="CurrentTimeMobile-today">
                 <div>Today</div>
-                {/* <div>{currentHours12}:{currentMinutesFormatted} {amPm()}</div> */}
                 <div>{currTime.toLocaleTimeString()}</div>
                 <div>{getWeekday()}, </div>
                 <div>{monthsArray[month]} {day}, {year}</div>
