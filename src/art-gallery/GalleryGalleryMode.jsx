@@ -9,12 +9,12 @@ import './GalleryGalleryMode.css';
 export default function GalleryGalleryMode(){
 
 const arrayOfArtworks = [
-    '/images/food/chatgpt-breakfast.png',
-    '/images/food/chatgpt-burrito-bowl.png',
-    '/images/food/chatgpt-dessert.png',
-    '/images/food/chatgpt-mediterrarean-bowl.png',
-    '/images/food/chatgpt-oatmeal.png',
-    '/images/food/chatgpt-tropical-smoothie.png'
+    'public/images/food/chatgpt-breakfast.png',
+    'public/images/food/chatgpt-burrito-bowl.png',
+    'public/images/food/chatgpt-dessert.png',
+    'public/images/food/chatgpt-mediterrarean-bowl.png',
+    'public/images/food/chatgpt-oatmeal.png',
+    'public/images/food/chatgpt-tropical-smoothie.png'
 ]
 
 

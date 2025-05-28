@@ -16,7 +16,11 @@
     display: block;
 }
 
-.ViewNote-title textarea {
+textarea:focus {
+    outline: none;
+}
+
+.ViewNote-title {
     margin: 3px auto 10px auto;
     display: block;
     width:380px;
@@ -29,7 +33,7 @@
     border: 2px solid var(--purple);
 }
 
-.ViewNote-contents textarea {
+.ViewNote-contents {
     margin: 0 auto;
     display: block;
     width: 380px;
@@ -38,4 +42,19 @@
     background: var(--white);
     border: 2px solid var(--purple);
     resize: none;
+    overflow-x: hidden;
+}
+
+.ViewNote-close-btn {
+    border: none;
+    background: var(--purple);
+    padding: 6px 18px;
+    display: block;
+margin: 5px auto;
+border-radius: 5px;
+}
+
+.ViewNote-close-btn:hover {
+    cursor: pointer;
+    transform: scale(0.97);
 }
