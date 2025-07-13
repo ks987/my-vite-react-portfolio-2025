@@ -24,8 +24,6 @@ export default function OneList() {
     return (
         <div className="OneList">
             <div>
-
-
                 <div className="OneList-title">to-do list # 1</div>
                 <div className="Onetasklist-tasks-themselves">
 
@@ -37,8 +35,6 @@ export default function OneList() {
                                     toCrossOut(taskIndex))
                                 }></i>
                             <div className={crossedOut}>{task}</div>
-
-        
                         </div>
                     ))}
                 </div>

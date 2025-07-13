@@ -1,6 +1,7 @@
 
 
 import React from 'react';
+
 import { useEffect, useState } from "react";
 import { Routes, Route } from 'react-router';
 
@@ -17,7 +18,7 @@ import CalendarLayout from './calendar/CalendarLayout.jsx';
 
 import NotebookApp from './notebook-app/NotebookApp.jsx';
 import ArtGalleryLayout from './art-gallery/ArtGallery-layout.jsx';
-// import ToDoApp from './to-do-app/ToDoApp.jsx';
+import ToDoApp from './to-do-app/ToDoApp.jsx';
 import Page404 from './page-not-found/page-not-found.jsx';
 
 
@@ -46,12 +47,12 @@ function App() {
 
         {/* portfolio landing page routes */}
         <Route path='' element={<Layout />}>
-          <Route index element={<OneYear />}></Route>
+  
           <Route exact path='/about-and-contact' element={<AboutAndContact />}></Route>
           <Route exact path='/calendar-in-react' element={<OneYear />}></Route>
           <Route exact path='/notebook-app-in-react' element={<NotebookApp />}></Route>
           <Route exact path='/art-gallery-in-react' element={<ArtGalleryLayout />}></Route>
-          {/* <Route exact path='/to-do-app-in-react' element={<ToDoApp />}></Route> */}
+          <Route exact path='/to-do-app-in-react' element={<ToDoApp />}></Route>
           <Route exact path='*' element={<Page404 />}></Route>
 
 
@@ -60,7 +61,7 @@ function App() {
 
         {/* calendar application routes */}
 
-        <Route exact path='' element={<Layout />}>
+        {/* <Route exact path='' element={<Layout />}>
           <Route exact path='/go-to-day' element={<OneDay />}></Route>
           <Route exact path='/go-to-four-days' element={<FourDays />}></Route>
           <Route exact path='/go-to-week' element={<OneWeek />}></Route>
@@ -68,7 +69,7 @@ function App() {
           <Route exact path='/go-to-year' element={<OneYear />}></Route>
           <Route exact path='*' element={<Page404 />}></Route>
 
-        </Route>
+        </Route> */}
 
         {/* gallery application routes */}
 

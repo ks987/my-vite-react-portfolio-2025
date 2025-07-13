@@ -1,8 +1,6 @@
 
 import React from "react";
 import { Outlet } from "react-router";
-
-
 import Navbar from './Navbar.jsx';
 import Footer from './Footer.jsx';
 import ScreenTooSmall from './ScreenTooSmall.jsx';
